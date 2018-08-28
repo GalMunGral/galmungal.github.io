@@ -1,0 +1,14 @@
+body {
+  font-family: monospace;
+  font-size: 16px;
+  padding: 10px 25%;
+}
+#menu ul {
+  list-style: none;
+  font-size: 20px;
+}
+#menu ul li:hover{
+  font-weight: 900; 
+  color: #2F5EC4;
+  cursor: pointer;
+}
