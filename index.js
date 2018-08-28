@@ -6,7 +6,7 @@ window.onload = function() {
     const items = json.map(entry => {
       const li = document.createElement('li');
       li.id = entry.id;
-      li.innerHTML = entry.title;
+      li.innerHTML = entry.id;
       return li;
     });
     const ul = document.querySelector('#menu').querySelector('ul');
