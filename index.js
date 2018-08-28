@@ -15,23 +15,17 @@ window.onload = function() {
   article.remove();
 
   function loadArticle(id) {
-    fetch(id + '.txt')
-      .then(res => {
-        if (res.status === 404) {
-          throw new Error('404 Not Found');
-        }
-        return res.text();
-      })
-      .then(text => {
-        article.innerHTML = text;
-      })
-      .catch(() => {
-        article.innerHTML = '404 NOT FOUND';
-      })
-      .finally(() => {
-        menu.remove();
-        document.body.append(article);
-      });
+    fetch(id + '.txt').then(res => {
+      if (res.status === 404) throw new Error('Not Found');
+      return res.text();
+    }).then(text => {
+      article.innerHTML = text;
+    }).catch(() => {
+      article.innerHTML = '404 NOT FOUND';
+    }).finally(() => {
+      menu.remove();
+      document.body.append(article);
+    });
   }
   menu.onclick = function(e) {
     const id = e.target.id;
