@@ -7,6 +7,10 @@ body {
   list-style: none;
   font-size: 20px;
 }
+a {
+  display: block;
+  margin-bottom: 50px;
+}
 #menu ul li:hover{
   font-weight: 900; 
   color: #2F5EC4;
