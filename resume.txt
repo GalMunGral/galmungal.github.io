@@ -1,1 +1,1 @@
-<a href="resume.pdf">My Resume</a>
+<img id="preview" src="resume.png"></img>
