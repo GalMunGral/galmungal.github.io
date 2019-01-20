@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<style>
+html {
+    font-family: 'Open Sans';
+}
+.fa-check {
+    color: forestgreen;
+}
+.fa-times {
+    color: darkred;
+}
+.display-1 {
+    font-size: 2.5em;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-element {
+    margin-right: 30px;
+}
+.test-case {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.test-header {
+    margin-left: -50px;
+}
+.call {
+    font-family: "Courier New";
+}
+.variable-name {
+    font-family: "Courier New";
+}
+.variable-value {
+    font-family: "Courier New";
+}
+.problem div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.exception {
+    color: darkred;
+    font-family: "Courier New";
+    margin-bottom: 0px;
+}
+.problem-row:hover {
+    cursor: pointer;
+}
+.table-responsive {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+h1 {
+    margin: 20px;
+}
+h3 {
+    font-size: 130%;
+}
+.warning {
+    color: #c94f00;
+}
+.feedback-points {
+    font-size: 110%;
+}
+.feedback {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5%;
+}
+pre {
+display:inline;
+}
+.diffnomatch {
+    background: #e5d5e8;
+}
+.right {
+    background: #dbf2fc;
+}
+.left {
+    background: #f3e9d1;
+}
+.diffsoft {
+    color: #888;
+}
+.diffskip {
+    color: #888;
+    background: #e0e0e0;
+}
+.bold {
+    font-weight:bold;
+}
+.problem-name {
+    font-family: 'Courier New', monospace;
+}
+.merged {
+    background-color: #eaeaea;
+}
+span {
+    font-family: "Courier New";
+}
+.diff-equal {
+    background-color: white;
+}
+.diff-delete {
+    background-color: #FF8A8A;
+    text-decoration: line-through;
+}
+.diff-insert {
+    background-color: lightgreen;
+}
+.diff-invisible {
+    color: white;
+}
+.diff-omitted {
+    color:#b5b5b5;
+}
+</style>
+<script>
+$(document).ready(function() {
+    $(".problem-row").on("click",function(){
+        window.location = $(this).data("href");
+        return false;
+    });
+});
+</script>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row text-center">
+<div class="col-12">
+<h1 class="display-1">
+Feedback for Wenqi He (whe47)
+</h1>
+</div>
+</div>
+<div class="row text-center">
+<div class="col-12">
+<div class="table-responsive">
+<table class="table table-striped table-bordered table-hover">
+<thead>
+<tr>
+<th>
+#
+</th>
+<th>
+Problem
+</th>
+<th>
+Points Earned (Plus Comments)
+</th>
+<th>
+Points Possible
+</th>
+</tr>
+</thead>
+<tr class="problem-row" data-href="#problem1">
+<td>
+<p>
+1
+</p>
+</td>
+<td>
+<p>
+cosign
+</p>
+</td>
+<td>
+<p>
+0.0 (+0.0)
+</p>
+</td>
+<td>
+<p>
+25.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem2">
+<td>
+<p>
+2
+</p>
+</td>
+<td>
+<p>
+pythag
+</p>
+</td>
+<td>
+<p>
+0.0 (+0.0)
+</p>
+</td>
+<td>
+<p>
+25.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem3">
+<td>
+<p>
+3
+</p>
+</td>
+<td>
+<p>
+interest
+</p>
+</td>
+<td>
+<p>
+0.0 (+0.0)
+</p>
+</td>
+<td>
+<p>
+25.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem4">
+<td>
+<p>
+4
+</p>
+</td>
+<td>
+<p>
+pizzaParty
+</p>
+</td>
+<td>
+<p>
+0.0 (+0.0)
+</p>
+</td>
+<td>
+<p>
+25.0
+</p>
+</td>
+</a>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<strong>Total</strong>
+</td>
+<td>
+<p>
+0.0 (+0.0)
+</p>
+</td>
+<td>
+<p>
+100.0
+</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem1" class="problem col-12">
+<h2 class="problem-name">
+cosign
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="https://cs1371.gatech.edu/homework/homework01/resubmission/cosign.mat" download="cosign.mat">cosign.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[sideC1] = cosign(in1_sub, in2_sub, in3_sub);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><p class="exception">STUDENT:fileNotSubmitted - File <code>cosign.m</code> wasn't submitted, so the function was not graded.</p></div><p class="feedback-points">Points earned for this test case: <b>0.0/8.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[sideC2] = cosign(in4_sub, in5_sub, in6_sub);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><p class="exception">STUDENT:fileNotSubmitted - File <code>cosign.m</code> wasn't submitted, so the function was not graded.</p></div><p class="feedback-points">Points earned for this test case: <b>0.0/8.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[sideC3] = cosign(in7_sub, in8_sub, in9_sub);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><p class="exception">STUDENT:fileNotSubmitted - File <code>cosign.m</code> wasn't submitted, so the function was not graded.</p></div><p class="feedback-points">Points earned for this test case: <b>0.0/9.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem2" class="problem col-12">
+<h2 class="problem-name">
+pythag
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="https://cs1371.gatech.edu/homework/homework01/resubmission/pythag.mat" download="pythag.mat">pythag.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[c1] = pythag(in1_sub, in2_sub);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><p class="exception">STUDENT:fileNotSubmitted - File <code>pythag.m</code> wasn't submitted, so the function was not graded.</p></div><p class="feedback-points">Points earned for this test case: <b>0.0/8.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[c2] = pythag(in3_sub, in4_sub);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><p class="exception">STUDENT:fileNotSubmitted - File <code>pythag.m</code> wasn't submitted, so the function was not graded.</p></div><p class="feedback-points">Points earned for this test case: <b>0.0/8.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[c3] = pythag(in5_sub, in6_sub);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><p class="exception">STUDENT:fileNotSubmitted - File <code>pythag.m</code> wasn't submitted, so the function was not graded.</p></div><p class="feedback-points">Points earned for this test case: <b>0.0/9.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem3" class="problem col-12">
+<h2 class="problem-name">
+interest
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="https://cs1371.gatech.edu/homework/homework01/resubmission/interest.mat" download="interest.mat">interest.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[time1] = interest(in1_sub, in2_sub, in3_sub);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><p class="exception">STUDENT:fileNotSubmitted - File <code>interest.m</code> wasn't submitted, so the function was not graded.</p></div><p class="feedback-points">Points earned for this test case: <b>0.0/8.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[time2] = interest(in4_sub, in5_sub, in6_sub);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><p class="exception">STUDENT:fileNotSubmitted - File <code>interest.m</code> wasn't submitted, so the function was not graded.</p></div><p class="feedback-points">Points earned for this test case: <b>0.0/8.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[time3] = interest(in7_sub, in8_sub, in9_sub);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><p class="exception">STUDENT:fileNotSubmitted - File <code>interest.m</code> wasn't submitted, so the function was not graded.</p></div><p class="feedback-points">Points earned for this test case: <b>0.0/9.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem4" class="problem col-12">
+<h2 class="problem-name">
+pizzaParty
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="https://cs1371.gatech.edu/homework/homework01/resubmission/pizzaParty.mat" download="pizzaParty.mat">pizzaParty.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[slices1, leftOver1] = pizzaParty(in1_sub, in2_sub);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><p class="exception">STUDENT:fileNotSubmitted - File <code>pizzaParty.m</code> wasn't submitted, so the function was not graded.</p></div><p class="feedback-points">Points earned for this test case: <b>0.0/8.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[slices2, leftOver2] = pizzaParty(in3_sub, in4_sub);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><p class="exception">STUDENT:fileNotSubmitted - File <code>pizzaParty.m</code> wasn't submitted, so the function was not graded.</p></div><p class="feedback-points">Points earned for this test case: <b>0.0/8.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[slices3, leftOver3] = pizzaParty(in5_sub, in6_sub);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><p class="exception">STUDENT:fileNotSubmitted - File <code>pizzaParty.m</code> wasn't submitted, so the function was not graded.</p></div><p class="feedback-points">Points earned for this test case: <b>0.0/9.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
