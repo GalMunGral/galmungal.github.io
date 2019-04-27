@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'IM Fell English', serif;
+        font-size: 14pt;
+        padding: 20px 20%;
+        word-wrap: break-word;
+        background: #FFFAF1;
+        text-align: justify;
+        user-select: none;
+      }
+      h1, h2, h3, h4, h5 {
+        font-variant: small-caps;
+      }
+      .quote {
+        margin: 10px 30px;
+        font-family: 'Homemade Apple', cursive;
+      }
+    </style>
+  </head>
+  <body>
+  <h2>What is Computation?</h2>
+  <p>
+  In 1928, David Hilbert, the most influential mathematician of 20th century, posed the famous Entscheidungsproblem:
+  </p>
+  <p class="quote">Does there exist an algorithm for deciding whether or not a specific mathematical assertion does or does not have a proof?</p>
+  <p>
+  In 1936, Alonzo Church and Alan Turing, showed independently that the answer was negative, using lambda calculus and Turing machine, respectively, as their models of computation in their proofs. These two papers marked the beginning of Computer Science.
+  </p>
+
+<pre>
+  if hahah {
+    then
+  }
+</pre>
+  If you think back to high school algebra classes, you probably remember substituting expressions into other expressions. That is roughly how lambda-calculus describes computation. Turing machine, on the other hand, models computation as a mechanical process of writing down symbols on paper while referencing what’s written previously. The assumption that any real-world calculation can be can be translated into an equivalent computation using the lambda calculus or equivalently, Turing machine, is called the Church-Turing Thesis. In Turing’s own words:
+
+  A man provided with paper, pencil, and rubber, and subject to strict discipline, is in effect a universal machine. (Turing 1948: 416)
+  How do Computer Programs Work?
+  Months before the Pacific War ended in 1945, during the several train trips to the Los Alamos Laboratory to work on the Manhattan Project, mathematician-physicist John von Neumann wrote down the First Draft of a Report on the EDVAC, detailing the design for electronic digital computers now known as the von Neumann architecture. It remains how computers are implemented to this day.
+
+  Von Neumann architecture consists of
+
+  a processing unit that contains a arithmetic logic unit and many registers.
+  a control unit that contains an instruction register and program counter.
+  a memory that stores both data and instructions
+  external mass storage and input/output mechanisms.
+  The processing unit and control unit together is called the central processing unit (CPU), and a computer program is a sequence of instructions that the CPU recognizes, in the form of zeros and ones living somewhere in the memory.
+
+  When a program runs, the program counter is initialized with the memory address of the first instruction, then instructions are loaded one by one to the instruction register, decoded, and turned into actual operations. Whenever an instruction is loaded to instruction register, the program counter is automatically incremented by one, pointing to the next instruction to be executed.
+
+  Through these instructions, a programmer can tell the CPU to perform arithmetic/logic operations, read values from arbitrary locations in memory into CPU registers, write register values to arbitrary locations memory, and also alter the value stored in program counter, thereby redirecting the control flow, which by default goes sequentially from beginning to finish.
+
+  How To Write a Program?
+  There are basically two type of instructions you can give to a computer. You can either make it perform some actual task or redirect its control to whatever you want it to do next. In reality, the doing-actual-stuff part is usually provided to you by programming languages and libraries, especially in the case of application-level programming. Therefore in most cases you only need to worry about directing the control flow.
+
+  Typically, you would write human-readable code in a text file, using all the convenient constructs made available to you by the language/libraries, then a compiler/interpreter will take care of converting it to the actual sequence of instructions. In a sense, assuming you are not writing assembly/machine code, as long as you know how to draw a flow diagram, you already know how to write a program in whatever high-level language you want (except for the functional ones). The remaining hurdles are just technicalities that one can get familiar with over time.
+
+  But How Does GUI Work?
+  As a novice programmer, you sometimes forget to increment an index in a while loop and the program just gets stuck there forever. Then whenever the program freezes you know you might accidentally created an infinite loop somewhere — it becomes associated with the perception of unresponsiveness.
+  </body>
+</html>
