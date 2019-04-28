@@ -121,7 +121,7 @@
     <h2>3. Support Vector Machine</h2>
     <h3>Cost Function</h3>
     \[ J(\theta) = - C\sum_{i=1}^m \Big[y^{(i)}cost_1(\theta^Tx^{(i)}) + \left(1-y^{(i)}\right)cost_0(\theta^Tx^{(i)})\Big] + \frac{1}{2} \sum_{j=1}^n \theta_j^2\]
-    where \(cost_i\) is linear until its value reaches zero, after which it stays zero.
+    where \(cost_i\) is a linear function until its value reaches zero, after which it stays zero.
     <h3>Optimization Objective</h3>
     Since \(cost_i\) can be made zero, the optimization obejctive can be rephrased as
     \[ \min_\theta \frac{1}{2} \sum_{j=1}^n \theta_j^2 = \min_\theta \frac{1}{2} \lVert\theta\rVert^2 \]
