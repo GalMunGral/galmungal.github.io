@@ -122,100 +122,101 @@
         10^{54} \,\text{g} \cdot \text{cm}^{-3} \text{ (neutrons)}
         \end{cases}\]
         Thus, Einstein-Cartan theory only produces non-negligible deviations from general relativity under extremely high densities that might in fact be unphysical.  
+    
+    
     <h1>Appendix: Summary of Einstein’s 1916 Paper<br>
       <i>The Foundation of <br> the General Theory of Relativity</i></h1>
     <p class="author">Wenqi He, &nbsp; December 2018</p>
-    <h2>1. Philosophical Motivation</h2>
-    Near the end of the first section, Einstein states his guiding principle:
+    <h2>1. Motivation</h2>
+    As stated at the end of the first section:
     <p class="quote">The general laws of nature are to be expressed by equations which hold good for all systems of coordinates, that is, are covariant with respect to any substitutions whatever.</p>
-    <h2>2. Mathematical Aid</h2>
-    Here he intentionally introduces the mathematics in a simple manner so that <p class="quote">a special study of the mathe- matical literature is not required for the understanding of the present paper</p>
-    <h3>2. 1. Tensor</h3>
-    Following his guiding principle, tensor are very natural objects to investigate, for that
-    ...the equations of transformation for their components are linear and homogeneous. Accord- ingly, all the components in the new system vanish, if they all vanish in the original system. If, therefore, a law of nature is expressed by equating all the components of a tensor to zero, it is generally covariant.
-    <h3>2. 2. Covariant and Contravariant Tensor</h3>
-    First he introduced contravariant and covariant tensors and their respective transformation rules under a change of coordinates, which could be generalizes to that of mixed tensors:
-    \[{A'}_\tau^{\sigma} = \frac{\partial x'^\tau}{\partial x^\mu}\frac{\partial x^\mu}{\partial x'^\sigma} A^\nu_\mu\]
-    Then he introduced outer product, contraction, and combining both, inner product.
-    2.3 Metric
-    The entire theory was built on top of the metric tensor gμν (he called it the covariant fundamental tensor) which determines the invariant line element of spacetime by
-    \[ ds^2 = g_{\mu\nu}dx^\mu dx^\nu \]
-    He further introduces the inverse metric gμν and demonstrates that one could raise and lower indices by contraction with the (inverse) metric.    
+    <h2>2. Mathematical Preparation</h2>
+    Einstein claims:
+    <p class="quote">... a special study of the mathe- matical literature is not required for the understanding of the present paper.</p>
+    <h3>2.1. Tensor</h3>
+    Tensor are natural objects to investigate, for that
+    <p class="quote">... the equations of transformation for their components are linear and homogeneous. Accordingly, all the components in the new system vanish, if they all vanish in the original system. If, therefore, a law of nature is expressed by equating all the components of a tensor to zero, it is generally covariant.</p>
+    <h3>2.2. Covariant and Contravariant Tensor</h3>
+    Under a change of coordinates, covariant and contravariant indices of a tensor transform by
+    \[{A'}^\tau_{\sigma} = \dfrac{\partial x'^\tau}{\partial x^\nu}\dfrac{\partial x^\mu}{\partial x'^\sigma} A^\nu_\mu\]
+    <h3>2.3. Metric</h3>
+    The invariant line element of spacetime is determined by the metric tensor \(g_{\mu\nu}\) by definition: \[ds^2 = g_{\mu\nu}dx^\mu dx^\nu \]
     <h3>2.4. Geodesic</h3>
-    Next, he derived the equation of geodesic by doing variation on arclength
+    The equation of geodesic is derived in this paper by doing variation on arclength:
     \[ \delta S = \delta \int \sqrt{-g_{\mu\nu}\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}}d\lambda = 0 \quad\Rightarrow\quad \frac{d^2x^\tau}{ds^2} + \Gamma^\tau_{\mu\nu}\frac{dx^\mu}{ds}\frac{dx^\nu}{ds} = 0\]
-    where \(\Gamma^\tau_{\mu\nu}\), the Christoffel symbol, is a shorthand for a mixture of derivatives of \(g_{\mu\nu}\).
     <h3>2.5. Covariant Derivative</h3>
-    In order to write what he called 
-    <p class="quote">generally covariant differential equations,</p> Einstein derives the notion of covariant derivatives in the following way: Suppose \(\psi\) is invariant in spacetime. Because ds is invariant, the derivatives of \(\psi\) along the geodesic (so that the above equation can be used to simplify terms) with respect to \(s\)
+    The notion of covariant derivative is introduced in order to write what Einstein called 
+    <p class="quote">... generally covariant differential equations ...</p>
+    Suppose \(\phi\) is invariant. Since \(ds\) is invariant, the derivatives of \(\phi\) along the geodesic
     \[\frac{d\phi}{ds} = \frac{\partial\phi}{\partial x^\mu}\frac{d x^\mu}{ds} = A_\mu \frac{dx^\mu}{ds} \]
     \[ \frac{d^2\phi}{ds^2} = \left(\frac{\partial^2\phi}{\partial x^\mu \partial x^\nu} + \Gamma^\tau_{\mu\nu} \frac{\partial\phi}{\partial x^\tau}\right)\frac{dx^\mu}{ds}\frac{dx^\nu}{ds} = \left(\frac{\partial A_\mu}{\partial x^\nu} + \Gamma^\tau_{\mu\nu} A_\tau \right)\frac{dx^\mu}{ds}\frac{dx^\nu}{ds}\]
-    must be invariant as well. In order for the derivative to preserves the tensor property,
+    must also be invariant. In order for the derivative to be tensorial,
     \[ \nabla_\nu A_\mu := \frac{\partial A_\mu}{\partial x^\nu} + \Gamma^\tau_{\mu\nu}A_\tau \]
-    For rank two tensor Aμν = AμBν, requiring that it follows Leibniz rule,
+    For rank two tensor \(A_{\mu\nu} = A_\mu B_\nu\), requiring that the derivative satisfy Leibniz rule,
     \[ \nabla_\sigma A_{\mu\nu} : = \nabla_\sigma A_\mu B_\nu + A_\nu \nabla_\sigma B_\mu = \frac{\partial A_{\mu\nu}}{\partial x^\sigma} + \Gamma^\tau_{\sigma\mu}A_{\tau\nu} + \Gamma^\tau_{\sigma\nu}A_{\mu\tau} \]
     <h3>2.6. Curvature</h3>
-    Einstein’s derived the Riemann curvature tensor by taking the commutator of the two covariant derivatives:
+    Riemann curvature tensor is defined by the commutator of covariant derivatives:
     \[ [\nabla_\sigma, \nabla_\tau] A_\mu = R^\rho_{\mu\sigma\tau}A_\rho \]
-    where \(R^\rho_{\mu\sigma\tau}\) is a shorthand for a mixture of first and second derivatives of \(g_{\mu\nu}\). Then he explains the
-    significance of the Riemann tensor by citing (without giving the proof) a fundamental theorem 
-    \[ R^\rho_{\mu\sigma\tau} = 0 \quad\Longleftrightarrow\quad g_{\mu\nu} = \text{constant under appropriate coordinates} \]
-    Contracting the Riemann tensor gives the Ricci tensor \(R_{\mu\nu}\). In coordinates where \(\sqrt{−g} = 1\)
-    \[ R_{\mu\nu} = \frac{\partial\Gamma^\alpha_{\mu\nu}}{\partial x^\alpha} - \Gamma^\beta_{\mu\alpha}\Gamma^\alpha_{\nu\beta} \]
-    which he considers to be of particular interest, for that
+    Einstein pointed out the significance of Riemann tensor, citing the theorem that \(g_{\mu\nu}\) could be made constant under appropriate coordinates if \(R^\rho_{\mu\sigma\tau} = 0\).
+    Contracting the Riemann tensor gives the Ricci tensor \(R_{\mu\nu}\):
+    \[ R_{\mu\nu} = \frac{\partial\Gamma^\alpha_{\mu\nu}}{\partial x^\alpha} - \Gamma^\beta_{\mu\alpha}\Gamma^\alpha_{\nu\beta} \quad (\sqrt{−g} = 1) \]
+    which he considered particularly interesting, for that
     <p class="quote">
-    ...besides Rμν there is no tensor of second rank which is formed from the gμν and its deriva- tives, contains no derivations higher than second, and is linear is these derivatives.
+    ...besides \(\it{R_{\mu\nu}}\) there is no tensor of second rank which is formed from the \(\it{g_{\mu\nu}}\) and its derivatives, contains no derivations higher than second, and is linear is these derivatives.
     </p>    
     <h2>3. Physical Postulates</h2>
-    The famous summary by Wheeler:
+    (A famous quote by physicist John A. Wheeler)
     <p class="quote">Spacetime tells matter how to move; matter tells spacetime how to curve.</p> 
     <h3>3.1. Equations of Motion</h3>
     The first postulate is that particles follow the geodesic
     \[ \frac{d^2x^\tau}{ds^2} = -\Gamma^\tau_{\mu\nu} \frac{dx^\mu}{ds}\frac{dx^\nu}{ds} \]
-    Based on this, he calls Γτμν the components of the gravitational field, since
-    If the \(\Gamma^\tau_{\mu\nu}\) vanish, then the point moves uniformly in a straight line. These quantities therefore
-    condition the deviation of the motion from uniformity.
+    Einstein calls the Christoffel symbols \(\Gamma^\tau_{\mu\nu}\)
+    <p class="quote">... the components of the gravitational field ...</p>
+    since
+    <p class="quote">... if the \(\it{\Gamma}\) vanish, then particle moves uniformly in a straight line. These quantities therefore
+    condition the deviation of the motion from uniformity.</p>
     <h3>3.2. Field Equations and Laws of Conservation</h3>
     <h4>3.2.1. In the Absence of Matter</h4>
-    Einstein argues that the equation must be less restrictive than, but nonetheless must in special cases be reducible to, the vanishing of the Riemann tensor, for compatibility with special relativity. Thus he requires that Ricci tensor vanish:
+    Einstein argues that, for compatibility with special relativity, the field equations must be less restrictive than, but (as a special case) reducible to, the vanishing of the Riemann tensor. Hence:
     \[R_{\mu\nu} = 0 \]
-    which he later compares to \(\nabla^2 \phi = 0\) in Newtonian gravity. He first verifies that the Lagrangian is
-    \[ \mathcal{L} = g_{\mu\nu}\Gamma^\alpha_{\mu\beta}\Gamma^\beta_{\nu\alpha} \]
-    Then from the Euler-Lagrange equation, a divergence-free quantity arises after some calculation:
-    \[ \frac{\partial}{\partial x^\alpha}\Big(\partial_\sigma g^{\mu\nu} \frac{\partial\mathcal{L}}{\partial\partial_\alpha g^{\mu\nu}} - \delta^\alpha_\sigma \mathcal{L}\Big) = 0\]
-    Einstein argues that
+    
+    From the Lagrangian, Einstein derived the Noether current:
+    \[ \frac{\partial}{\partial x^\alpha}\Big(\partial_\sigma g^{\mu\nu} \frac{\partial\mathcal{L}}{\partial\partial_\alpha g^{\mu\nu}} - \delta^\alpha_\sigma \mathcal{L}\Big) = 0, \quad\text{where } \mathcal{L} = g_{\mu\nu}\Gamma^\alpha_{\mu\beta}\Gamma^\beta_{\nu\alpha}\]
     <p class="quote">
-      This equation expresses the law of conservation of momentum and of energy for the gravita- tional field
+      This equation expresses the law of conservation of momentum and of energy for the gravitational field.
     </p>
-      and gives the definition of the energy components of the gravitational field as:
-    \[ t^\sigma_\sigma := -\frac{1}{2\kappa}\Big(\partial_\sigma g^{\mu\nu} \frac{\partial\mathcal{L}}{\partial\partial_\alpha g^{\mu\nu}} - \delta^\alpha_\sigma \mathcal{L}\Big) = \frac{1}{2\kappa}\big(\delta^\alpha_\sigma g^{\mu\nu}\Gamma^\lambda_{\mu\beta}\Gamma^\beta_{\nu\lambda} - 2g^{\mu\nu}\Gamma^\alpha_{\mu\beta}\Gamma^\beta_{\nu\sigma}\big), \quad t = t^\alpha_\alpha \]
-   Extracting from the field equation all terms expressible in terms of \(t^\alpha_\alpha\) and its trace:
-       \[\frac{\partial}{\partial x^\alpha}\Big(g^{\sigma\beta}\Gamma^\alpha_{\mu\beta}\Big) = -\kappa\left(t^\sigma_\mu - \frac{1}{2}\delta^\sigma_\mu t\right) \]
-    which equation, Einstein immediately points out,
+      The definition of the energy components of the gravitational field was then given as:
+    \[ t^\alpha_\sigma := -\frac{1}{2\kappa}\Big(\partial_\sigma g^{\mu\nu} \frac{\partial\mathcal{L}}{\partial\partial_\alpha g^{\mu\nu}} - \delta^\alpha_\sigma \mathcal{L}\Big), \quad t = t^\alpha_\alpha \]
+   Pulling all terms involving \(t^\sigma_\mu\) and its trace to the right gives
+       \[\frac{\partial}{\partial x^\alpha}\Big(g^{\sigma\beta}\Gamma^\alpha_{\mu\beta}\Big) = -\kappa\left(t^\sigma_\mu - \frac{1}{2}\delta^\sigma_\mu t\right) \tag{1}\]
+    which, as Einstein immediately pointed out,
     <p class="quote">
-        ...is particularly useful for a vivid grasp of our subject
+        ... is particularly useful for a vivid grasp of our subject.
     </p>
     <h4>3.2.2 General Form</h4>
-    Finally, Einstein argues that the contribution of matter should be analogous to the source term in Poisson’s equation \(\Delta\phi = 4\pi G\rho\). Thus he modifies the matter-free field equation by introducing the energy-tensor of matter \(T_\mu^\sigma\) and its trace \(T = T^\mu_\mu\) to the right side:
-    \[ \frac{\partial}{\partial x^\alpha}\big(g^{\sigma\beta}\Gamma^\alpha_{\mu\beta}\big) = -\kappa\Big[\big(t^\sigma_\mu + T^\sigma_\mu\big) - \frac{1}{2}\delta^\sigma_\mu(t + T)\Big]\]
-    Absorbing tσμ and t terms back to the left yields the well-known field equation:
-    Lastly, he checks that the conservation laws still hold, that is,
+    Einstein added the energy tensor of matter \(T_\mu^\sigma\) to the field equations on the grounds that matter contributions should constitute the source term, analogously to Poisson’s equation. Equation (1) then becomes:
+    \[ \frac{\partial}{\partial x^\alpha}\Big(g^{\sigma\beta}\Gamma^\alpha_{\mu\beta}\Big) = -\kappa\Big[\big(t^\sigma_\mu + T^\sigma_\mu\big) - \frac{1}{2}\delta^\sigma_\mu(t + T)\Big]\]
+    Absorbing \(t^\sigma_\mu\) and \(t\) back to the left yields the well-known field equation:
+    \[ R_{\mu\nu} = \kappa \Big(T_{\mu\nu} - \frac{1}{2} T g_{\mu\nu} \Big) \]
+    Lastly, it was verified that conservation laws still hold for energy tensors, that is,
     \[ \frac{\partial\big(t^\sigma_\mu + T^\sigma_\mu\big)}{\partial x^\sigma} = 0 \]
     <h3>3.3 Newtonian Approximation</h3>
     <h4>3.3.1 Equations of Motion</h4> 
-    Suppose \(\Gamma^\tau_{\mu\nu}\) are small quantities, and the speed of the particle is small compared to the speed of light, namely, for spatial dimensions dxα/ds are small quantities, and \(dt/ds = dx^0/ds \approx 1\). Additionally, suppose the gravitational field to be quasistatic, that is, \(\partial g_{\mu\nu}/\partial t = \partial g_{\mu\nu}/\partial x^0 = 0\), then
-    \[ \frac{d^2x^\tau}{ds^2} = -\Gamma^\tau_{\mu\nu} \frac{x^\mu}{ds}\frac{x^\nu}{ds} \quad\Rightarrow\quad \frac{d^2x^\alpha}{dt^2} = -\Gamma^\alpha_{00} = -\frac{1}{2}\frac{\partial g_{00}}{\partial x^\alpha}, \quad \alpha = 1,2,3 \]
-    This is exactly the equations of motion in Newton’s theory if we set φ = g00/2:
+    Suppose \(\Gamma^\tau_{\mu\nu}\) are small quantities, and the speed of particle is small compared to the speed of light, that is, \(dx^\alpha/ds\) are small quantities and \(dt/ds = dx^0/ds \approx 1\). Additionally, suppose the gravitational field is quasistatic, that is, \(\partial g_{\mu\nu}/\partial t = \partial g_{\mu\nu}/\partial x^0 = 0\). Then,
+    \[ \frac{d^2x^\tau}{ds^2} = -\Gamma^\tau_{\mu\nu} \frac{dx^\mu}{ds}\frac{dx^\nu}{ds} \quad\Rightarrow\quad \frac{d^2x^\alpha}{dt^2} = -\Gamma^\alpha_{00} = -\frac{1}{2}\frac{\partial g_{00}}{\partial x^\alpha}, \quad \alpha = 1,2,3 \]
+    This is exactly the equations of motion in Newtonian theory if \(\phi = g_{00}/2\):
     <p class="quote">What is remarkable in this result is that the component \(\it{g_{00}}\) of the fundamental tensor alone defines, to a first approximation, the motion of the material point.</p>
     
     <h4>3.3.2 Field Equations</h4>
-    Under the condition that \(T_{00} = T = ρ/\) and \(T_{\mu\nu} = 0\) otherwise, for \(\mu = \nu = 0 \), we can approximate both sides of the field equation as follows:
+    Suppose the only non-vanishing component of \(T_{\mu\nu}\) is \(T_{00} = T = ρ\). For \(\mu = \nu = 0 \),
     \[ LHS = R_{00} \approx \frac{\partial}{\partial x^\alpha} \Gamma^\alpha_{00} = \frac{\partial}{\partial x^\alpha}\left(\frac{1}{2}\frac{\partial g_{00}}{\partial x^\alpha}\right) = \frac{\partial^2}{(\partial x^\alpha)^2}\left(\frac{g_{00}}{2}\right) = \frac{\partial^2\phi}{(\partial x^\alpha)^2}\]
     \[ RHS = \kappa \Big(T_{00} - \frac{1}{2}Tg_{00}\Big) \approx -\kappa \Big(\rho - \frac{1}{2} \rho\Big) = - \frac{\kappa\rho}{2} \]
-    The field equations then reduce to Poisson’s equation for Newton’s law of gravitation:
-    \[ \frac{\partial^2\phi}{(\partial x^\alpha)^2} = - \frac{\kappa\rho}{2} = \frac{4\pi G\rho}{c^4} \Rightarrow \kappa = - \frac{8\pi G}{c^4} \]
-    Thus, the field equations can be rewritten as:
+    The field equations reduce to Poisson’s equation for Newton’s law of gravitation:
+    \[ \frac{\partial^2\phi}{(\partial x^\alpha)^2} = - \frac{\kappa\rho}{2} = \frac{4\pi G\rho}{c^4} \quad\Rightarrow\quad \kappa = - \frac{8\pi G}{c^4} \]
+    The field equations can now be rewritten as:
     \[ R_{\mu\nu} = \frac{8\pi G}{c^4} \Big(T_{\mu\nu} - \frac{1}{2} T g_{\mu\nu} \Big) \]
+    or equivalently,
+    \[ R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu} \]
     <h2>References</h2>
     <p class="citation">
       [1] Einstein, Albert. "The foundation of the general theory of relativity." <i>Annalen der Physik</i> 49, no. 7 (1916): 769-822.
