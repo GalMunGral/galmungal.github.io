@@ -174,9 +174,10 @@
     Fit distribution parameters \(\mu_i\) and \(\sigma_i\) for each feature \(x_i\)
     \[ \mu_j = \frac{1}{m}\sum_{i=1}^m x^{(i)}_j, \quad \sigma_j^2 = \frac{1}{m}\sum_{i=1}^m \big(x^{(i)}_j - \mu_j \big)^2 \]
     <h3>Prediction</h3>
-    Given new example \(x\)
+    Given new example \(x\),
     \[ p(x) = \prod_{i=1}^n p(x_j;\mu_j, \sigma_j^2) = \prod_{i=1}^n \frac{1}{\sqrt{2\pi\sigma_j}}\exp\left[{-\frac{(x_j-\mu_j)^2}{2\sigma_j^2}}\right]\]
-    Predict anomaly if \(p(x) < \epsilon \)
+    Predict anomaly if \(p(x) < \epsilon \).
+    
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
         CommonHTML: {
