@@ -149,6 +149,9 @@
     </pre>
     <h1><i>Below are unsupervised learning algorithms</i></h1>
     <h2>5. Clustering - K-Means</h2>
+    <h3>Optimization Objective</h3>
+    \[ J\left(c^{(1)},...c^{(m)},\mu_1,...\mu_K\right) := \frac{1}{m}\sum_{i=1}^m \left\lVert x^{(i)}-\mu_{c^{(i)}}\right\rVert^2\]
+    The two steps in the algorithm computes \(\min_{c^{(1)},...c^{(m)}}J\) and \(\min_{\mu_1,...\mu_K}J\) respectively.
     <h3>Training Algorithm</h3>
     <pre>
     Randomly initialize K cluster centroids
@@ -161,10 +164,6 @@
       }
     }
     </pre>
-    <h3>Optimization Objective</h3>
-    \[ J\left(c^{(1)},...c^{(m)},\mu_1,...\mu_K\right) := \frac{1}{m}\sum_{i=1}^m \left\lVert x^{(i)}-\mu_{c^{(i)}}\right\rVert^2\]
-    The two steps in the algorithm computes \(\min_{c^{(1)},...c^{(m)}}J\) and \(\min_{\mu_1,...\mu_K}J\) respectively.
-    
     <h2>6. Dimensionality Reduction - PCA</h2>
     First compute the covariance matrix
     \[ \Sigma := \frac{1}{m} \sum_{i=1}^n\Big(x^{(i)}\Big)\Big(x^{(i)}\Big)^T\]
