@@ -115,7 +115,7 @@
     -\log(h_\theta(x)) \quad\text{if } y = 1\\
     -\log(1-h_\theta(x)) \quad\text{if } y = 0)\end{cases}\]
     With an additional regularization term,
-    \[ J(\theta) = - \frac{1}{m}\sum_{i=1}^m \Big[y^{(i)}\log\left(h_\theta(x^{(i)})\right) + \left(1-y^{(i)}\right)\log(1-h_\theta\left(x^{(i)})\right)\Big] + \frac{\lambda}{2m} \sum_{j=1}^n \theta_j^2\]
+    \[ J(\theta) = - \frac{1}{m}\sum_{i=1}^m \Big[y^{(i)}\log\left(h_\theta(x^{(i)})\right) + \left(1-y^{(i)}\right)\log(1-h_\theta\left(x^{(i)})\right)\Big]\\ + \frac{\lambda}{2m} \sum_{j=1}^n \theta_j^2\]
     
     <h2>3. Support Vector Machine</h2>
     <h3>Cost Function</h3>
@@ -134,10 +134,7 @@
     \[h_\Theta(x) = \Big(g \circ \Theta^{(m)} \circ \cdots \circ g \circ \Theta^{(1)}\Big)x\]
     <h3>Cost Function</h3>
     Suppose the network has \(L\) layers and output \(h_{\Theta}(x) \in \mathbb{R}^K \)
-    \[ J(\Theta) = - \frac{1}{m}\sum_{i=1}^m \sum_{k=1}^K \Big[y_k^{(i)}\log\left(h_\theta(x^{(i)})_k\right) + \left(1-y_k^{(i)}\right)\log\left(1-h_\theta(x^{(i)})_k\right)\Big] \\+ \frac{\lambda}{2m} \sum_{l=1}^{L-1} \sum_{i=1}^{s_{l}} \sum_{j=1}^{s_{l+1}} \left(\Theta^{(l)}_{ji}\right)^2\]
-    <h3>Backpropagation</h3>
-    Computes partial derivatives of the cost function
-    \(\dfrac{\partial}{\partial\Theta^{(l)}_{ij}}J(\Theta)\)
+    \[ J(\Theta) = - \frac{1}{m}\sum_{i=1}^m \sum_{k=1}^K \Big[y_k^{(i)}\log\left(h_\theta(x^{(i)})_k\right) + \left(1-y_k^{(i)}\right)\log\left(1-h_\theta(x^{(i)})_k\right)\Big] \\+ \frac{\lambda}{2m} \sum_{l=1}^{L-1} \sum_{i=1}^{s_{l}} \sum_{j=1}^{s_{l+1}} \left(\Theta^{(l)}_{ji}\right)^2\] 
     <h3>Training Algorithm</h3>
     <pre>
     Randomly initialize weights
@@ -147,6 +144,8 @@
       Backpropation
     }
     </pre>
+    Backgrapagation computes partial derivatives of the cost function
+    \(\dfrac{\partial}{\partial\Theta^{(l)}_{ij}}J(\Theta)\)
     <h1><i>Below are unsupervised learning algorithms</i></h1>
     <h2>5. Clustering - K-Means</h2>
     <h3>Optimization Objective</h3>
