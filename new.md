@@ -102,7 +102,7 @@ source: https://www.cc.gatech.edu/academics/degree-programs/masters/computer-sci
 - CS 6310 Software Architecture and Design ***[irrelevant]***
 - CS 6340 Software Analysis and Testing ***[maybe relevant]***
 - CS 6365 Introduction to Enterprise Computing ***[irrelevant]***
-- CS 6422 Database System Implementation ***[irrelevant]***
+- ~~CS 6422 Database System Implementation ***[irrelevant]***~~
 - CS 6550 Design and Analysis of Algorithms ***[unintersting but maybe relevant]***
 - CS 6675 Advanced Internet Computing Systems and Applications ***[irrelevant]***
 - CS 7210 Distributed Computing ***[irrelevant]***
@@ -154,30 +154,23 @@ This specialization is only available to students enrolled in the Human Centered
 - CS 8803 Computational Social Science ***[irrelevant]***
 
 ## Specialization in High Performance Computing
-Core Courses
-
-(6 hours)
-
-CSE 6140 Computational Science and Engineering Algorithms
-CSE 6220 High Performance Computing
-Electives
-
-(9 hours)
-
-Pick three (3) from:
-
-CSE 6221 Multicore Computing: Concurrency and Parallelism on the Desktop
-CS/CSE 6230 High-Performance Parallel Computing: Tools and Applications
-CS 6241 Compiler Design
-CS 6290 High-Performance Computer Architecture
-CS/CSE 8803 Special Topics: Parallel Numerical Algorithms
-CSE 6236 Parallel and Distributed Simulation
-CSE 8803 Special Topics: Hot Topics in Parallel Computing
+### Core Courses (6 hours)
+- CSE 6140 Computational Science and Engineering Algorithms ***[irrelevant]***
+- CSE 6220 High Performance Computing ***[irrelevant]***
+### Electives (9 hours)
+#### Pick three (3) from:
+- CSE 6221 Multicore Computing: Concurrency and Parallelism on the Desktop ***[irrelevant]***
+- CS/CSE 6230 High-Performance Parallel Computing: Tools and Applications ***[irrelevant]***
+- CS 6241 Compiler Design ***[irrelevant]***
+- CS 6290 High-Performance Computer Architecture ***[irrelevant]***
+- CS/CSE 8803 Special Topics: Parallel Numerical Algorithms ***[irrelevant]***
+- CSE 6236 Parallel and Distributed Simulation ***[irrelevant]***
+- CSE 8803 Special Topics: Hot Topics in Parallel Computing ***[irrelevant]***
 
 ## Specialization in Human-Computer Interaction 
 ### Core Courses (6 hours)
-- CS 6456 Principles of User Interface Software
-- CS 6750 Human-Computer Interaction
+- CS 6456 Principles of User Interface Software ***[relevant]***
+- CS 6750 Human-Computer Interaction ***[maybe relevant]***
 ### Electives (9 hours)
 #### Pick three (3) courses from the two sub-areas below, including at least one from each sub-area:
 #### Sub-area: Design and evaluation concepts
@@ -329,11 +322,11 @@ CSE 8803 Special Topics: Hot Topics in Parallel Computing
 - CSE 6242 Data and Visual Analytics ***[irrelevant]***
 ### Electives (9 hours)
 #### Pick three from:
-- CS 6456 Principles of User Interface Software
-- CS 6465 Computational Journalism ***[irrelevant]***
-- CS 6485 Visualization Methods in Science and Engineering ***[irrelevant]***
+- CS 6456 Principles of User Interface Software ***[relevant]***
+- ~~CS 6465 Computational Journalism ***[irrelevant]***~~
+- ~~CS 6485 Visualization Methods in Science and Engineering ***[irrelevant]***~~
 - CS 6490 Computer Graphics ***[partially relevant ]***
-- CS 6750 Human-Computer Interaction ***[relevant]***
-- CS 6795 Introduction to Cognitive Science ***[irrelevant]***
-- CSE 6242 Data and Visual Analytics ***[irrelevant]***
-- CS 8803 VDS Visual Data Analytics ***[irrelevant]***
+- ~~CS 6750 Human-Computer Interaction ***[relevant]***~~
+- ~~CS 6795 Introduction to Cognitive Science ***[irrelevant]***~~
+- ~~CSE 6242 Data and Visual Analytics ***[irrelevant]***~~
+- ~~CS 8803 VDS Visual Data Analytics ***[irrelevant]***~~
