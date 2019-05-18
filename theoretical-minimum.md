@@ -5,7 +5,7 @@ The most commonly used ones are C-family languages
 C is a structured programming language, where as C++, C# and Java are object-oriented (OO) languages.
 Classes are optional in C++ but mandatory in C# and Java.
 ```c++
-/* class SomeWrapperClass { // C++/C#/Java */
+/* class SomeWrapperClass { */
   int binarySearch(int arr[], int l, int r, int x) { 
     while (l <= r) { 
       int m = l + (r - l) / 2; 
@@ -18,9 +18,7 @@ Classes are optional in C++ but mandatory in C# and Java.
     } 
     return -1; 
   }
-/* }  // C#/Java */
-/* }; // C++     */
-
+/* } // C++ requires a semicolon ; */
 ```
 ### Dynamically Typed Scripting Languages
 #### JavaScript
