@@ -20,7 +20,8 @@ Classes are optional in C++ but mandatory in C# and Java.
     }
 //} (C++ requires a semicolon here)
 ```
-### Dynamically Typed Scripting Languages
+### Dynamically-typed Scripting Languages
+Dynamically-typed means types are determined at run-time, so there is no type declaration in source code.
 #### JavaScript
 ```javascript
 function binarySearch(arr, l, r, x) { 
