@@ -2,7 +2,7 @@
 The most commonly used ones are C-family languages
 ### Statically-typed Compiled Languages
 #### C/C++/C#/Java
-C is a structured programming lanugage, where as C++/C#/Java are object-oriented programming (OOP) languages.
+C is a structured programming language, where as C++/C#/Java are object-oriented (OO) languages.
 Classes are optional in C++ but mandatory in C# and Java.
 ```c++
 /* class SomeWrapperClass { // C++/C#/Java */
