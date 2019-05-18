@@ -1,5 +1,5 @@
 ## Programming Languages
-We will introduce the most popular programming languages, as indicated by the TIOBE index, using the implementation of binary search for comparison. As you will see, overall these languages are, as least conceptually, pretty much the same.
+We will introduce the most popular programming languages, as indicated by the TIOBE index, using the implementation of binary search for comparison of the basic control structures. As you will see, these languages are essentially the same on tbe conceptual level, the only difference being conventions.
 ### Statically-typed Compiled Languages (C-family) 
 #### C and C++/C#/Java
 C is a structured programming language where a program comprises standalone functions, whereas C++, C# and Java are object-oriented (OO) languages where functions are bundled with the data they modify into objects, which are constructed from templates called classes. Classes are optional in C++ but mandatory in C# and Java.
