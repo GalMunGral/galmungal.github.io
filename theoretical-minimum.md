@@ -1,5 +1,7 @@
 ## What Is a Computer
-The world beneath the casing of a computer is, at least mathematically, distinct from its surroundings: The physical world that constitutes our sense-experience is usually modeled as a *continuous* system, whereas computers are conceived and engineered to be *discrete*, both in space (information is stored in discrete units) and time (computation is a by definition stepwise process).
+The characteristic of the world beneath the casing of a computer is, at least mathematically, distinct from its surroundings: The physical world that constitutes our sense-experience is usually modeled as a *continuous* system, whereas computers are conceived and engineered to be *discrete*, both in space (information is stored in discrete units) and time (computation is a by definition stepwise process).
+## What Is Programming
+A 
 ## (Imperative) Programming Languages
 Regardless of language, under the imperative paradigm you use branching (`if-elseif-else`, `switch-case`) and looping (`for`, `while`,`do-while`) control sturctures to direct execution flow - essentially giving a textual description of a 'flowchart' for your program, the rest are simply language-specific conventions. We will introduce the most popular programming languages, as indicated by the TIOBE index, using their respective implementations of a binary search algorithm. As you will see, their syntax are very similar and even identical in some cases.
 ### Statically-typed Compiled Languages (C-family) 
