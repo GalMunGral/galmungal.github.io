@@ -1,5 +1,5 @@
 ## What Is a Computer
-The characteristic of the world beneath the casing of a computer is, at least mathematically, distinct from its surroundings: The physical world that constitutes our sense-experience is usually modeled as a *continuous* system, whereas computers are conceived and engineered to be *discrete*, both in space (information is stored in discrete units) and time (computation is a by definition stepwise process).
+The characteristic of the world beneath the casing of a computer is mathematically distinct from its surroundings: The physical world that constitutes our sense-experience is usually modeled as a *continuous* system, whereas computers are conceived and engineered to be *discrete*, both in space (information is stored in discrete units) and time (computation is a by definition stepwise process).
 ## What Is Programming
 A 
 ## (Imperative) Programming Languages
