@@ -1,6 +1,5 @@
 ## Programming Languages
-The most popular of programming languages indicated by ihe TIOBE index are all . 
-The index can be used to check whether your programming skills are still up to date or to make a strategic decision about what programming language should be adopted when starting to build a new software system. The definition of the TIOBE index can be found here.
+We will introduce the most popular programming languages, as indicated by the TIOBE index, using the implementation of binary search for comparison. As you will see, overall these languages are, as least conceptually, pretty much the same.
 ### Statically-typed Compiled Languages (C-family) 
 #### C and C++/C#/Java
 C is a structured programming language where a program comprises standalone functions, whereas C++, C# and Java are object-oriented (OO) languages where functions are bundled with the data they modify into objects, which are constructed from templates called classes. Classes are optional in C++ but mandatory in C# and Java.
