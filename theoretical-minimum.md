@@ -24,7 +24,6 @@ Classes are optional in C++ but mandatory in C# and Java.
 ```
 ### Dynamically Typed Scripting Languages
 #### JavaScript
-JavaScript is a, meaning that types are not declared in source code.
 ```javascript
 function binarySearch(arr, l, r, x) { 
   while (l <= r) { 
@@ -40,7 +39,6 @@ function binarySearch(arr, l, r, x) {
 }
 ```
 #### PHP
-PHP is also dynamically typed. Variables names are prefixed by `$`.
 ```php
 <?php
 function binarySearch($arr, $l, $r, $x) { 
@@ -58,8 +56,8 @@ function binarySearch($arr, $l, $r, $x) {
 ?> 
 ```
 #### Python
-In Python, blocks are indicated by indentations. Semicolons are usually not used at the end of statements.
 ```python
+# In Python, blocks are indicated by indentations instead of curly braces.
 def binarySearch(arr, l, r, x): 
   while l <= r: 
     m = l + (r - l) / 2
