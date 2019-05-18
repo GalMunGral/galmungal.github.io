@@ -1,7 +1,6 @@
 ### Programming Languages
 The most commonly used ones are C-family languages
-#### C/C++
-C is only structured, where as C++ can also be used for object-oriented programming.
+#### 
 
 ```c++
 int binarySearch(int arr[], int l, int r, int x) { 
@@ -17,11 +16,12 @@ int binarySearch(int arr[], int l, int r, int x) {
   return -1; 
 }
 ```
-#### C++/C#/Java
+#### C/C++/C#/Java
+C is a structured programming lanugage, where as C++/C#/Java are object-oriented programming (OOP) languages.
 Classes are optional in C++ but mandatory in C# and Java.
-```java
-class SomeWrapperClass {
-  static int binarySearch(int arr[], int l, int r, int x) { 
+```c++
+/* class SomeWrapperClass { // For C++/C#/Java */
+  int binarySearch(int arr[], int l, int r, int x) { 
     while (l <= r) { 
       int m = l + (r - l) / 2; 
       if (arr[m] == x)
@@ -33,7 +33,7 @@ class SomeWrapperClass {
     } 
     return -1; 
   }
-} // ; for C++
+/* } // ; for C++ */
 ```
 #### JavaScript (Scripting)
 JavaScript is dynamically typed, meaning that types are not declared in source code.
