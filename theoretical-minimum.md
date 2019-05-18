@@ -1,10 +1,11 @@
 ### Programming Languages
 The most commonly used ones are C-family languages
+### Statically-typed Compiled Languages
 #### C/C++/C#/Java
 C is a structured programming lanugage, where as C++/C#/Java are object-oriented programming (OOP) languages.
 Classes are optional in C++ but mandatory in C# and Java.
 ```c++
-/* class SomeWrapperClass { // For C++/C#/Java */
+/* class SomeWrapperClass { // C++/C#/Java */
   int binarySearch(int arr[], int l, int r, int x) { 
     while (l <= r) { 
       int m = l + (r - l) / 2; 
@@ -17,10 +18,13 @@ Classes are optional in C++ but mandatory in C# and Java.
     } 
     return -1; 
   }
-/* } // ; for C++ */
+/* }  // C#/Java */
+/* }; // C++     */
+
 ```
-#### JavaScript (Scripting)
-JavaScript is dynamically typed, meaning that types are not declared in source code.
+### Dynamically Typed Scripting Languages
+#### JavaScript
+JavaScript is a, meaning that types are not declared in source code.
 ```javascript
 function binarySearch(arr, l, r, x) { 
   while (l <= r) { 
@@ -35,7 +39,7 @@ function binarySearch(arr, l, r, x) {
   return -1; 
 }
 ```
-#### PHP (Scripting)
+#### PHP
 PHP is also dynamically typed. Variables names are prefixed by `$`.
 ```php
 <?php
