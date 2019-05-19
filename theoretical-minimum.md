@@ -80,7 +80,7 @@ From the Wikipedia article:
 > Direct manipulation is a human–computer interaction style which involves continuous representation of objects of interest and rapid, reversible, and incremental actions and feedback. As opposed to other interaction styles, for example, the command language, the intention of direct manipulation is to allow a user to manipulate objects presented to them, using actions that correspond at least loosely to manipulation of physical objects. ... Having real-world metaphors for objects and actions can make it easier for a user to learn and use an interface (some might say that the interface is more natural or intuitive), and rapid, incremental feedback allows a user to make fewer errors and complete tasks in less time, because they can see the results of an action before completing the action, thus evaluating the output and compensating for mistakes.
 
 # 2. Graphical User Interface
-Before we delve into the archetectural and algorithmic structure of GUI systems, we need to be briefly mention that computer display creates the illusion of continuity through high spatial and temporal resolutions. Modern computers typically have high DPI (Dots per inch) displays with 60 Hz refresh rate. The goal for a GUI program then is to continually generate frames so that the frame rate (FPS, frame per second) matches display refresh rate. The overall structure of the program can be written in pseudocode as
+Digital displays creates the illusion of continuity through high spatial and temporal resolutions. Modern computers typically have high DPI (Dots per inch) displays with 60 Hz refresh rate. The goal for a GUI program then is to continually generate frames so that the frame rate (FPS, frame per second) matches display refresh rate. The overall algorithm of the program can be written in pseudocode as
 ```javascript
 while (true) {
   updateFrame();
@@ -89,7 +89,7 @@ while (true) {
   }
 }
 ```
-
+Now we can delve into the archetectural and algorithmic structure of GUI systems, then we will be able to explain what goes into that `updateFrame()` pseudocode;
 ## UI Software Organization
 Modern (“direct manipulation”) interfaces tend to be collections of quasi-independent agents,or interactors (“object of interest” on the screen),which leads to object-based architectures.
 - Each on-screen interactor corresponds to an object instance
