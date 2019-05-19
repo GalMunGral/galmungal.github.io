@@ -112,7 +112,7 @@ Mordern UI (direct manipulation) interfaces tend to be collections of quasi-inde
 
 As a standard OO approach, classes are organized into a **subclassing hierarchy**, in which the top-level class describes basic interactor capabilities, the leaf-node classes describe what you actually see on the screen, and intermediate classes describe common behaviors. In the case of Web interface, `Element` is the the base class, which is immediately inherited by `HTMLElement` and `SVGElement` interfaces. The leaf-node classes include `HTMLButtonElement`, `HTMLInputElement`, `HTMLTable​Element`, etc.
     
-To create UI software, we need a system, commonly referred to as a UI toolkit, to provide development-time and runtime support. In Web developmemnt, the browser itself is the UI toolkit that handles *input (event dispatching)* and *output (layout and drawing)* behind the scenes.
+To create UI software, we need a system, commonly referred to as a UI toolkit, to provide development-time and runtime support. In Web developmemnt, the browser itself is the toolkit, which provides the underlying mechanism for managing interactors (DOM elements) in memory and handling *input (event dispatching)* and *output (layout and drawing)* behind the scenes.
 
 ### Core functions
 - **Hierarchy management**:
