@@ -155,6 +155,14 @@ l isEnabled(), setEnabled()
 l isVisible(), setVisible()
 l Lots of other methods of lesser importance
 
+### Input
+- Picking: Figuring out what interactors are “under” a given screen point
+l Determine if a point is “inside” a component
+l contains(int x, int y)
+l Is the point inside the bounding box of this component (uses local
+coordinate system of component)
+l Terminology: likewise, picking is not a Swing term
+
 ### Output
 - Layout: Establishing the size and position of each object, both initially, and after a resize
 
@@ -189,17 +197,10 @@ l Puts the indicated rectangle on the RepaintManager’s queue of regions
 to be redrawn
 l Terminology: damage is not a Swing term; generic
 
-### Input
-- Picking: Figuring out what interactors are “under” a given screen point
-l Determine if a point is “inside” a component
-l contains(int x, int y)
-l Is the point inside the bounding box of this component (uses local
-coordinate system of component)
-l Terminology: likewise, picking is not a Swing term
-
 - Event dispatch, translation, handling: This is where a lot of the work goes
-###  Application interface
-- How the UI system connects with application code: Callbacks
+
+##  Application interface - Event-Driven Architecture
+How the UI system connects with application code: Callbacks
 l Glue between component and application functionality
 l Not directly in component, but there is a convention for how to
 associate your functionality with a component
@@ -209,7 +210,6 @@ l Terminology: Swing uses the term listener for a piece of application
 code that will be called back in response to something happening
 l The code “listens for” something happening
 
-## Event-Driven Architecture
 Listeners
 l Any given component may have multiple situations in which it invokes
 a listener
