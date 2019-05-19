@@ -118,7 +118,16 @@ As a standard OO approach, classes are organized into a **subclassing hierarchy*
 To create UI software, we need a system that provides development-time and runtime support for UIs, commonly referred to as a UI toolkit. In the case of Web developmemnt, the toolkit is simply the browser itself.
 
 ### Core functions
-- Hierarchy management: Create, maintain, tear down tree of interactor objects
+#### Hierarchy management
+Create, maintain, tear down tree of interactor objects
+Hierarchy Management
+l Swing interfaces are trees of components
+l To make something appear, you must add
+it to the tree
+l Swing takes care of many of the details
+from there
+l Screen redraw
+l Input dispatch
 - Geometry management: Dealing with coordinate systems and on-screen bounds of interactors
 - Interactor status/information management: Is this interactor visible? Is it active?
 ### Output
@@ -132,32 +141,7 @@ To create UI software, we need a system that provides development-time and runti
 - How the UI system connects with application code: Callbacks
     
 
-JComponent API defines methods
-for
-l Hierarchy management
-l Geometry management
-l Object status management
-l Layout
-l (Re)drawing
-l Damage management
-l Picking
 
-In subclasses and other parts of
-the toolkit:
-l Input dispatch and handling
-l Application interface
-l Pluggable looks and feels
-l Undo support
-l Accessibility
-
-Hierarchy Management
-l Swing interfaces are trees of components
-l To make something appear, you must add
-it to the tree
-l Swing takes care of many of the details
-from there
-l Screen redraw
-l Input dispatch
 
 Hierarchy Management
 l Lots of methods for manipulating the tree
