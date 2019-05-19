@@ -128,29 +128,14 @@ l Swing takes care of many of the details
 from there
 l Screen redraw
 l Input dispatch
-- Geometry management: Dealing with coordinate systems and on-screen bounds of interactors
-- Interactor status/information management: Is this interactor visible? Is it active?
-### Output
-- Layout: Establishing the size and position of each object, both initially, and after a resize
-- (Re)drawing
-- Damage management: Knowing what needs to be redrawn
-### Input
-- Picking: Figuring out what interactors are “under” a given screen point
-- Event dispatch, translation, handling: This is where a lot of the work goes
-###  Application interface
-- How the UI system connects with application code: Callbacks
-    
-
-
-
-Hierarchy Management
 l Lots of methods for manipulating the tree
 l add(), remove(), removeAll(), getComponents(), getComponentCount(),
 isAncestorOf(), ...
 l Common mistake
 l If nothing shows up on the screen, make sure you’ve added it!
 
-Geometry Management
+### Geometry management
+Dealing with coordinate systems and on-screen bounds of interactors
 l Every component maintains its own geometry:
 l Bounding box: getX(), getY(), getWidth(), getHeight()
 l X,Y are relative to parent
@@ -163,11 +148,15 @@ l Including output of children!
 l Drawing is relative to top-left corner
 l Each component has its own coordinate system
 
-Object Status
+#### Interactor status/information management
+Is this interactor visible? Is it active?
 l Each component maintains information about its “state”
 l isEnabled(), setEnabled()
 l isVisible(), setVisible()
 l Lots of other methods of lesser importance
+
+### Output
+- Layout: Establishing the size and position of each object, both initially, and after a resize
 
 Each component handles:
 l Layout (we’ll talk about this later...)
@@ -183,7 +172,9 @@ l These are the only places to draw on the screen!!!
 l Automatically called by JComponent’s paint() method, which is itself
 called by the Swing RepaintManager (figures out “damaged” regions)
 
-Damage Management
+
+- (Re)drawing
+- Damage management: Knowing what needs to be redrawn
 l Damage: areas of a component that need to be redrawn
 l Sometimes: computed automatically by Swing RepaintManager
 l e.g., if another window is dragged over your component, or your
@@ -198,16 +189,17 @@ l Puts the indicated rectangle on the RepaintManager’s queue of regions
 to be redrawn
 l Terminology: damage is not a Swing term; generic
 
-Picking
+### Input
+- Picking: Figuring out what interactors are “under” a given screen point
 l Determine if a point is “inside” a component
 l contains(int x, int y)
 l Is the point inside the bounding box of this component (uses local
 coordinate system of component)
 l Terminology: likewise, picking is not a Swing term
 
-Other stuff
-l Input (we’ll talk about this later...)
-l Application interface
+- Event dispatch, translation, handling: This is where a lot of the work goes
+###  Application interface
+- How the UI system connects with application code: Callbacks
 l Glue between component and application functionality
 l Not directly in component, but there is a convention for how to
 associate your functionality with a component
@@ -217,7 +209,7 @@ l Terminology: Swing uses the term listener for a piece of application
 code that will be called back in response to something happening
 l The code “listens for” something happening
 
-
+## Event-Driven Architecture
 Listeners
 l Any given component may have multiple situations in which it invokes
 a listener
