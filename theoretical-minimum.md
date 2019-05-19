@@ -156,11 +156,16 @@ l isVisible(), setVisible()
 l Lots of other methods of lesser importance
 
 ### Input
-- Picking: Figuring out what interactors are “under” a given screen point
+#### Picking
+Figuring out what interactors are “under” a given screen point
 l Determine if a point is “inside” a component
 l contains(int x, int y)
 l Is the point inside the bounding box of this component (uses local
 coordinate system of component)
+In the case of DOM
+```js
+var element = document.elementFromPoint(x, y);
+```
 l Terminology: likewise, picking is not a Swing term
 
 ### Output
