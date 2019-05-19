@@ -2,7 +2,7 @@
     - http://www.kedwards.com/classes/AY2017/cs4470_fall/
     
 # 0. Preliminaries
-Since the 1990s, computers wtih 2D graphical user interface (GUI) has become an extension of our physical environment, but hidden from us, the world of electronic circuitry beneath the casing of a computer is fundamentally distinct from the external world that we dwell in: We sense and model reality as a *continuous* system, whereas computers are designed from the ground up to be a *discrete-space* (information is stored in discrete units), *discrete-time* (computation is by definition a stepwise process) system. So how does this exotic non-continuous pocket reality arising from the esotetic discipline of pure mathematics becomes part of our modern sense-experience?
+Since the 1990s, computers wtih 2D graphical user interface (GUI) has become an extension of our physical environment, but hidden from our direct interaction, the world of electronic circuitry beneath the shell of a computer is fundamentally different from the external world that experience: We perceive and (mathematically) model reality as a continuous system, but computers are *designed* to be a system with discrete space (information is stored in discrete units) and discrete time (computation is by definition a stepwise process). So how are these encapsulated exotic worlds integrated into our modern sense-experience?
 ## What Is a Computer
 
 ## Computer Programming (Imperative)
