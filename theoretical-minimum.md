@@ -110,7 +110,7 @@ Now we can delve into the archetectural and algorithmic details of GUI systems, 
 ## UI Software Organization
 Direct manipulation interfaces tend to be collections of quasi-independent interactors ("objects of interest"), which naturally leads to object-based architectures where each interactor corresponds to an object instance. At runtime, interactor objects are organized hierarchically into a **interactor tree**, which normally reflect spatial containment relationships.
 
-As a typical OOP feature, classes are organized into a **subclassing hierarchy**, in which the top-level class describes basic interactor capabilities, the leaf-node classes describe what you actually see on the screen, and intermediate classes describe common behaviors. In the case of Web documents, `Element` is the the root class, which is inherited by `HTMLElement` and `SVGElement`. The leaf-node classes include `HTMLButtonElement`, `HTMLInputElement`, `HTMLTable​Element`, etc.
+As a typical OOP feature, classes are organized into a **subclassing hierarchy**, in which the top-level class describes basic interactor capabilities, the leaf-node classes describe what you actually see on the screen, and intermediate classes describe common behaviors. In the case of Web interface, `Element` is the the root class, which is immediately inherited by `HTMLElement` and `SVGElement` interfaces. The leaf-node classes include `HTMLButtonElement`, `HTMLInputElement`, `HTMLTable​Element`, etc.
     
 ## UI Toolkits
 - System to provide development-time and runtime support for UIs
