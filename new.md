@@ -2,8 +2,6 @@
   - CS 6300 Software Development Process
   - CS 6340 Software Analysis and Testing
 - UI Software
-  - CS 4470: Introduction to User Interface Software & CS 6456 Principles of User Interface Software
-    - http://www.kedwards.com/classes/AY2017/cs4470_fall/
   - CS 7450 Information Visualization
   - CS 7270 Networked Applications and Services (topic 1 - 3)
     - https://www.cc.gatech.edu/~dovrolis/Courses/cs7270-S15.html
