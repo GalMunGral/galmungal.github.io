@@ -118,7 +118,7 @@ As a standard OO approach, classes are organized into a **subclassing hierarchy*
 To create UI software, we need a system that provides development-time and runtime support for UIs, commonly referred to as a UI toolkit. In the case of Web developmemnt, the toolkit is simply the browser itself.
 
 ### Core functions
-#### Hierarchy management
+- **Hierarchy management**:
 Create, maintain, tear down tree of interactor objects
 Hierarchy Management
 l Swing interfaces are trees of components
@@ -133,70 +133,33 @@ l add(), remove(), removeAll(), getComponents(), getComponentCount(),
 isAncestorOf(), ...
 l Common mistake
 l If nothing shows up on the screen, make sure you’ve added it!
+- **Geometry management**:
+Dealing with coordinate systems and on-screen bounds of interactors. In **CSS Box Model**, every DOM element is considered as rectangular box, whose position and size are determined by the browsers rendering engine.
 
-#### Geometry management
-Dealing with coordinate systems and on-screen bounds of interactors
 l Every component maintains its own geometry:
 l Bounding box: getX(), getY(), getWidth(), getHeight()
-l X,Y are relative to parent
-l i.e., 0,0 is at parent’s top left corner
-l Other operations: setSize(), setLocation(), setBounds(), getSize(),
-getLocation(), getBounds()
-l All drawing happens within that box
-l System clips to bounding box
-l Including output of children!
-l Drawing is relative to top-left corner
-l Each component has its own coordinate system
 
-#### Interactor status/information management
+As with most computer graphic systems, (0,0) is at parent’s top left corner
+- **Interactor status/information management**
 Is this interactor visible? Is it active?
 l Each component maintains information about its “state”
 l isEnabled(), setEnabled()
 l isVisible(), setVisible()
 l Lots of other methods of lesser importance
 
+
+### Output
+- **Layout**: Establishing the size and position of each object, both initially, and after a resize.  
+- **(Re)drawing**  
+- **Damage management**: Knowing what needs to be redrawn
+
 ### Input
-**Picking**: figuring out what interactors are under a given screen point. In the case of DOM / Web API:
+- **Picking**: figuring out what interactors are under a given screen point. In the case of DOM / Web API:
 ```js
 var element = document.elementFromPoint(x, y);
 ```
-l Terminology: likewise, picking is not a Swing term
-
-### Output
-- Layout: Establishing the size and position of each object, both initially, and after a resize
-
-Each component handles:
-l Layout (we’ll talk about this later...)
-l Drawing
-l Each component knows how to (re)create its appearance based on its
-current state
-l Responsible for painting three items, in order:
-1. Component
-2. Borders
-3. Children
-l paintComponent(), paintBorder(), paintChildren()
-l These are the only places to draw on the screen!!!
-l Automatically called by JComponent’s paint() method, which is itself
-called by the Swing RepaintManager (figures out “damaged” regions)
-
-
-- (Re)drawing
-- Damage management: Knowing what needs to be redrawn
-l Damage: areas of a component that need to be redrawn
-l Sometimes: computed automatically by Swing RepaintManager
-l e.g., if another window is dragged over your component, or your
-component is resized
-l Other times: you need to flag damage yourself to tell the system that
-something in your internal state has changes and your on-screen image
-may not be correct
-l e.g., your component needs to change the color of a displayed label
-l Managing damage yourself:
-l repaint(Rectangle r)
-l Puts the indicated rectangle on the RepaintManager’s queue of regions
-to be redrawn
-l Terminology: damage is not a Swing term; generic
-
-- Event dispatch, translation, handling: This is where a lot of the work goes
+- **Event dispatch, translation, handling**: This is where a lot of the work goes
+bubbling
 
 ##  Application interface - Event-Driven Architecture
 How the UI system connects with application code: Callbacks
