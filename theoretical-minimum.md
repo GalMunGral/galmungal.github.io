@@ -2,7 +2,7 @@
     - http://www.kedwards.com/classes/AY2017/cs4470_fall/
     
 Since the 1990s, 2-dimensional graphical user interface (GUI) has become an extension of our physical environment
-
+# Chapter 0: Preliminaries
 ## What Is a Computer
 The world of transistors and circuitry beneath the casing of a computer is distinct in nature from the external world: The physical reality that constitutes our sense-experience is usually modeled mathematically as a *continuous* system, whereas computers are designed to be *discrete*, both in space (information is stored in discrete units) and time (computation is by definition a stepwise process). Fortunately, the discontinuities elude our perception when the spatial and temporal resolutions are high enough. Modern computers typically have high DPI (Dots per inch) displays with 60 Hz refresh rate, which almost perfectly disguises the discrete nature of a computer - but there is a potential problem.
 ## What Is Programming
