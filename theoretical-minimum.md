@@ -134,7 +134,7 @@ isAncestorOf(), ...
 l Common mistake
 l If nothing shows up on the screen, make sure you’ve added it!
 
-### Geometry management
+#### Geometry management
 Dealing with coordinate systems and on-screen bounds of interactors
 l Every component maintains its own geometry:
 l Bounding box: getX(), getY(), getWidth(), getHeight()
@@ -156,13 +156,7 @@ l isVisible(), setVisible()
 l Lots of other methods of lesser importance
 
 ### Input
-#### Picking
-Figuring out what interactors are “under” a given screen point
-l Determine if a point is “inside” a component
-l contains(int x, int y)
-l Is the point inside the bounding box of this component (uses local
-coordinate system of component)
-In the case of DOM
+**Picking**: figuring out what interactors are under a given screen point. In the case of DOM
 ```js
 var element = document.elementFromPoint(x, y);
 ```
