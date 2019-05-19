@@ -75,20 +75,20 @@ def binarySearch(arr, l, r, x):
   return -1
 ```
 End users interact with computers through the operating system shell. For someone familiar with the workings of computers, it is fairly natural to use command-line interface (CLI, such as Bash on Unix/Linux operating systems), where you issue commands to perform tasks and use the shell-specific scripting languages (such as Bash script) for automation. However, for the unitiated, this way of interaction is very unituitive, especially when compared to the direct-manipulation graphical user interface (GUI).
-Before we delve into the archetectural and algorithmic structure of GUI systems, we can first try to answer the answer. The discontinuity elude our perception when the spatial and temporal resolutions are high enough. Modern computers typically have high DPI (Dots per inch) displays with 60 Hz refresh rate, which almost perfectly disguises the discrete nature of a computer. The program that generates these frames can be written in pseudocode as
+
+From the Wikipedia article:
+> Direct manipulation is a human–computer interaction style which involves continuous representation of objects of interest and rapid, reversible, and incremental actions and feedback. As opposed to other interaction styles, for example, the command language, the intention of direct manipulation is to allow a user to manipulate objects presented to them, using actions that correspond at least loosely to manipulation of physical objects. ... Having real-world metaphors for objects and actions can make it easier for a user to learn and use an interface (some might say that the interface is more natural or intuitive), and rapid, incremental feedback allows a user to make fewer errors and complete tasks in less time, because they can see the results of an action before completing the action, thus evaluating the output and compensating for mistakes.
+
+# 2. Graphical User Interface
+Before we delve into the archetectural and algorithmic structure of GUI systems, we need to be briefly mention that computer display creates the illusion of continuity through high spatial and temporal resolutions. Modern computers typically have high DPI (Dots per inch) displays with 60 Hz refresh rate. The goal for a GUI program then is to continually generate frames so that the frame rate (FPS, frame per second) matches display refresh rate. The overall structure of the program can be written in pseudocode as
 ```javascript
 while (true) {
-  // TODO: Update Frame;
+  updateFrame();
   if (shouldDrawFrame()) {
     drawFrame()
   }
 }
 ```
-
-
-# 2. Graphical User Interface
-From the Wikipedia article:
-> Direct manipulation is a human–computer interaction style which involves continuous representation of objects of interest and rapid, reversible, and incremental actions and feedback. As opposed to other interaction styles, for example, the command language, the intention of direct manipulation is to allow a user to manipulate objects presented to them, using actions that correspond at least loosely to manipulation of physical objects. ... Having real-world metaphors for objects and actions can make it easier for a user to learn and use an interface (some might say that the interface is more natural or intuitive), and rapid, incremental feedback allows a user to make fewer errors and complete tasks in less time, because they can see the results of an action before completing the action, thus evaluating the output and compensating for mistakes.
 
 ## UI Software Organization
 Modern (“direct manipulation”) interfaces tend to be collections of quasi-independent agents,or interactors (“object of interest” on the screen),which leads to object-based architectures.
