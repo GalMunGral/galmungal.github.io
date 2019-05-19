@@ -156,7 +156,7 @@ l isVisible(), setVisible()
 l Lots of other methods of lesser importance
 
 ### Input
-**Picking**: figuring out what interactors are under a given screen point. In the case of DOM
+**Picking**: figuring out what interactors are under a given screen point. In the case of DOM / Web API:
 ```js
 var element = document.elementFromPoint(x, y);
 ```
