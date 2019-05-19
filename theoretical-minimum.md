@@ -110,17 +110,12 @@ Now we can delve into the archetectural and algorithmic details of GUI systems, 
 ## UI Software Organization
 Direct manipulation interfaces tend to be collections of quasi-independent interactors ("objects of interest"), which naturally leads to object-based architectures where each interactor corresponds to an object instance. At runtime, interactor objects are organized hierarchically into a **interactor tree**, which normally reflect spatial containment relationships.
 
-As a typical OOP feature, classes are organized into a **subclassing hierarchy**, in which the top-level class describes basic interactor capabilities, the leaf-node classes describe what you actually see on the screen, and intermediate classes describe common behaviors. In the case of Web interface, `Element` is the the root class, which is immediately inherited by `HTMLElement` and `SVGElement` interfaces. The leaf-node classes include `HTMLButtonElement`, `HTMLInputElement`, `HTMLTable​Element`, etc.
+As a standard OO approach, classes are organized into a **subclassing hierarchy**, in which the top-level class describes basic interactor capabilities, the leaf-node classes describe what you actually see on the screen, and intermediate classes describe common behaviors. In the case of Web interface, `Element` is the the base class, which is immediately inherited by `HTMLElement` and `SVGElement` interfaces. The leaf-node classes include `HTMLButtonElement`, `HTMLInputElement`, `HTMLTable​Element`, etc.
+
+
+
     
-## UI Toolkits
-- System to provide development-time and runtime support for UIs
-    - Core functionality
-    - Input & output handling
-    - Connecting to the application
-- Also: specific interaction techniques
-    - Library of interactors
-    - Look and feel (sometimes pluggable)
-(Browser)
+To create UI software, we need a system that provides development-time and runtime support for UIs, commonly referred to as a UI toolkit. In the case of Web developmemnt, the toolkit is simply the browser itself.
 
 ### Core functions
 - Hierarchy management: Create, maintain, tear down tree of interactor objects
@@ -136,21 +131,6 @@ As a typical OOP feature, classes are organized into a **subclassing hierarchy**
 ###  Application interface
 - How the UI system connects with application code: Callbacks
     
-
-Example: Java Swing
-l All functions of interactors encapsulated in base class
-l javax.swing.JComponent
-l All objects on-screen inherit from this class
-l Terminology:
-l interactor, widget, component, control, ...
-
-Standard object-oriented
-approach
-l Base class (or interface) defines the set of things that every
-interactor must do
-l e.g., public void paintComponent(Graphics g);
-l Subclasses provide specific specialized implementations
-l Do the right drawing, input, etc., to be a button vs. a slider vs. ...
 
 JComponent API defines methods
 for
