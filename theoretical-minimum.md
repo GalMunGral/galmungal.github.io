@@ -121,6 +121,7 @@ To create UI software, we need a system that provides development-time and runti
 - **Hierarchy management**:
 Create, maintain, tear down tree of interactor objects
 Hierarchy Management
+The DOM specification
 l Swing interfaces are trees of components
 l To make something appear, you must add
 it to the tree
@@ -134,18 +135,12 @@ isAncestorOf(), ...
 l Common mistake
 l If nothing shows up on the screen, make sure you’ve added it!
 - **Geometry management**:
-Dealing with coordinate systems and on-screen bounds of interactors. In **CSS Box Model**, every DOM element is considered as rectangular box, whose position and size are determined by the browsers rendering engine.
+Dealing with coordinate systems and on-screen bounds of interactors. 
+Every component maintains its own geometry. In **CSS Box Model**, every DOM element is considered as rectangular box, whose position and size are determined by the browsers rendering engine.
+  As with most computer graphic systems, (0,0) is at parent’s top left corner
+- **Interactor status/information management**:
+Each component (DOM elements) maintains information about its state, such as its attributes and CSS style properties. Each individual attribute can be accessed through `Element​.get​Attribute()` and modified through `Element.setAttribute()`. The final computed CSS styles can be accessed through `Window.getComputedStyle()` and the inline style attribute of an element through `HTMLElement​.style`.
 
-l Every component maintains its own geometry:
-l Bounding box: getX(), getY(), getWidth(), getHeight()
-
-As with most computer graphic systems, (0,0) is at parent’s top left corner
-- **Interactor status/information management**
-Is this interactor visible? Is it active?
-l Each component maintains information about its “state”
-l isEnabled(), setEnabled()
-l isVisible(), setVisible()
-l Lots of other methods of lesser importance
 
 
 ### Output
