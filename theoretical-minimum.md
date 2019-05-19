@@ -5,7 +5,7 @@
 Since the 1990s, computers wtih 2D graphical user interface (GUI) has become an extension of our physical environment, but hidden from us, the world of electronic circuitry beneath the casing of a computer is fundamentally distinct from the external world that we dwell in: We sense and model reality as a *continuous* system, whereas computers are designed from the ground up to be a *discrete-space* (information is stored in discrete units), *discrete-time* (computation is by definition a stepwise process) system. So how does this exotic non-continuous pocket reality arising from the esotetic discipline of pure mathematics becomes part of our modern sense-experience?
 ## What Is a Computer
 
-## Imperative Programming
+## Computer Programming (Imperative)
 Regardless of language, under the imperative paradigm you use branching (`if-elseif-else`, `switch-case`) and looping (`for`, `while`,`do-while`) control sturctures to direct execution flow - essentially giving a textual description of a 'flowchart' for your program, the rest are simply language-specific conventions. We will introduce the most popular programming languages, as indicated by the TIOBE index, using their respective implementations of a binary search algorithm. As you will see, their syntax are very similar and even identical in some cases.
 ### Statically-typed Compiled Languages
 #### C (C++/Objective-C)
@@ -90,6 +90,7 @@ def binarySearch(arr, l, r, x):
       r = m - 1
   return -1
 ```
+## User Interface
 End users interact with computers through the operating system shell. For someone familiar with the workings of computers, it is fairly natural to use command-line interface (CLI, such as Bash on Unix/Linux operating systems), where you issue commands to perform tasks and use the shell-specific scripting languages (such as Bash script) for automation. However, for the unitiated, this way of interaction is very unituitive, especially when compared to the direct-manipulation graphical user interface (GUI).
 
 From the Wikipedia article:
