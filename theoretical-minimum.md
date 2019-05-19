@@ -1,13 +1,11 @@
 - CS 4470: Introduction to User Interface Software & CS 6456 Principles of User Interface Software
     - http://www.kedwards.com/classes/AY2017/cs4470_fall/
     
-Since the 1990s, 2-dimensional graphical user interface (GUI) has become an extension of our physical environment
-# Chapter 0: Preliminaries
+# 0. Preliminaries
+Since the 1990s, computers wtih 2D graphical user interface (GUI) has become an extension of our physical environment, but hidden from us, the world of electronic circuitry beneath the casing of a computer is fundamentally distinct from the external world that we dwell in: We sense and model reality as a *continuous* system, whereas computers are designed from the ground up to be a *discrete-space* (information is stored in discrete units), *discrete-time* (computation is by definition a stepwise process) system. So how does this exotic non-continuous pocket reality arising from the esotetic discipline of pure mathematics becomes part of our modern sense-experience?
 ## What Is a Computer
-The world of transistors and circuitry beneath the casing of a computer is distinct in nature from the external world: The physical reality that constitutes our sense-experience is usually modeled mathematically as a *continuous* system, whereas computers are designed to be *discrete*, both in space (information is stored in discrete units) and time (computation is by definition a stepwise process). Fortunately, the discontinuities elude our perception when the spatial and temporal resolutions are high enough. Modern computers typically have high DPI (Dots per inch) displays with 60 Hz refresh rate, which almost perfectly disguises the discrete nature of a computer - but there is a potential problem.
-## What Is Programming
-A 
-## (Imperative) Programming Languages
+
+## Imperative Programming
 Regardless of language, under the imperative paradigm you use branching (`if-elseif-else`, `switch-case`) and looping (`for`, `while`,`do-while`) control sturctures to direct execution flow - essentially giving a textual description of a 'flowchart' for your program, the rest are simply language-specific conventions. We will introduce the most popular programming languages, as indicated by the TIOBE index, using their respective implementations of a binary search algorithm. As you will see, their syntax are very similar and even identical in some cases.
 ### Statically-typed Compiled Languages (C-family) 
 #### C and C++/C#/Java
@@ -76,7 +74,13 @@ def binarySearch(arr, l, r, x):
       r = m - 1
   return -1
 ```
-## Graphical User Interface (GUI)
+End users interact with computers through the operating system shell. For someone familiar with the workings of computers, it is fairly natural to use command-line interface (CLI, such as Bash on Unix/Linux operating systems), where you issue commands to perform tasks and use the shell-specific scripting languages (such as Bash script) for automation. However, for the unitiated, this way of interaction is very unituitive, especially when compared to the direct-manipulation graphical user interface (GUI).
+
+# 2. Graphical User Interface
+From the Wikipedia article:
+> Direct manipulation is a human–computer interaction style which involves continuous representation of objects of interest and rapid, reversible, and incremental actions and feedback. As opposed to other interaction styles, for example, the command language, the intention of direct manipulation is to allow a user to manipulate objects presented to them, using actions that correspond at least loosely to manipulation of physical objects. An example of direct manipulation is resizing a graphical shape, such as a rectangle, by dragging its corners or edges with a mouse. Having real-world metaphors for objects and actions can make it easier for a user to learn and use an interface (some might say that the interface is more natural or intuitive), and rapid, incremental feedback allows a user to make fewer errors and complete tasks in less time, because they can see the results of an action before completing the action, thus evaluating the output and compensating for mistakes. The term was introduced by Ben Shneiderman in 1982 within the context of office applications and the desktop metaphor.[2][3] Individuals in academia and computer scientists doing research on future user interfaces often put as much or even more stress on tactile control and feedback, or sonic control and feedback than on the visual feedback given by most GUIs. As a result, the term has been more widespread in these environments.[citation needed]
+
+, the discontinuities elude our perception when the spatial and temporal resolutions are high enough. Modern computers typically have high DPI (Dots per inch) displays with 60 Hz refresh rate, which almost perfectly disguises the discrete nature of a computer - but there is a potential problem.
 
 ## UI Software Organization
 Modern (“direct manipulation”) interfaces tend to be collections of quasi-independent agents,or interactors (“object of interest” on the screen),which leads to object-based architectures.
