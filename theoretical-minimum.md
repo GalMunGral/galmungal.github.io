@@ -108,15 +108,10 @@ while (true) {
 ```
 Now we can delve into the archetectural and algorithmic details of GUI systems, then we will be able to explain what goes into that `updateFrame()`;
 ## UI Software Organization
-Modern (“direct manipulation”) interfaces tend to be collections of quasi-independent agents,or interactors (“object of interest” on the screen),which leads to object-based architectures.
-- Each on-screen interactor corresponds to an object instance
-- Classes are organized into a subclassing hierarchy
-    - Typically a top-level “Component” or “Widget” class that describes basic interactor capabilities
-    - Leaf-node classes for the things you actually see on the screen (buttons, scrollbars, etc.)
-    - Intermediate classes for common behaviors (text or mouse processing)
-- Objects are organized hierarchically at runtime (Interactor trees)
-     - Normally reflecting spatial containment relationships
-    - NOTE: different than class hierarchy created at development time
+Direct manipulation interfaces tend to be collections of quasi-independent interactors ("objects of interest"), which naturally leads to object-based architectures where each interactor corresponds to an object instance. At runtime,interactor objects are organized hierarchically into a **interactor tree**, which normally reflect spatial containment relationships.
+
+Classes are organized into a **subclassing hierarchy**. The top-level class describes basic interactor capabilities, leaf-node classes are for the things you actually see on the screen, and intermediate classes are for common behaviors.
+In the case of Web pages, `Element` is the the root class, which is inherited by `HTMLElement` and `SVGElement`; the leaf-node classes include `HTMLButtonElement`, `HTMLInputElement`, `HTMLTable​Element`, etc.
     
 UI Toolkits (Browser)
 - System to provide development-time and runtime support for UIs
