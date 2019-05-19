@@ -7,11 +7,27 @@ Since the 1990s, computers wtih 2D graphical user interface (GUI) has become an 
 
 ## Imperative Programming
 Regardless of language, under the imperative paradigm you use branching (`if-elseif-else`, `switch-case`) and looping (`for`, `while`,`do-while`) control sturctures to direct execution flow - essentially giving a textual description of a 'flowchart' for your program, the rest are simply language-specific conventions. We will introduce the most popular programming languages, as indicated by the TIOBE index, using their respective implementations of a binary search algorithm. As you will see, their syntax are very similar and even identical in some cases.
-### Statically-typed Compiled Languages (C-family) 
-#### C and C++/C#/Java
-C is a structured programming language where a program comprises standalone functions, whereas C++, C# and Java are object-oriented (OO) languages where functions are bundled with the data they modify into objects, which are constructed from templates called classes. Classes are optional in C++ but mandatory in C# and Java.
+### Statically-typed Compiled Languages
+#### C (C++/Objective-C)
+C is a structured programming language. A C program is made up of stand-alone functions. C++/Obj-C are supersets of C with additional OOP (object-oriented programming) features, therefore the following is also a valid C++/Obj-C program. 
 ```c++
-//class SomeWrapperClass {
+int binarySearch(int arr[], int l, int r, int x) { 
+  while (l <= r) { 
+    int m = l + (r - l) / 2; 
+    if (arr[m] == x)
+      return m;
+    if (arr[m] < x)
+      l = m + 1;
+    else
+      r = m - 1;
+  } 
+  return -1; 
+}
+```
+#### C++/C#/Java
+C++, C# and Java are **OOP languages** where functions are bundled with the data they modify into individual objects, which are constructed from templates called classes. Classes are optional in C++ but mandatory in C# and Java.
+```c++
+class SomeWrapperClass {
     int binarySearch(int arr[], int l, int r, int x) { 
       while (l <= r) { 
         int m = l + (r - l) / 2; 
@@ -24,7 +40,7 @@ C is a structured programming language where a program comprises standalone func
       } 
       return -1; 
     }
-//} (C++ requires a semicolon here)
+} (C++ requires a semicolon here)
 ```
 ### Dynamically-typed Scripting Languages
 Types are determined at run-time, so there is no type declaration in source code.
