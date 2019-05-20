@@ -44,7 +44,8 @@ class SomeWrapperClass {
 ```
 ### Dynamically-typed Scripting Languages
 Types are determined at run-time, so there is no type declaration in source code.
-#### JavaScript
+<details>
+<summary>#### JavaScript</summary>
 ```javascript
 function binarySearch(arr, l, r, x) { 
   while (l <= r) { 
@@ -59,6 +60,7 @@ function binarySearch(arr, l, r, x) {
   return -1; 
 }
 ```
+</details>
 #### PHP
 ```php
 <?php
@@ -90,8 +92,10 @@ def binarySearch(arr, l, r, x):
       r = m - 1
   return -1
 ```
+## Operating Systems
+
 ## User Interface
-End users interact with computers through the operating system shell. For someone familiar with the workings of computers, it is fairly natural to use command-line interface (CLI, such as Bash on Unix/Linux operating systems), where you issue commands to perform tasks and use the shell-specific scripting languages (such as Bash script) for automation. However, for the unitiated, this way of interaction is very unituitive compared to graphical user interface (GUI), which is a major type of direct manipulation interface.
+End users interact with computers through the **operating system shell**, which is named in contrast to "kernel". For someone familiar with the workings of computers, it is fairly natural to use command-line interface (CLI, such as Bash on Unix/Linux), where you issue commands to perform tasks and use the shell-specific scripting languages (such as Bash script) for automation. However, for the unitiated, this way of interaction is very unituitive compared to graphical user interface (GUI), which is a major type of direct manipulation interface.
 
 From the Wikipedia article:
 > Direct manipulation is a human–computer interaction style which involves **continuous representation of objects of interest** and **rapid, reversible, and incremental actions and feedback**. ...the intention of direct manipulation is to allow a user to manipulate objects presented to them, **using actions that correspond at least loosely to manipulation of physical objects**. ... Having **real-world metaphors for objects and actions** can make it easier for a user to learn and use an interface, and rapid, incremental feedback allows a user to make fewer errors and complete tasks in less time, because they can **see the results of an action before completing the action, thus evaluating the output and compensating for mistakes.**
