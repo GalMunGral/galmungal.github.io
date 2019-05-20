@@ -24,7 +24,7 @@ int binarySearch(int arr[], int l, int r, int x) {
 }
 ```
 <details>
-<summary>C++/C#/Java</summary>
+<summary><b>C++/C#/Java</b></summary>
 
 C++, C# and Java are **OOP languages** where functions are bundled with the data they modify into individual objects, which are constructed from templates called classes. Classes are optional in C++ but mandatory in C# and Java.
 ```c++
@@ -48,7 +48,7 @@ class SomeWrapperClass {
 ### Dynamically-typed Scripting Languages
 Types are determined at run-time, so there is no type declaration in source code.
 <details>
-<summary>JavaScript</summary>
+<summary><b>JavaScript</b></summary>
 
 ```javascript
 function binarySearch(arr, l, r, x) { 
@@ -66,7 +66,7 @@ function binarySearch(arr, l, r, x) {
 ```
 </details>
 <details>
-<summary>PHP</summary>
+<summary><b>PHP</b></summary>
 
 ```php
 <?php
@@ -87,7 +87,7 @@ function binarySearch($arr, $l, $r, $x) {
 </details>
 
 <details>
-<summary>Python</summary>
+<summary><b>Python</b></summary>
 
 ```python
 # In Python, blocks are indicated by indentations instead of curly braces.
