@@ -45,7 +45,8 @@ class SomeWrapperClass {
 ### Dynamically-typed Scripting Languages
 Types are determined at run-time, so there is no type declaration in source code.
 <details>
-<summary>#### JavaScript</summary>
+<summary>JavaScript</summary>
+
 ```javascript
 function binarySearch(arr, l, r, x) { 
   while (l <= r) { 
@@ -60,7 +61,9 @@ function binarySearch(arr, l, r, x) {
   return -1; 
 }
 ```
+</p>
 </details>
+
 #### PHP
 ```php
 <?php
