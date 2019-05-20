@@ -139,12 +139,6 @@ Every component maintains its own geometry. In **CSS Box Model**, every DOM elem
 Each component (DOM elements) maintains information about its state, such as its attributes and CSS style properties. Each individual attribute can be accessed through `Element​.get​Attribute()` and modified through `Element.setAttribute()`. The final computed CSS styles can be accessed through `Window.getComputedStyle()` and the inline style attribute of an element through `HTMLElement​.style`.
 
 
-
-### Output
-- **Layout**: Establishing the size and position of each object, both initially, and after a resize.  
-- **(Re)drawing**  
-- **Damage management**: Knowing what needs to be redrawn
-
 ### Input
 - **Picking**: figuring out what interactors are under a given screen point. In the case of DOM / Web API:
 ```js
@@ -196,5 +190,50 @@ l MouseListener: MouseEvent
 l Passed as a parameter containing details of what happened
 l e.g., MouseListener: mouse coordinates, whether it was pressed,
 released, etc
+
+
+### Output
+- **Layout**: Establishing the size and position of each object, both initially, and after a resize.  
+- **(Re)drawing**  
+- **Damage management**: Knowing what needs to be redrawn
+
+**Damage Management & Layout**
+
+Need to keep track of parts of the screen that need update
+interactor has changed appearance, moved, appeared, disappeared, etc.
+done by “declaring damage”
+
+
+dirty list: list of regions that need to be redrawn
+... can collapse multiple dirty regions into a few larger ones to optimize  
+
+Typical overall “processing cycle”
+```
+loop forever
+  wait for event then dispatch it
+  (causes actions to be invoked and/or update interactor state)
+  (typically causes damage)
+  if (damaged_somewhere)
+    layout
+```
+Layout
+Deciding size and placement of every object
+Dynamic layout: Change layout on the fly to reflect the current situation
+Need to do layout before redraw, Because you have to draw in strict order, but layout (esp. position) may depend on size/position of things not in order (drawn after you!)
+
+invalidate() method
+invalidate() is often called automatically
+e.g., in response to changes to components’ state
+validate() method
+Starts the process that makes an invalid layout valid--recomputes sizes and positions to get correct layout
+
+Layout with containers
+Containers (parent components) can control size/position of children
+Two basic strategies  
+Bottom-up (AKA inside-out)  
+Top-down or outside-in layout: Parent determines layout of children, Typically used for position, but sometimes size  
+Bottom-up or inside-out layout:Children determine layout of parent, Typically just size  
+Neither one is sufficient  Need both May even need both in same object
+
 
 
