@@ -9,8 +9,7 @@ Since the 1990s, computers wtih 2D graphical user interface (GUI) has become an 
 Regardless of language, under the imperative paradigm you use branching (`if-elseif-else`, `switch-case`) and looping (`for`, `while`,`do-while`) control sturctures to direct execution flow - essentially giving a textual description of a 'flowchart' for your program, the rest are simply language-specific conventions. We will introduce the most popular programming languages, as indicated by the TIOBE index, using their respective implementations of a binary search algorithm. As you will see, their syntax are very similar and even identical in some cases.
 ### Statically-typed Compiled Languages
 #### C (C++/Objective-C)
-C is a structured programming language. A C program is made up of stand-alone functions. C++/Obj-C are supersets of C with additional OOP features. 
-```c++
+```c
 int binarySearch(int arr[], int l, int r, int x) { 
   while (l <= r) { 
     int m = l + (r - l) / 2; 
