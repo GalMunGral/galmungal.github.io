@@ -64,10 +64,10 @@ function binarySearch(arr, l, r, x) {
   return -1; 
 }
 ```
-</p>
 </details>
+<details>
+<summary>PHP</summary>
 
-#### PHP
 ```php
 <?php
 function binarySearch($arr, $l, $r, $x) { 
@@ -84,7 +84,11 @@ function binarySearch($arr, $l, $r, $x) {
 }
 ?> 
 ```
-#### Python
+</details>
+
+<details>
+<summary>Python</summary>
+
 ```python
 # In Python, blocks are indicated by indentations instead of curly braces.
 def binarySearch(arr, l, r, x): 
@@ -98,6 +102,8 @@ def binarySearch(arr, l, r, x):
       r = m - 1
   return -1
 ```
+</details>
+
 ## Operating Systems
 
 ## User Interface
