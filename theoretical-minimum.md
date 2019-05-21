@@ -106,7 +106,7 @@ def binarySearch(arr, l, r, x):
 ```
 </details>
 
-# 0. Preliminaries
+# 1. Abstraction, Abstraction, Abstraction
 
 These languages
 
@@ -114,7 +114,7 @@ These languages
 A program consumes memory space and CPU time, A GUI program, in addition occupies screen space. However they all share the same hardware resources, so how does
 
 ## Fundamental Theorem of Software Engineering (FTSE)
-**We can solve any problem by introducing an extra level of indirection. &mdash; David Wheeler**
+> We can solve any problem by introducing an extra level of indirection. &mdash; David Wheeler
 
 
 ## User Interface
