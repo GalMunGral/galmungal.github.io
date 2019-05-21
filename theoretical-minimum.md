@@ -4,7 +4,9 @@
 # 0. Preliminaries
 Since the 1990s, computers wtih 2D graphical user interface (GUI) has become an extension of our physical environment, but hidden from sight, the world of electronic circuitry beneath the shell of a computer behave in a fundamentally different way than the external world that we experience: We perceive reality as continuous, but computers are designed to be a system with discrete space (information is stored in discrete units) and discrete time (computation is a stepwise process). So how is it possible for computers to produce the kind of interaction that is now integrated into our daily sense-experience?
 ## What Is a Computer
-
+CPU
+Instruction Sets
+High-levle Languages and Compilers
 ## Computer Programming (Imperative)
 Regardless of language, under the imperative paradigm you use branching (`if-elseif-else`, `switch-case`) and looping (`for`, `while`,`do-while`) control sturctures to direct execution flow - essentially giving a textual description of a 'flowchart' for your program, the rest are simply language-specific conventions. We will introduce the most popular programming languages, as indicated by the TIOBE index, using their respective implementations of a binary search algorithm. As you will see, their syntax are very similar and even identical in some cases.
 ### Statically-typed Compiled Languages
@@ -104,7 +106,16 @@ def binarySearch(arr, l, r, x):
 ```
 </details>
 
+# 0. Preliminaries
+
+These languages
+
 ## Operating Systems
+A program consumes memory space and CPU time, A GUI program, in addition occupies screen space. However they all share the same hardware resources, so how does
+
+## Fundamental Theorem of Software Engineering (FTSE)
+**We can solve any problem by introducing an extra level of indirection. &mdash; David Wheeler**
+
 
 ## User Interface
 End users interact with computers through the **operating system shell**, which is named in contrast to "kernel". For someone familiar with the workings of computers, it is fairly natural to use command-line interface (CLI, such as Bash on Unix/Linux), where you issue commands to perform tasks and use the shell-specific scripting languages (such as Bash script) for automation. However, for the unitiated, this way of interaction is very unituitive compared to graphical user interface (GUI), which is a major type of direct manipulation interface.
