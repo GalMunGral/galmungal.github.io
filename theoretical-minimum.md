@@ -124,7 +124,7 @@ In addition to CPU and memory, all GUI programs running concurrently requires ac
 
 [fill in here]
 
-# Interlude: TCP/IP Model
+# Interlude: TCP/IP
 
 
 # Chapter II: GUI Architecture [(source)](http://www.kedwards.com/classes/AY2017/cs4470_fall/)
