@@ -4,10 +4,10 @@ Since the 1990s, computers wtih 2D graphical user interface (GUI) has become an 
 CPU
 Instruction Sets
 
-# 1. Abstraction, Abstraction, Abstraction
+# Chapter I. Abstraction, Abstraction, Abstraction
 Turing machine (or any model of computation for that matter) abstracts away the physical implementations: the view of space as discrete cells and time as sequence of steps is a logical rather than physical one. This is what lies the heart of mathematical modeling:  **Abstration**, the art of disregarding nonessential details thereby hiding underlying complexity and extracting a simplified, logical view. It turns out abstration plays an essential role in software engineering as well. 
 
-## 0. High-level Languages
+## High-level Languages
 
 At the machine/assembly language level, a program must be written in a specific instruction set and therefore will not run on others CPU architectures. To write portable code, computer scientists came up with the concept of high-level languages, using which programmer only need to write out the high-level algorithms in human-readable text, and a program called **compiler** (one for each CPU architecture) will take care of translating that to hardware-specific machine code. In other words, the complexity of CPU archtectures, which is nonessential algorithmically, is abstracted away from the programmer, who can now simply focus on the program logic. 
 
@@ -100,7 +100,7 @@ function binarySearch($arr, $l, $r, $x) {
 ?> 
 ```
 
-## 1. Operating Systems [(source)](https://learning.oreilly.com/library/view/linux-device-drivers/0596005903/ch01.html)
+## Operating Systems [(source)](https://learning.oreilly.com/library/view/linux-device-drivers/0596005903/ch01.html)
 A running program consumes *memory space*, *CPU time* and other hardware resources. If you remember the **basic economic problem** from economics classes, all kinds of resources are scarce &mdash; that is, they are always insufficient to satisfy all human wants and needs. Computer hardware resources are no exception: People eventually started to want to execute multiple programs concurrently on a single machine because machines were expensive to build. This is where **operating systems** come into play. An operating system (OS) is the big chunk of executable code loaded into memory by the bootloader at start-up, and the **kernel** of an operating system is the program that is the core of a an operating system, responsible for providing access to and allocating the limited hardware resources. the kernel's role can be split into the following parts:
 
 ### Process management
@@ -125,7 +125,7 @@ A GUI program, in addition occupies screen space. However they all share the sam
 ## Interlude: Layers of Abstraction
 
 
-# GUI Software Architecture [(source)](http://www.kedwards.com/classes/AY2017/cs4470_fall/)
+# Chapter II. GUI Architecture [(source)](http://www.kedwards.com/classes/AY2017/cs4470_fall/)
 Digital displays create the illusion of continuity through high spatial and temporal resolutions. Modern computers typically have high DPI (dots per inch) displays with 60 Hz refresh rate. The goal for a GUI program then is to generate frames at the rate of 60 FPS (frame per second). Using the expressive tools we learned in last chapter, we can write the skeleton of a GUI program in JavaScript-like pseudocode as
 ```javascript
 while (true) {
