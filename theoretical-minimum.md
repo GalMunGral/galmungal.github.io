@@ -7,7 +7,7 @@ Instruction Sets
 # Part I: Abstraction, Abstraction, Abstraction
 Turing machine (or any model of computation for that matter) abstracts away the physical implementations: the view of space as discrete cells and time as sequence of steps is a logical rather than physical one. This is what lies the heart of mathematical modeling:  **Abstration**, the art of disregarding nonessential details thereby hiding underlying complexity and extracting a simplified, logical view. It turns out abstration plays an essential role in software engineering as well. 
 
-## High-level Languages
+## High-level Programming Languages
 
 At the machine/assembly language level, a program must be written in a specific instruction set and therefore will not run on others CPU architectures. To write portable code, computer scientists came up with the concept of high-level languages, using which programmer only need to write out the high-level algorithms in human-readable text, and a program called **compiler** (one for each CPU architecture) will take care of translating that to hardware-specific machine code. In other words, the complexity of CPU archtectures, which is nonessential algorithmically, is abstracted away from the programmer, who can now simply focus on the program logic. 
 
@@ -114,13 +114,13 @@ Almost every system operation eventually maps to a physical device. With the exc
 ### Networking
 Networking must be managed by the operating system, because most network operations are not specific to a process: incoming packets are asynchronous events. The packets must be collected, identified, and dispatched before a process takes care of them. The system is in charge of delivering data packets across program and network interfaces, and it must control the execution of programs according to their network activity. Additionally, all the routing and address resolution issues are implemented within the kernel.
 
-## Windowing System
-End users interact with computers at the top abstraction layer, through the operating system **shell**. For a computationally literate person, command-line shells, through which one issue a series of commands to perform tasks, is a natural interface to interact with computers. However, for people who are not accustomed to a computational way of thinking, a direct-manipulation graphical user interface (GUI) is prefered.
+## GUI and Window System
+End users interact with computers at the top abstraction layer, through the operating system **shell**. For a computationally literate person, issue commands through a command-line shell, much like imperative programming, is a natural way to interact with computers. However, for people who are not accustomed to this way of thinking, a direct-manipulation graphical user interface (GUI) is much more intuitive.
 
 From the Wikipedia article:
 > Direct manipulation is a human–computer interaction style which involves **continuous representation of objects of interest** and **rapid, reversible, and incremental actions and feedback**. ...the intention of direct manipulation is to allow a user to manipulate objects presented to them, **using actions that correspond at least loosely to manipulation of physical objects**. ... Having **real-world metaphors for objects and actions** can make it easier for a user to learn and use an interface, and rapid, incremental feedback allows a user to make fewer errors and complete tasks in less time, because they can **see the results of an action before completing the action, thus evaluating the output and compensating for mistakes.**
 
-In addition to CPU and memory, all GUI programs running concurrently requires access to a single computer screen, which again requires management from the underlying system. This is handled by a window system (NOT Microsoft Windows!)
+However, adding GUI to a program introduces a new problem: in addition to CPU and memory, concurrent GUI programs contend for screen space, which again requires management from the underlying system. This is handled by what's called a window system.
 
 [fill in here]
 
