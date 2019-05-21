@@ -115,12 +115,14 @@ Almost every system operation eventually maps to a physical device. With the exc
 Networking must be managed by the operating system, because most network operations are not specific to a process: incoming packets are asynchronous events. The packets must be collected, identified, and dispatched before a process takes care of them. The system is in charge of delivering data packets across program and network interfaces, and it must control the execution of programs according to their network activity. Additionally, all the routing and address resolution issues are implemented within the kernel.
 
 ## Windowing System
-End users interact with computers at the top abstraction layer, through the operating system **shell**. For someone familiar with the workings of computers, it is fairly natural to use command-line interface (CLI, such as Bash on Unix/Linux), where you issue commands to perform tasks and use the shell-specific scripting languages (such as Bash script) for automation. However, for the unitiated, this way of interaction is very unituitive compared to graphical user interface (GUI), which is a major type of direct manipulation interface.
+End users interact with computers at the top abstraction layer, through the operating system **shell**. For a computationally literate person, command-line shells, through which one issue a series of commands to perform tasks, is a natural interface to interact with computers. However, for people who are not accustomed to a computational way of thinking, a direct-manipulation graphical user interface (GUI) is prefered.
 
 From the Wikipedia article:
 > Direct manipulation is a human–computer interaction style which involves **continuous representation of objects of interest** and **rapid, reversible, and incremental actions and feedback**. ...the intention of direct manipulation is to allow a user to manipulate objects presented to them, **using actions that correspond at least loosely to manipulation of physical objects**. ... Having **real-world metaphors for objects and actions** can make it easier for a user to learn and use an interface, and rapid, incremental feedback allows a user to make fewer errors and complete tasks in less time, because they can **see the results of an action before completing the action, thus evaluating the output and compensating for mistakes.**
 
 In addition to CPU and memory, all GUI programs running concurrently requires access to a single computer screen, which again requires management from the underlying system. This is handled by a window system (NOT Microsoft Windows!)
+
+[fill in here]
 
 # Interlude: TCP/IP Model
 
@@ -165,7 +167,7 @@ Dealing with coordinate systems and on-screen bounds of interactors.
 Every component maintains its own geometry. In **CSS Box Model**, every DOM element is considered as rectangular box, whose position and size are determined by the browsers rendering engine.
   As with most computer graphic systems, (0,0) is at parent’s top left corner
 - **Interactor status/information management**:
-Each component (DOM elements) maintains information about its state, such as its attributes and CSS style properties. Each individual attribute can be accessed through `Element​.get​Attribute()` and modified through `Element.setAttribute()`. The final computed CSS styles can be accessed through `Window.getComputedStyle()` and the inline style attribute of an element through `HTMLElement​.style`.
+Each component (DOM elements) maintains information about its state, such as its attributes and CSS style properties. Each individual attribute can be accessed through `Element​.get​Attribute()` and modified through `Element.setAttribute()`. The final computed CSS styles can be accessed through `Window.getComputedStyle()` and the inline style attribute of an element through `HTMLElement.style`.
 
 
 ### Input
