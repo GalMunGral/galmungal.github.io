@@ -4,7 +4,7 @@ Since the 1990s, computers wtih 2D graphical user interface (GUI) has become an 
 CPU
 Instruction Sets
 
-# Part I: Abstraction, Abstraction, Abstraction
+# Part I: The Art of Abstraction
 Turing machine (or any model of computation for that matter) abstracts away the physical implementations: the view of space as discrete cells and time as sequence of steps is a logical rather than physical one. This is what lies the heart of mathematical modeling:  **Abstration**, the art of disregarding nonessential details thereby hiding underlying complexity and extracting a simplified, logical view. It turns out abstration plays an essential role in software engineering as well. 
 
 ## High-level Programming Languages
@@ -124,17 +124,20 @@ However, adding GUI to a program introduces a new problem: in addition to CPU an
 
 [fill in here]
 
-# Interlude: Internet Protocol Suite
+# Interlude: TCP/IP Model
+A classic example of abstraction layers in computer science.
 ## Link Layer
 The **network interface controller (NIC)** in each computer is uniquely identified by its **media access control (MAC) address** (which looks like `00:3e:e1:c4:5d:df`). Link-layer protocols such as **IEEE 802.3 Ethernet** and  **IEEE 802.11 Wifi** protocols handles the transmission of datagrams (called "frames") from one computer to another directly connected computer using their MAC addresses.
 ## Internet Layer
 Each host in a network is given an hierarchical **Internet Protocol (IP) address**, either configured statically or assgined dynamically through **DHCP protocol**. The IP protocol directs each datagram from a the source IP to destination IP across multiple networks through a series of **routers**, which are intermediate nodes (computers) that forwards datagrams by examining its destination address and then looking up their own **routing tables**. A routing table maps ranges of network destinations to the route's output links. Routers construct these routing table by running various **routing algorithms** (typically shortest path algorithms such as [Bellman-ford algorithm](https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm) or [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)).
 
 ## Transport Layer
-There are many reasons a network might fail to deliver data packets as intended: Radio signal could be interfered in a wireless network, packets might be dropped by routers in case of network congestion, and even if packets are all delivered successfully, depending on the individual routes each packets has taken, they might not arrive in the order they were sent, which could cause problems for upper layer protocols. The 
-## Application Layer
+The transport-Layer **User Datagram Protocol (UDP)** allows computer applications to send messages to other hosts on an IP network directly. However, there are many reasons a network might fail to deliver data packets as intended: Radio signal could be interfered in a wireless network, packets might be dropped by routers in case of network congestion, and even if packets are all delivered successfully, depending on the individual routes each packets has taken, they might not arrive in the order they were sent, which could cause problems for upper layer protocols. The **Transmission Control Protocol (TCP)** was designed to solve this problem. TCP provides *reliable, ordered, and error-checked* delivery of data packets. Major internet applications such as the World Wide Web, email, remote administration, and file transfer rely on TCP.
 
-# Chapter II: GUI Architecture [(source)](http://www.kedwards.com/classes/AY2017/cs4470_fall/)
+## Application Layer
+HTTP here
+
+# Part II: GUI Architecture [(source)](http://www.kedwards.com/classes/AY2017/cs4470_fall/)
 Digital displays create the illusion of continuity through high spatial and temporal resolutions. Modern computers typically have high DPI (dots per inch) displays with 60 Hz refresh rate. The goal for a GUI program then is to generate frames at the rate of 60 FPS (frame per second). Using the expressive tools we learned in last chapter, we can write the skeleton of a GUI program in JavaScript-like pseudocode as
 ```javascript
 while (true) {
