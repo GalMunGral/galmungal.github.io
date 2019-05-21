@@ -1,13 +1,13 @@
-# Prelude
+# Prelude: A Discrete World
 Since the 1990s, computers wtih 2D graphical user interface (GUI) has become an extension of our physical environment, but hidden from sight, the world of electronic circuitry beneath the shell of a computer behave in a fundamentally different way than the external world that we experience: We perceive reality as continuous, but computers are designed to be a system with discrete space (information is stored in discrete units) and discrete time (computation is a stepwise process). So how is it possible for computers to produce the kind of interaction that is now integrated into our daily sense-experience?
 
 CPU
 Instruction Sets
 
-# Abstraction, Abstraction, Abstraction
+# 1. Abstraction, Abstraction, Abstraction
 Turing machine (or any model of computation for that matter) abstracts away the physical implementations: the view of space as discrete cells and time as sequence of steps is a logical rather than physical one. This is what lies the heart of mathematical modeling:  **Abstration**, the art of disregarding nonessential details thereby hiding underlying complexity and extracting a simplified, logical view. It turns out abstration plays an essential role in software engineering as well. 
 
-## High-level Languages
+## 0. High-level Languages
 
 At the machine/assembly language level, a program must be written in a specific instruction set and therefore will not run on others CPU architectures. To write portable code, computer scientists came up with the concept of high-level languages, using which programmer only need to write out the high-level algorithms in human-readable text, and a program called **compiler** (one for each CPU architecture) will take care of translating that to hardware-specific machine code. In other words, the complexity of CPU archtectures, which is nonessential algorithmically, is abstracted away from the programmer, who can now simply focus on the program logic. 
 
@@ -100,7 +100,7 @@ function binarySearch($arr, $l, $r, $x) {
 ?> 
 ```
 
-## Operating Systems [(source)](https://learning.oreilly.com/library/view/linux-device-drivers/0596005903/ch01.html)
+## 1. Operating Systems [(source)](https://learning.oreilly.com/library/view/linux-device-drivers/0596005903/ch01.html)
 A running program consumes *memory space*, *CPU time* and other hardware resources. If you remember the **basic economic problem** from economics classes, all kinds of resources are scarce &mdash; that is, they are always insufficient to satisfy all human wants and needs. Computer hardware resources are no exception: People eventually started to want to execute multiple programs concurrently on a single machine because machines were expensive to build. This is where **operating systems** come into play. An operating system (OS) is the big chunk of executable code loaded into memory by the bootloader at start-up, and the **kernel** of an operating system is the program that is the core of a an operating system, responsible for providing access to and allocating the limited hardware resources. the kernel's role can be split into the following parts:
 
 ### Process management
@@ -114,12 +114,6 @@ Almost every system operation eventually maps to a physical device. With the exc
 ### Networking
 Networking must be managed by the operating system, because most network operations are not specific to a process: incoming packets are asynchronous events. The packets must be collected, identified, and dispatched before a process takes care of them. The system is in charge of delivering data packets across program and network interfaces, and it must control the execution of programs according to their network activity. Additionally, all the routing and address resolution issues are implemented within the kernel.
 
-
-
-#### Fundamental Theorem of Software Engineering (FTSE)
-> We can solve any problem by introducing an extra level of indirection. &mdash; David Wheeler
-
-
 ## GUI and Windowing System
 End users interact with computers through the **operating system shell**, which is named in contrast to "kernel". For someone familiar with the workings of computers, it is fairly natural to use command-line interface (CLI, such as Bash on Unix/Linux), where you issue commands to perform tasks and use the shell-specific scripting languages (such as Bash script) for automation. However, for the unitiated, this way of interaction is very unituitive compared to graphical user interface (GUI), which is a major type of direct manipulation interface.
 
@@ -127,6 +121,9 @@ From the Wikipedia article:
 > Direct manipulation is a human–computer interaction style which involves **continuous representation of objects of interest** and **rapid, reversible, and incremental actions and feedback**. ...the intention of direct manipulation is to allow a user to manipulate objects presented to them, **using actions that correspond at least loosely to manipulation of physical objects**. ... Having **real-world metaphors for objects and actions** can make it easier for a user to learn and use an interface, and rapid, incremental feedback allows a user to make fewer errors and complete tasks in less time, because they can **see the results of an action before completing the action, thus evaluating the output and compensating for mistakes.**
 
 A GUI program, in addition occupies screen space. However they all share the same hardware resources, so how does
+
+## Interlude: Layers of Abstraction
+
 
 # GUI Software Architecture [(source)](http://www.kedwards.com/classes/AY2017/cs4470_fall/)
 Digital displays create the illusion of continuity through high spatial and temporal resolutions. Modern computers typically have high DPI (dots per inch) displays with 60 Hz refresh rate. The goal for a GUI program then is to generate frames at the rate of 60 FPS (frame per second). Using the expressive tools we learned in last chapter, we can write the skeleton of a GUI program in JavaScript-like pseudocode as
