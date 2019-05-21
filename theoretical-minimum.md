@@ -29,9 +29,7 @@ int binarySearch(int arr[], int l, int r, int x) {
   return -1; 
 }
 ```
-<details>
-<summary><b>C++/C#/Java</b></summary>
-
+#### C++/C#/Java
 C++, C# and Java are **OOP languages** where functions are bundled with the data they modify into individual objects, which are constructed from templates called classes. Classes are optional in C++ but mandatory in C# and Java.
 ```c++
 class SomeWrapperClass {
@@ -49,7 +47,6 @@ class SomeWrapperClass {
     }
 } (C++ requires a semicolon here)
 ```
-</details>
 
 ### Dynamically-typed Scripting Languages
 An alternative to compilation is **interpretation**, where a program (**interpreter**) reads in program text written in a (usually) high-level language and executes it line by line. Interpreted languages can be though of as *software-processed* languages just like machine languages are *hardware-processed* languages &mdash; In a sense processors are really interpreters for their respective machine languages.
@@ -71,10 +68,21 @@ function binarySearch(arr, l, r, x) {
   return -1; 
 }
 ```
-
-<details>
-<summary><b>PHP</b></summary>
-
+#### Python
+```python
+# In Python, blocks are indicated by indentations instead of curly braces.
+def binarySearch(arr, l, r, x): 
+  while l <= r: 
+    m = l + (r - l) / 2
+    if arr[m] == x: 
+      return m 
+    if arr[m] < x: 
+      l = m + 1
+    else: 
+      r = m - 1
+  return -1
+```
+#### PHP
 ```php
 <?php
 function binarySearch($arr, $l, $r, $x) { 
@@ -91,30 +99,9 @@ function binarySearch($arr, $l, $r, $x) {
 }
 ?> 
 ```
-</details>
-
-<details>
-<summary><b>Python</b></summary>
-
-```python
-# In Python, blocks are indicated by indentations instead of curly braces.
-def binarySearch(arr, l, r, x): 
-  while l <= r: 
-    m = l + (r - l) / 2
-    if arr[m] == x: 
-      return m 
-    if arr[m] < x: 
-      l = m + 1
-    else: 
-      r = m - 1
-  return -1
-```
-</details>
 
 ## Operating Systems [(source)](https://learning.oreilly.com/library/view/linux-device-drivers/0596005903/ch01.html)
-A running program consumes *memory space*, *CPU time* and other hardware resources. If you remember the **basic economic problem** from economics classes, all kinds of resources are scarce &mdash; that is, they are always insufficient to satisfy all human wants and needs. Computer hardware resources are no exception: People eventually started to want to execute multiple programs concurrently on a single machine because machines were expensive to build. This is where **operating systems** come into play.
-
-An operating system (OS), or more accurately, the **kernel** of an operating system, is a program in charge of providing accesses to and allocating the limited hardware resources. the kernel's role can be split into the following parts:
+A running program consumes *memory space*, *CPU time* and other hardware resources. If you remember the **basic economic problem** from economics classes, all kinds of resources are scarce &mdash; that is, they are always insufficient to satisfy all human wants and needs. Computer hardware resources are no exception: People eventually started to want to execute multiple programs concurrently on a single machine because machines were expensive to build. This is where **operating systems** come into play. An operating system (OS) is the big chunk of executable code loaded into memory by the bootloader at start-up, and the **kernel** of an operating system is the program that is the core of a an operating system, responsible for providing access to and allocating the limited hardware resources. the kernel's role can be split into the following parts:
 
 ### Process management
 The kernel is in charge of creating and destroying processes and handling their connection to the outside world (input and output). Communication among different processes (through signals, pipes, or interprocess communication primitives) is basic to the overall system functionality and is also handled by the kernel. In addition, the scheduler, which controls how processes share the CPU, is part of process management. More generally, the kernel's process management activity implements the abstraction of several processes on top of a single CPU or a few of them.
@@ -141,7 +128,7 @@ From the Wikipedia article:
 
 A GUI program, in addition occupies screen space. However they all share the same hardware resources, so how does
 
-# GUI Software
+# GUI Software Architecture [(source)](http://www.kedwards.com/classes/AY2017/cs4470_fall/)
 Digital displays create the illusion of continuity through high spatial and temporal resolutions. Modern computers typically have high DPI (dots per inch) displays with 60 Hz refresh rate. The goal for a GUI program then is to generate frames at the rate of 60 FPS (frame per second). Using the expressive tools we learned in last chapter, we can write the skeleton of a GUI program in JavaScript-like pseudocode as
 ```javascript
 while (true) {
@@ -283,5 +270,4 @@ Neither one is sufficient  Need both May even need both in same object
 
 
 - CS 4470: Introduction to User Interface Software & CS 6456 Principles of User Interface Software
-    - http://www.kedwards.com/classes/AY2017/cs4470_fall/
     
