@@ -107,8 +107,9 @@ def binarySearch(arr, l, r, x):
 </details>
 
 # 1. Abstraction, Abstraction, Abstraction
+Alan Turing's computational machine is ultimately, like any kind of machines, a physical one. However, the concept does not explicitly invovle physical concepts or depend on any particular physical implementation. So whether the machine is engineered as mechanical or electronic, decimal or binary, it is not much different. When talking about models of computation, the view of space-time is a logical one rather than physical one. That is, time is measured in logical steps, regardless of how much physical time each step takes. Likewise, space is measured by how many bits of information need to be stored, regardless of the actual physical component used to store each single bit, whether they are vacuum tubes take takes up considerable phyiscal volume or transistors that are so tiny that millions can fit in a chip. This is the power of mathematical modeling, or in other words, mathematical abstraction.
 
-These languages
+
 
 ## Operating Systems
 A program consumes memory space and CPU time, A GUI program, in addition occupies screen space. However they all share the same hardware resources, so how does
