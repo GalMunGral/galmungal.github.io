@@ -124,8 +124,16 @@ However, adding GUI to a program introduces a new problem: in addition to CPU an
 
 [fill in here]
 
-# Interlude: TCP/IP
+# Interlude: Internet Protocol Suite
+## Link Layer
+The **network interface controller (NIC)** in each computer is uniquely identified by its **media access control (MAC) address** (which looks like `00:3e:e1:c4:5d:df`). Link-layer protocols such as **IEEE 802.3 Ethernet** and  **IEEE 802.11 Wifi** protocols handles the transmission of datagrams (called "frames") from one computer to another directly connected computer using their MAC addresses.
+## Internet Layer
+Each host in a network is given an hierarchical **Internet Protocol (IP) address**, either configured statically or assgined dynamically through **DHCP protocol**. The IP protocol directs datagrams from a source IP address to destination IP address through a series of **routers**, which are intermediate nodes (computers) that forwards datagrams by examining its destination address and then looking up its own **routing table**. The routing table maps ranges of network destinations to the route's output links. Routers construct these routing table by running **routing algorithms** (typically shortest path algorithms such as [Bellman-ford algorithm](https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm) or [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)).
 
+
+
+## Transport Layer
+## Application Layer
 
 # Chapter II: GUI Architecture [(source)](http://www.kedwards.com/classes/AY2017/cs4470_fall/)
 Digital displays create the illusion of continuity through high spatial and temporal resolutions. Modern computers typically have high DPI (dots per inch) displays with 60 Hz refresh rate. The goal for a GUI program then is to generate frames at the rate of 60 FPS (frame per second). Using the expressive tools we learned in last chapter, we can write the skeleton of a GUI program in JavaScript-like pseudocode as
