@@ -128,11 +128,10 @@ However, adding GUI to a program introduces a new problem: in addition to CPU an
 ## Link Layer
 The **network interface controller (NIC)** in each computer is uniquely identified by its **media access control (MAC) address** (which looks like `00:3e:e1:c4:5d:df`). Link-layer protocols such as **IEEE 802.3 Ethernet** and  **IEEE 802.11 Wifi** protocols handles the transmission of datagrams (called "frames") from one computer to another directly connected computer using their MAC addresses.
 ## Internet Layer
-Each host in a network is given an hierarchical **Internet Protocol (IP) address**, either configured statically or assgined dynamically through **DHCP protocol**. The IP protocol directs datagrams from a source IP address to destination IP address through a series of **routers**, which are intermediate nodes (computers) that forwards datagrams by examining its destination address and then looking up its own **routing table**. The routing table maps ranges of network destinations to the route's output links. Routers construct these routing table by running **routing algorithms** (typically shortest path algorithms such as [Bellman-ford algorithm](https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm) or [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)).
-
-
+Each host in a network is given an hierarchical **Internet Protocol (IP) address**, either configured statically or assgined dynamically through **DHCP protocol**. The IP protocol directs each datagram from a the source IP to destination IP across multiple networks through a series of **routers**, which are intermediate nodes (computers) that forwards datagrams by examining its destination address and then looking up their own **routing tables**. A routing table maps ranges of network destinations to the route's output links. Routers construct these routing table by running various **routing algorithms** (typically shortest path algorithms such as [Bellman-ford algorithm](https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm) or [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)).
 
 ## Transport Layer
+There are many reasons a network might fail to deliver data packets as intended: Radio signal could be interfered in a wireless network, packets might be dropped by routers in case of network congestion, and even if packets are all delivered successfully, depending on the individual routes each packets has taken, they might not arrive in the order they were sent, which could cause problems for upper layer protocols. The 
 ## Application Layer
 
 # Chapter II: GUI Architecture [(source)](http://www.kedwards.com/classes/AY2017/cs4470_fall/)
