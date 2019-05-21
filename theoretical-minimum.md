@@ -1,13 +1,10 @@
-- CS 4470: Introduction to User Interface Software & CS 6456 Principles of User Interface Software
-    - http://www.kedwards.com/classes/AY2017/cs4470_fall/
-    
+# 零. Prelude
 Since the 1990s, computers wtih 2D graphical user interface (GUI) has become an extension of our physical environment, but hidden from sight, the world of electronic circuitry beneath the shell of a computer behave in a fundamentally different way than the external world that we experience: We perceive reality as continuous, but computers are designed to be a system with discrete space (information is stored in discrete units) and discrete time (computation is a stepwise process). So how is it possible for computers to produce the kind of interaction that is now integrated into our daily sense-experience?
-# 0. Abstraction, Abstraction, Abstraction
-## What Is a Computer
+
 CPU
 Instruction Sets
-High-levle Languages and Compilers
 
+# 壹. Abstraction, Abstraction, Abstraction
 Turing machine (or any model of computation for that matter) abstracts away the physical implementations: the view of space as discrete cells and time as sequence of steps is a logical rather than physical one. This is what lies the heart of mathematical modeling:  **Abstration**, the art of disregarding nonessential details thereby hiding underlying complexity and extracting a simplified, logical view. It turns out abstration plays an essential role in software engineering as well. 
 
 ## High-level Programming Languages
@@ -114,19 +111,15 @@ def binarySearch(arr, l, r, x):
 ```
 </details>
 
+
+A program consumes memory space and CPU time, A GUI program, in addition occupies screen space. However they all share the same hardware resources, so how does
+
 # 1. 
-
-
-
+## Operating Systems
 
 
 #### Fundamental Theorem of Software Engineering (FTSE)
 > We can solve any problem by introducing an extra level of indirection. &mdash; David Wheeler
-
-
-## Operating Systems
-A program consumes memory space and CPU time, A GUI program, in addition occupies screen space. However they all share the same hardware resources, so how does
-
 
 
 ## User Interface
@@ -276,3 +269,6 @@ Neither one is sufficient  Need both May even need both in same object
 
 
 
+- CS 4470: Introduction to User Interface Software & CS 6456 Principles of User Interface Software
+    - http://www.kedwards.com/classes/AY2017/cs4470_fall/
+    
