@@ -57,7 +57,7 @@ class SomeWrapperClass {
 ### Dynamically-typed Scripting Languages
 An alternative to compilation is **interpretation**, where a program (**interpreter**) reads in program text written in a (usually) high-level language and executes it line by line. Interpreted languages can be though of as *software-processed* languages just like machine languages are *hardware-processed* languages &mdash; In a sense processors are really interpreters for their respective machine languages.
 
-Scripting languages ubiquitous in Web development are all interpreted, and like most interpreted languages, **dynamically typed**, meaning that types are determined at run-time, and not declared in programs. Interpreted languages are usually more flexible and productive but much slower than compiled languages like C/C++, but the performance can be improved by using a JIT (just-in-time) compiler.
+Scripting languages ubiquitous on the Web are all interpreted, and like most interpreted languages, **dynamically typed**, meaning that types are determined at run-time, and not declared in programs. Interpreted languages are usually more flexible and productive but much slower than compiled languages like C/C++, but the performance can be improved by using a JIT (just-in-time) compiler.
 
 **JavaScript**  
 ```javascript
