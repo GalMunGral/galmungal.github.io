@@ -7,7 +7,7 @@ Instruction Sets
 # Abstraction, Abstraction, Abstraction
 Turing machine (or any model of computation for that matter) abstracts away the physical implementations: the view of space as discrete cells and time as sequence of steps is a logical rather than physical one. This is what lies the heart of mathematical modeling:  **Abstration**, the art of disregarding nonessential details thereby hiding underlying complexity and extracting a simplified, logical view. It turns out abstration plays an essential role in software engineering as well. 
 
-## High-level Programming Languages
+## High-level Languages
 
 At the machine/assembly language level, a program must be written in a specific instruction set and therefore will not run on others CPU architectures. To write portable code, computer scientists came up with the concept of high-level languages, using which programmer only need to write out the high-level algorithms in human-readable text, and a program called **compiler** (one for each CPU architecture) will take care of translating that to hardware-specific machine code. In other words, the complexity of CPU archtectures, which is nonessential algorithmically, is abstracted away from the programmer, who can now simply focus on the program logic. 
 
@@ -111,24 +111,37 @@ def binarySearch(arr, l, r, x):
 ```
 </details>
 
+## Operating Systems [(source)](https://learning.oreilly.com/library/view/linux-device-drivers/0596005903/ch01.html)
+A running program consumes *memory space*, *CPU time* and other hardware resources. If you remember the **basic economic problem** from economics classes, all kinds of resources are scarce &mdash; that is, they are always insufficient to satisfy all human wants and needs. Computer hardware resources are no exception: People eventually started to want to execute multiple programs concurrently on a single machine because machines were expensive to build. This is where **operating systems** come into play.
 
-A program consumes memory space and CPU time, A GUI program, in addition occupies screen space. However they all share the same hardware resources, so how does
+An operating system (OS), or more accurately, the **kernel** of an operating system, is a program in charge of providing accesses to and allocating the limited hardware resources. the kernel's role can be split into the following parts:
 
-# 1. 
-## Operating Systems
+### Process management
+The kernel is in charge of creating and destroying processes and handling their connection to the outside world (input and output). Communication among different processes (through signals, pipes, or interprocess communication primitives) is basic to the overall system functionality and is also handled by the kernel. In addition, the scheduler, which controls how processes share the CPU, is part of process management. More generally, the kernel's process management activity implements the abstraction of several processes on top of a single CPU or a few of them.
+### Memory management
+The computer's memory is a major resource, and the policy used to deal with it is a critical one for system performance. The kernel builds up a virtual addressing space for any and all processes on top of the limited available resources. The different parts of the kernel interact with the memory-management subsystem through a set of function calls, ranging from the simple malloc/free pair to much more complex functionalities.
+### Filesystems
+Unix is heavily based on the filesystem concept; almost everything in Unix can be treated as a file. The kernel builds a structured filesystem on top of unstructured hardware, and the resulting file abstraction is heavily used throughout the whole system. In addition, Linux supports multiple filesystem types, that is, different ways of organizing data on the physical medium. For example, disks may be formatted with the Linux-standard ext3 filesystem, the commonly used FAT filesystem or several others.
+### Device control
+Almost every system operation eventually maps to a physical device. With the exception of the processor, memory, and a very few other entities, any and all device control operations are performed by code that is specific to the device being addressed. That code is called a device driver. The kernel must have embedded in it a device driver for every peripheral present on a system, from the hard drive to the keyboard and the tape drive. This aspect of the kernel's functions is our primary interest in this book.
+### Networking
+Networking must be managed by the operating system, because most network operations are not specific to a process: incoming packets are asynchronous events. The packets must be collected, identified, and dispatched before a process takes care of them. The system is in charge of delivering data packets across program and network interfaces, and it must control the execution of programs according to their network activity. Additionally, all the routing and address resolution issues are implemented within the kernel.
+
 
 
 #### Fundamental Theorem of Software Engineering (FTSE)
 > We can solve any problem by introducing an extra level of indirection. &mdash; David Wheeler
 
 
-## User Interface
+## GUI and Windowing System
 End users interact with computers through the **operating system shell**, which is named in contrast to "kernel". For someone familiar with the workings of computers, it is fairly natural to use command-line interface (CLI, such as Bash on Unix/Linux), where you issue commands to perform tasks and use the shell-specific scripting languages (such as Bash script) for automation. However, for the unitiated, this way of interaction is very unituitive compared to graphical user interface (GUI), which is a major type of direct manipulation interface.
 
 From the Wikipedia article:
 > Direct manipulation is a human–computer interaction style which involves **continuous representation of objects of interest** and **rapid, reversible, and incremental actions and feedback**. ...the intention of direct manipulation is to allow a user to manipulate objects presented to them, **using actions that correspond at least loosely to manipulation of physical objects**. ... Having **real-world metaphors for objects and actions** can make it easier for a user to learn and use an interface, and rapid, incremental feedback allows a user to make fewer errors and complete tasks in less time, because they can **see the results of an action before completing the action, thus evaluating the output and compensating for mistakes.**
 
-# 2. Graphical User Interface
+A GUI program, in addition occupies screen space. However they all share the same hardware resources, so how does
+
+# GUI Software
 Digital displays create the illusion of continuity through high spatial and temporal resolutions. Modern computers typically have high DPI (dots per inch) displays with 60 Hz refresh rate. The goal for a GUI program then is to generate frames at the rate of 60 FPS (frame per second). Using the expressive tools we learned in last chapter, we can write the skeleton of a GUI program in JavaScript-like pseudocode as
 ```javascript
 while (true) {
