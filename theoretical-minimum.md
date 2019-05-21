@@ -1,13 +1,18 @@
 - CS 4470: Introduction to User Interface Software & CS 6456 Principles of User Interface Software
     - http://www.kedwards.com/classes/AY2017/cs4470_fall/
     
-# 0. Preliminaries
 Since the 1990s, computers wtih 2D graphical user interface (GUI) has become an extension of our physical environment, but hidden from sight, the world of electronic circuitry beneath the shell of a computer behave in a fundamentally different way than the external world that we experience: We perceive reality as continuous, but computers are designed to be a system with discrete space (information is stored in discrete units) and discrete time (computation is a stepwise process). So how is it possible for computers to produce the kind of interaction that is now integrated into our daily sense-experience?
+# 0. Abstraction, Abstraction, Abstraction
 ## What Is a Computer
 CPU
 Instruction Sets
 High-levle Languages and Compilers
-## Computer Programming (Imperative)
+
+Turing machine (or any model of computation for that matter) abstracts away the physical implementations: the view of space as discrete cells and time as sequence of steps is a logical rather than physical one. This is what lies the heart of mathematical modeling:  **Abstration**, the art of disregarding nonessential details thereby hiding underlying complexity and extracting a simplified, logical view. It turns out abstration plays an essential role in software engineering as well. 
+
+## High-level Programming Languages
+At the machine/assembly language level, a program must be written in a specific instruction set and therefore will not run on others CPU architectures. To write portable code, computer scientists came up with the concept of high-level languages, using which programmer only need to write out the high-level algorithms, and a program called **compiler** (one for each CPU architecture) will take care of translating that to hardware-specific machine code. In other words, the complexity of CPU archtectures, which is nonessential algorithmically, is abstracted away from the programmer, who can now simply focus on the program logic. 
+
 Regardless of language, under the imperative paradigm you use branching (`if-elseif-else`, `switch-case`) and looping (`for`, `while`,`do-while`) control sturctures to direct execution flow - essentially giving a textual description of a 'flowchart' for your program, the rest are simply language-specific conventions. We will introduce the most popular programming languages, as indicated by the TIOBE index, using their respective implementations of a binary search algorithm. As you will see, their syntax are very similar and even identical in some cases.
 ### Statically-typed Compiled Languages
 #### C (C++/Objective-C)
@@ -106,10 +111,12 @@ def binarySearch(arr, l, r, x):
 ```
 </details>
 
-# 1. Abstraction, Abstraction, Abstraction
-Alan Turing's computational machine is ultimately, like any kind of machines, a physical one. However, the concept does not explicitly invovle physical concepts or depend on any particular physical implementation. So whether the machine is engineered as mechanical or electronic, decimal or binary, it is not much different. When talking about models of computation, the view of space-time is a logical one rather than physical one. That is, time is measured in logical steps, regardless of how much physical time each step takes, whether its the time a human computer takes to perform a arithmetic operation in his/her head or the almost instantaenous switching of a electronic circuit. Likewise, space is measured by how many bits of information need to be stored, regardless of the actual physical component used to store each single bit, whether they are vacuum tubes take takes up considerable phyiscal volume, symbols a person write on a piece of paper, or transistors that are so tiny that millions can fit in a chip. This is the power of mathematical modeling, or in other words, mathematical abstration.
+# 1. 
 
-The same process of disregarding the complex but nonessential details thereby creating a simplified logical view, or **abstration**, is one of the central theme of software engineering.
+
+
+
+
 #### Fundamental Theorem of Software Engineering (FTSE)
 > We can solve any problem by introducing an extra level of indirection. &mdash; David Wheeler
 
