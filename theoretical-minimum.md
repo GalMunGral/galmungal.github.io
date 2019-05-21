@@ -11,7 +11,8 @@ High-levle Languages and Compilers
 Turing machine (or any model of computation for that matter) abstracts away the physical implementations: the view of space as discrete cells and time as sequence of steps is a logical rather than physical one. This is what lies the heart of mathematical modeling:  **Abstration**, the art of disregarding nonessential details thereby hiding underlying complexity and extracting a simplified, logical view. It turns out abstration plays an essential role in software engineering as well. 
 
 ## High-level Programming Languages
-At the machine/assembly language level, a program must be written in a specific instruction set and therefore will not run on others CPU architectures. To write portable code, computer scientists came up with the concept of high-level languages, using which programmer only need to write out the high-level algorithms, and a program called **compiler** (one for each CPU architecture) will take care of translating that to hardware-specific machine code. In other words, the complexity of CPU archtectures, which is nonessential algorithmically, is abstracted away from the programmer, who can now simply focus on the program logic. Another mechanism to provide the abstraction over processor hardware is **interpretation** instead of compilation. programs that accept program text in a high-level language and comile/execute it 
+
+At the machine/assembly language level, a program must be written in a specific instruction set and therefore will not run on others CPU architectures. To write portable code, computer scientists came up with the concept of high-level languages, using which programmer only need to write out the high-level algorithms in human-readable text, and a program called **compiler** (one for each CPU architecture) will take care of translating that to hardware-specific machine code. In other words, the complexity of CPU archtectures, which is nonessential algorithmically, is abstracted away from the programmer, who can now simply focus on the program logic. 
 
 Regardless of language, under the imperative paradigm you use branching (`if-elseif-else`, `switch-case`) and looping (`for`, `while`,`do-while`) control sturctures to direct execution flow - essentially giving a textual description of a 'flowchart' for your program, the rest are simply language-specific conventions. We will introduce the most popular programming languages, as indicated by the TIOBE index, using their respective implementations of a binary search algorithm. As you will see, their syntax are very similar and even identical in some cases.
 ### Statically-typed Compiled Languages
@@ -53,10 +54,9 @@ class SomeWrapperClass {
 </details>
 
 ### Dynamically-typed Scripting Languages
-Types are determined at run-time, so there is no type declaration in source code.
-<details>
-<summary><b>JavaScript</b></summary>
+An alternative to compilation is **interpretation**, where a program (**interpreter**) reads in program text written in a (usually) high-level language and executes it line by line. Scripting languages ubiquitous in Web development are all interpreted. These language are typically dynamically typed, meaning that types are determined at run-time, and not declared in programs. Interpreted languages are usually more flexible and productive but much slower than compiled languages like C/C++, but the performance can be improved by using a JIT (just-in-time) compiler.
 
+**JavaScript**  
 ```javascript
 function binarySearch(arr, l, r, x) { 
   while (l <= r) { 
@@ -71,7 +71,7 @@ function binarySearch(arr, l, r, x) {
   return -1; 
 }
 ```
-</details>
+
 <details>
 <summary><b>PHP</b></summary>
 
