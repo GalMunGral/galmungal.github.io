@@ -4,7 +4,7 @@ Since the 1990s, computers wtih 2D graphical user interface (GUI) has become an 
 CPU
 Instruction Sets
 
-# Part I: The Art of Abstraction
+# Part I: Abstraction, Abstraction, Abstraction
 Turing machine (or any model of computation for that matter) abstracts away the physical implementations: the view of space as discrete cells and time as sequence of steps is a logical rather than physical one. This is what lies the heart of mathematical modeling:  **Abstration**, the art of disregarding nonessential details thereby hiding underlying complexity and extracting a simplified, logical view. It turns out abstration plays an essential role in software engineering as well. 
 
 ## High-level Programming Languages
@@ -124,7 +124,7 @@ However, adding GUI to a program introduces a new problem: in addition to CPU an
 
 [fill in here]
 
-# Interlude: TCP/IP Model
+# Interlude I: Networking - TCP/IP Model
 A classic example of abstraction layers in computer science.
 ## Link Layer
 The **network interface controller (NIC)** in each computer is uniquely identified by its **media access control (MAC) address** (which looks like `00:3e:e1:c4:5d:df`). Link-layer protocols such as **IEEE 802.3 Ethernet** and  **IEEE 802.11 Wifi** protocols handles the transmission of datagrams (called "frames") from one computer to another directly connected computer using their MAC addresses.
@@ -136,6 +136,65 @@ The transport-Layer **User Datagram Protocol (UDP)** allows computer application
 
 ## Application Layer
 HTTP here
+
+# Interlude II: Graphics - Imaging Models
+## Current dominant: Raster models
+
+Imaging Models: What does the hardware “look like” to the higher levels of software?
+Software models of output (Imaging models)
+Start out by abstracting the HW
+! What does the hardware “look like” to the higher levels of
+software?
+
+Raster Graphics System
+ Raster: An array of picture element (pixel) 
+
+Frame Buffer
+ Frame buffer: the memory to hold the pixel intensity
+values 
+! Most systems provide model pretty close to raster display HW
+
+! integer coordinate system
+! 0,0 typically at top-left with Y down
+! all drawing primitives done by filling in pixel color values (values in FB)
+
+Other display technologies: LCD
+
+Liquid Crystal Display
+Direct retinal displays
+
+All these systems use a frame buffer
+ 8-bit of each does a pretty good job, but... some complications
+ 
+ 24 bits/pixel => “true color,” 
+ 
+Pixels determined by 2D array of intensity values in memory
+“Frame buffer”
+! Each memory cell controls 1 pixel
+ All drawing by placing values in memory
+ For each pixel place 3 spots of
+phosphor (glowing R, G, & B)
+
+Color frame buffer
+Frame buffer now has 3 values for each pixel
+
+ each value drives one electron gun
+! can only see ~ 2^8 gradations of intensity for each of R,G,&B ! 1 byte ea => 24 bits/pixel => full color
+## Higher level imaging models: Stencil-and-Paint
+Stencil and paint model
+! All drawing modeled as placing paint on a surface through a “stencil”
+
+ Stencil modeled as closed curves (e.g., splines)
+ ! In most cases, implemented at a much higher layer than the raw hardware (e.g., in the Window System or Toolkit, which we’ll talk about soon...)
+ Postscript is based on this approach
+! Implemented in printer’s hardware (often)
+Resolution & device independent
+ Can support full transformations
+! rotate & scale
+
+
+
+
 
 # Part II: GUI Architecture [(source)](http://www.kedwards.com/classes/AY2017/cs4470_fall/)
 Digital displays create the illusion of continuity through high spatial and temporal resolutions. Modern computers typically have high DPI (dots per inch) displays with 60 Hz refresh rate. The goal for a GUI program then is to generate frames at the rate of 60 FPS (frame per second). Using the expressive tools we learned in last chapter, we can write the skeleton of a GUI program in JavaScript-like pseudocode as
@@ -153,7 +212,7 @@ Mordern UI (direct manipulation) interfaces tend to be collections of quasi-inde
 
 As a standard OO approach, classes are organized into a **subclassing hierarchy**, in which the top-level class describes basic interactor capabilities, the leaf-node classes describe what you actually see on the screen, and intermediate classes describe common behaviors. In case of DOM/Web API, `Element` is the the base class, and the leaf-node classes include `HTMLButtonElement`, `HTMLInputElement`, `HTMLTable​Element`, etc.
 
-To create UI software, we need a system, commonly referred to as a UI toolkit, to provide development-time and runtime support. In Web developmemnt, the browser itself is the toolkit, which provides the underlying mechanism for creating interactors (DOM elements), managing interactor states and handling I/O (*event dispatching, layout and drawing*) behind the scenes.
+To create UI software, we need a system, commonly referred to as a UI toolkit, to provide development-time and runtime support. On iOS, for example, it is provided by the [UIKit framework](https://developer.apple.com/documentation/uikit). In Web developmemnt, the browser itself provides the infrastructure for creating on-screen interactors (DOM elements), managing interactor states and handling I/O (*event dispatching, layout and drawing*) behind the scenes.
   
 ### Core functions
 - **Hierarchy management**:
