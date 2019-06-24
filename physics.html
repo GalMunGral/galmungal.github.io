@@ -38,6 +38,22 @@
         margin-left: 60px;
         margin-right: 40px;
       }
+      #reference {
+        margin-top: 100px;
+      }
+      #appendix {
+        padding: 50px;
+        border: solid lightgray 1px;
+      }
+      .clickable {
+        cursor: pointer
+      }
+      .clickable:hover {
+        text-decoration: underline;
+      }
+      .hidden {
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -122,11 +138,14 @@
         10^{54} \,\text{g} \cdot \text{cm}^{-3} \text{ (neutrons)}
         \end{cases}\]
         Thus, Einstein-Cartan theory only produces non-negligible deviations from general relativity under extremely high densities that might in fact be unphysical.  
-    
-    
-    <h1>Appendix: Summary of Einstein’s 1916 Paper<br>
-      <i>The Foundation of <br> the General Theory of Relativity</i></h1>
+
+    <h1 class="clickable" onclick="document.querySelector('#appendix').classList.toggle('hidden');">
+      Appendix: Summary of Einstein’s 1916 Paper<br>
+      <i>The Foundation of <br> the General Theory of Relativity</i>
+    </h1>
     <p class="author">Wenqi He, &nbsp; December 2018</p>
+
+    <div id="appendix" class="hidden">    
     <h2>1. Motivation</h2>
     As stated at the end of the first section:
     <p class="quote">The general laws of nature are to be expressed by equations which hold good for all systems of coordinates, that is, are covariant with respect to any substitutions whatever.</p>
@@ -147,8 +166,6 @@
     <h3>2.5. Covariant Derivative</h3>
     The notion of covariant derivative is introduced in order to write what Einstein called 
     <p class="quote">... generally covariant differential equations ...</p>
-    Suppose \(\phi\) is invariant. Since \(ds\) is invariant, the derivatives of \(\phi\) along the geodesic
-    \[\frac{d\phi}{ds} = \frac{\partial\phi}{\partial x^\mu}\frac{d x^\mu}{ds} = A_\mu \frac{dx^\mu}{ds} \]
     \[ \frac{d^2\phi}{ds^2} = \left(\frac{\partial^2\phi}{\partial x^\mu \partial x^\nu} + \Gamma^\tau_{\mu\nu} \frac{\partial\phi}{\partial x^\tau}\right)\frac{dx^\mu}{ds}\frac{dx^\nu}{ds} = \left(\frac{\partial A_\mu}{\partial x^\nu} + \Gamma^\tau_{\mu\nu} A_\tau \right)\frac{dx^\mu}{ds}\frac{dx^\nu}{ds}\]
     must also be invariant. In order for the derivative to be tensorial,
     \[ \nabla_\nu A_\mu := \frac{\partial A_\mu}{\partial x^\nu} + \Gamma^\tau_{\mu\nu}A_\tau \]
@@ -217,6 +234,8 @@
     \[ R_{\mu\nu} = \frac{8\pi G}{c^4} \Big(T_{\mu\nu} - \frac{1}{2} T g_{\mu\nu} \Big) \]
     or equivalently,
     \[ R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu} \]
+  </div>
+  <div id="reference">
     <h2>References</h2>
     <p class="citation">
       [1] Einstein, Albert. "The foundation of the general theory of relativity." <i>Annalen der Physik</i> 49, no. 7 (1916): 769-822.
@@ -224,5 +243,6 @@
     <p class="citation">
       [2] Hehl, Friedrich W., Paul Von der Heyde, G. David Kerlick, and James M. Nester. "General relativity with spin and torsion: Foundations and prospects." <i>Reviews of Modern Physics</i> 48, no. 3 (1976): 393.
     </p>
+  </div>
   </body>
 </html>
