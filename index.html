@@ -1,23 +1,40 @@
 <html>
   <head>
-    <title>He, Wenqi / 何 文琦 / 하 문기</title>
+    <title>Wenqi He | 何文琦 | 하문기</title>
     <style>
       body {
         margin: 0;
         padding: 0;
-        height: 100vh;
+      }
+      .row {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 18pt;
+        align-items: flex-start;
       }
       #resume {
-        flex: 0;
-        width: 85vw;
+        flex: 0 0 70vw;
+        height: 100vh;
+        overflow: scroll;
+      }
+      #resume img {
+        width: 70vw;
+      }
+      iframe {
+        margin-left: -200px;
+        margin-right: -200px;
+        flex: 0 0 100vw;
+        height: 100vh;
+        border: none;
+      }
+      ::-webkit-scrollbar {
+        display: none;
       }
     </style>
   </head>
   <body>
-    <img id="resume" src="resume.png">
+    <div class="row">
+      <iframe id="paper" src="/physics.html"></iframe>
+      <div id="resume"><img src="resume.png"></div>
+      <iframe src="/machine-learning.html"></iframe>
+    </div> 
   <body>
 </html>
