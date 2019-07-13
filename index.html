@@ -7,13 +7,16 @@
         padding: 0;
       }
       .row {
-        width: calc(100vw + 70vw + 100vw - 800px);
+        width: calc(80vw + 2 * 100vw - 800px);
         overflow-x: hidden;
         display: flex;
         align-items: flex-start;
       }
       #resume {
-        flex: 0 0 70vw;
+        flex: 0 0 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         height: 100vh;
         overflow: scroll;
       }
@@ -26,6 +29,7 @@
         flex: 0 0 100vw;
         height: 100vh;
         border: none;
+        overflow-x: hidden;
       }
       ::-webkit-scrollbar {
         display: none;
@@ -35,7 +39,7 @@
   <body>
     <div class="row">
       <div id="resume"><img src="resume.png"></div>
-      <iframe id="paper" src="/physics.html"></iframe>
+      <iframe src="/physics.html"></iframe>
       <iframe src="/machine-learning.html"></iframe>
     </div> 
   <body>
