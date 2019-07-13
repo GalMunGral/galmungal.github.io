@@ -1,0 +1,97 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\titleformat{\section} {\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+\newcommand{\centertitle}[3]{
+	{\noindent\bfseries
+	\parbox[][0.5em][b]{0.35\textwidth}{#1\hfill}%
+	\parbox[][0.5em][b]{0.3\textwidth}{\centerline{#2}}%
+	\parbox[][0.5em][b]{0.35\textwidth}{\hfill#3}}
+}
+
+\pagestyle{empty}
+\begin{document}
+
+\noindent
+\parbox{0.2\textwidth}{\,}
+\parbox{0.6\textwidth}{\centerline{\huge\scshape\bfseries Wenqi He}}
+\parbox{0.2\textwidth}{+1 (470) 343 - 5207 \\hewenqi96@gmail.com}
+
+\section*{EDUCATION}
+\centertitle{Atlanta, GA, USA}{Georgia Institute of Technology}{Aug. 2015 - Dec. 2019}
+\begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
+\item \textbf{Bachelor of Science in Computer Science} \hfill major GPA: 4.0/4.0, cumulative GPA: 3.97/4.0
+\item \textbf{Minor in Physics} (Graduate-level Coursework: General Relativity) \hfill \texttt{//galmungral.github.io/physics}
+\item \textbf{CS Coursework:} OOP, Algorithms \& Data Structures, Analysis of Algorithms, Computer Organization, Operating Systems, Computer Networking, Relational Database, Information Security, Computer Simulation, Machine Learning (Incomplete)
+\end{itemize}
+\vspace{-0.5em}
+
+\section*{EXPERIENCE}
+\centertitle{Front-end Developer, Intern}{Pegasus CRM, Decatur, GA}{Jan. 2018 - May. 2018}
+\begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
+\item Provided a proof-of-concept \underline{\smash{Vue.js}} reimplementation of existing UI features for the team to evaluate framework adoptation.
+\item Implemented designer's page designs using \underline{\smash{Blade PHP templates}} and \underline{SASS} in a \underline{Laravel} application.
+\item Integrated resizing and drag-and-drop features to existing data tables using \underline{\smash{vanilla JavaScript}}.
+\item Expedited bug fixing process by tracing into back-end code and identifying reported bugs that originate in the backend.
+\end{itemize}
+\vspace{-0.5em}
+
+\section*{SOFTWARE PROJECTS \hfill \normalsize\texttt{//github.com/GalMunGral}}
+
+\textbf{SitBit} \enspace \textit{Accelerometer-based sitting time recorder. (Proof of Concept) } 
+\begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
+\item Utilized \underline{Core Motion} framework on iOS (\underline{Swift}) and the \underline{Sensor} framework on Android (\underline{Kotlin}) to detect acceleration.
+\item Created a GitHub-style calendar heat map based on (mock) data pulled from backend using \underline{\smash{D3.js}} and \underline{SVG}.
+\item Embedded the visualization in mobile app using \underline{WebView} on Android and \underline{WKWebView} on iOS. 
+\item Implemented the back end in \underline{\smash{Golang}} with a \underline{\smash{MySQL}} database.
+\end{itemize}
+\vspace{0.5em}
+%
+\textbf{ReSpotify} \enspace \textit{Reimplementation of Spotify music player}
+\begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
+\item  Recreated Spotify's playback/volume controls by integrating \underline{\smash{Spotify Web Playback SDK}} with a \underline{\smash{React.js}} UI.
+\item Implemented \underline{OAuth 2.0} authorization flows in \underline{\smash{Python}} using \underline{\smash{Flask}} framework to access \underline{\smash{Spotify Web API}}.
+\end{itemize}
+\vspace{0.5em}
+%
+\textbf{NoTube} \enspace \textit{Reimplementation of YouTube Website (Proof of Concept)}
+\begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
+\item Partially replicated the UI using \underline{\smash{Angular.js}} and \underline{\smash{SASS}}. Implemented video streaming using \underline{\smash{Shaka player}} and \underline{\smash{FFmpeg}}.
+\end{itemize}
+\vspace{0.5em}
+%
+\textbf{WebREPL}  \enspace \textit{Interactive shell in browser, as commonly seen on coding websites such as Codeacademy}
+\begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
+\item Designed a mechanism to evaluate submitted scripts on server and send back output/error to be displayed in browser.
+\item Implemented using a parent \underline{\smash{Node.js}} process that communicates with a \underline{\smash{Python}} interpreter child process.
+\end{itemize}
+\vspace{0.5em}
+%
+\textbf{TwoFactor} \enspace \textit{Two-factor authentication with push notifications (Proof of Concept)}
+\begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
+\item Implemented two-factor login using a \underline{\smash{Node.js}} backend that communicates with the login page through \underline{\smash{Socket.io}}.
+\item Crafted push notification requests to \underline{\smash{Firebase Cloud Messaging}} and to \underline{\smash{Apple Push Notification Service}} in \underline{HTTP/2}.
+\end{itemize}
+\vspace{0.5em}
+%
+\textbf{MARTA Passenger Traffic} \enspace \textit{(Database Course Project)}
+\begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
+\item Implemented the UI using \underline{\smash{React.js}} and \underline{\smash{Redux.js}}, and the \underline{REST API} using \underline{\smash{Express.js}} framework and \underline{\smash{MySQL}} database.
+\end{itemize}
+\vspace{0.5em}
+%
+\textbf{Todo Apps} \enspace \textit{Implemented using \underline{\smash{React Native}}, \underline{\smash{Flutter (Dart)}}, \underline{\smash{SwiftUI}}, \underline{\smash{UIKit (Objective-C)}}, etc. (Proof of Concept)}\\
+\textbf{Clean Water Crowdsourcing}	\enspace \textit{Mobile app based on \underline{\smash{Google Maps SDK}} and \underline{\smash{Firebase SDK}} (Android Course Project) }\\
+\textbf{Declarative DOM} \enspace \textit{UI state dependency/synchronization manager, inspired by frontend Web frameworks (Proof of Concept)}\\
+\textbf{Wikipedia Prerequisite Search} \enspace \textit{Breadth-first search of Wikipedia's citation graph (Incomplete)}\\
+\textbf{WolframAlpha CLI} \enspace \textit{Command-line utility for solving equations based on \underline{\smash{Wolfram|Alpha XML API}}}\\
+\textbf{WebSocket Server}  \enspace \textit{\underline{\smash{Node.js}} implementation of \underline{WebSocket} protocol}
+\vspace{-0.5em}
+
+\section*{TECHNICAL SKILLS}
+\textbf{Proficient:} Bash, Vim, Git, JavaScript (ES6), HTML, CSS  \enspace\textbf{Familiar:} C, Java, Swift, Python, MATLAB, shell script, React.js, Redux.js, Angular.js, Vue.js, jQuery, Bootstrap, Node.js, Express.js, socket.io \enspace\textbf{Used:} Objective-C, C\#, C++, Kotlin, Dart, TypeScript, SASS,  PHP, SQL, Android, Xcode, UIKit, SwiftUI, React Native, Flutter, Xamarin, Jupyter Notebook, NumPy, Matplotlib, LaTeX
+
+\end{document}
