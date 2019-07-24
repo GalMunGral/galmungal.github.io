@@ -1,59 +1,8 @@
 <html>
   <head>
     <title>Wenqi He | 何文琦 | 하문기</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        /* scroll-behavior: smooth; */
-        -ms-overflow-style: none;
-      }
-      body::-webkit-scrollbar {
-        display: none;
-      }
-      .slideshow {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-      }
-      .fullscreen {
-        width: 100vw;
-        height: 100vh;
-        overflow: scroll;
-        position: relative;
-        /* When placed inside a flex container */
-        flex: 0 0 auto;
-      }
-      img.fullscreen {
-        object-fit: cover;
-      }
-      .fullscreen::-webkit-scrollbar {
-        display: none;
-      }
-      .filtered {
-        transition: filter 0.2s, transform 0.2s;
-      }
-      .blurred {
-        filter: blur(80px) opacity(0.9);
-
-      }
-      .description {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-         transition: opacity 0.2s;
-        transition-delay: 0.05s;
-      }
-      .hidden {
-        opacity: 0;
-        pointer-events: none;
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
     <script src="//cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
   </head>
   <body>
@@ -61,25 +10,33 @@
       <div class="fullscreen">
         <img class="fullscreen filtered blurred" src="/images/respotify.png">
         <div class="description">
-          <a href="https://portfolio-galmungral.herokuapp.com/respotify">Go to Page</a>
+          <h1 href="https://portfolio-galmungral.herokuapp.com/respotify">
+            Go to Page <i class="material-icons">open_in_new</i>
+          </h1>
         </div>
       </div>
       <div class="fullscreen">
         <img class="fullscreen filtered blurred" src="/images/notube.png">
         <div class="description">
-          <a href="https://portfolio-galmungral.herokuapp.com/notube">Go to Page</a>
+          <h1 href="https://portfolio-galmungral.herokuapp.com/notube">
+            Go to Page <i class="material-icons">open_in_new</i>
+          </h1>
         </div>
       </div>
       <div class="fullscreen">
         <img class="fullscreen filtered blurred" src="/images/web-repl.png">
         <div class="description">
-          <a href="https://portfolio-galmungral.herokuapp.com/web-repl">Go to Page</a>
+          <h1 href="https://portfolio-galmungral.herokuapp.com/web-repl">
+            Go to Page <i class="material-icons">open_in_new</i>
+          </h1>
         </div>
       </div>
       <div class="fullscreen">
         <img class="fullscreen filtered blurred" src="/images/marta.png">
         <div class="description">
-          <a href="https://portfolio-galmungral.herokuapp.com/marta">Go to Page</a>
+          <h1 href="https://portfolio-galmungral.herokuapp.com/marta">
+            Go to Page <i class="material-icons">open_in_new</i>
+          </h1>
         </div>
       </div>
     </div>
@@ -120,18 +77,25 @@
       document.body.onload = function() {
         document.querySelectorAll('img.blurred').forEach(img => {
           let description = img.parentNode.querySelector('.description');
+          
+          let link = description.querySelector('h1');
+          let url = link.getAttribute('href');
+          link.addEventListener('click', () => window.open(url));
+
           img.classList.remove('blurred');
           description.classList.add('hidden');
           
-          img.parentNode.addEventListener('click', () => {
+          function showDescription() {
             img.classList.add('blurred');
             description.classList.remove('hidden')
             setTimeout(() => {
               img.classList.remove('blurred');
               description.classList.add('hidden');
-            }, 1500);
-          });
-        }) 
+            }, 3000);
+          }
+
+          img.parentNode.addEventListener('click', _.debounce(showDescription, 200)); 
+        });
       }
     </script>
   </body>
