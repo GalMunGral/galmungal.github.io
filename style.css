@@ -1,6 +1,6 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0; padding: 0;
+  background: linear-gradient(#222222, #444444);
   /* scroll-behavior: smooth; */
   -ms-overflow-style: none;
 }
@@ -10,11 +10,10 @@ body::-webkit-scrollbar {
 .slideshow {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
 }
 .fullscreen {
-  width: 100vw;
-  height: 100vh;
+  width: 100vw; height: 100vh;
   overflow: scroll;
   position: relative;
   /* When placed inside a flex container */
@@ -22,28 +21,32 @@ body::-webkit-scrollbar {
 }
 img.fullscreen {
   object-fit: cover;
+  cursor: pointer;
 }
 .fullscreen::-webkit-scrollbar {
   display: none;
 }
+div.fullscreen:hover img {
+  transform: scale(0.80);
+}
 .filtered {
   transition: filter 0.2s, transform 0.2s;
+  transform: scale(0.9);
+  filter: drop-shadow(0 0 15px black);
 }
 .blurred {
   filter: blur(10px) opacity(0.4);
+  transform: scale(1.2) !important;
 }
 .description {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  top: 0; left: 0; bottom: 0; right: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: opacity 0.2s;
-  transition-delay: 0.05s;
+  transition: opacity 0.1s;
+  /* transition-delay: 0.05s; */
   user-select: none;
 }
 .description h1, .description a {
@@ -53,11 +56,12 @@ img.fullscreen {
   cursor: pointer;
 }
 .description h1 {
-  color: black;
+  color: white;
   font-size: 50px;
 }
 .description a {
-  color: gray;
+  user-select: none;
+  color: lightgray;
   font-size: 30px;
 }
 .description h1:hover {
@@ -72,4 +76,32 @@ img.fullscreen {
 .hidden {
   opacity: 0;
   pointer-events: none;
+}
+.hint {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.4;
+  z-index: -1;
+}
+.top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.hint, .hint i {
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+  user-select: none;
+  cursor: pointer;
+  margin: 5px 10px;
 }
