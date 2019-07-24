@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
   flex: 0 0 auto;
 }
 img.fullscreen {
-  object-fit: cover;
+  object-fit: contain;
   cursor: pointer;
 }
 .fullscreen::-webkit-scrollbar {
