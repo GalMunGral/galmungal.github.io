@@ -5,18 +5,18 @@ function scrollTo(i) {
 function snap() {
   let targetIndex = Math.round(document.body.scrollLeft / window.innerWidth);
   let targetLeft = targetIndex * window.innerWidth;
-  // document.body.scrollLeft = targetLeft;
+  document.body.scrollLeft = targetLeft;
 
-  if (Math.abs(document.body.scrollLeft - targetLeft) < 50) {
+  if (Math.abs(document.body.scrollLeft - targetLeft) < 10) {
     document.body.scrollLeft = targetLeft;
     index = targetIndex;
   } else {
-    let left = document.body.scrollLeft * 0.8 + targetLeft * 0.2;
+    let left = document.body.scrollLeft + (document.body.scrollLeft - targetLeft > 0 ? -1 : 1);
     document.body.scrollLeft = left;
     window.requestAnimationFrame(snap);
   }
 }
-window.addEventListener('scroll', _.debounce(snap, 1500));
+window.addEventListener('scroll', _.debounce(snap, 1000));
 window.addEventListener('keydown', e => {
   switch(e.key) {
     case 'ArrowLeft':
