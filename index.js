@@ -34,9 +34,8 @@ window.addEventListener('keydown', e => {
 })
 
 document.body.onload = function() {
-  let hints = document.querySelectorAll('.hint');
   
-  document.querySelectorAll('img.fullscreen').forEach(img => {
+  document.querySelectorAll('img.fullscreen').forEach((img, i) => {
     let description = img.parentNode.querySelector('.description');
     
     let link = description.querySelector('h1');
@@ -46,14 +45,15 @@ document.body.onload = function() {
     function showDescription() {
       img.classList.add('blurred');
       description.classList.remove('hidden');
-      hints.forEach(h => h.style.visibility = 'hidden');
       setTimeout(() => {
         img.classList.remove('blurred');
         description.classList.add('hidden');
-        hints.forEach(h => h.style.visibility = 'visible');
       }, 3000);
     }
 
     img.parentNode.addEventListener('click', _.debounce(showDescription, 200)); 
+    window.addEventListener('keyup', e => {
+      if (e.key === ' ' &&  index === i) showDescription();
+    })
   });
 }

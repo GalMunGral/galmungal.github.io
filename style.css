@@ -49,29 +49,34 @@ div.fullscreen:hover img {
   /* transition-delay: 0.05s; */
   user-select: none;
 }
-.description h1, .description a {
-  color: black;
-  font-size: 50px;
+.description, .description {
   font-family: Arial, Helvetica, sans-serif;
-  cursor: pointer;
 }
-.description h1 {
+.description > h1 {
   color: white;
   font-size: 50px;
+  cursor: pointer;
 }
-.description a {
+.description > a {
   user-select: none;
   color: lightgray;
   font-size: 30px;
+  cursor: pointer;
 }
 .description h1:hover {
   text-decoration: underline;
+}
+.description p {
+  color: white;
+  margin-top: -10px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 .description i {
   font-size: 50px;
   line-height: 50px;
   position: relative;
-  top: 5px;
+  top: 7px;
 }
 .hidden {
   opacity: 0;
@@ -92,14 +97,19 @@ div.fullscreen:hover img {
   top: 0;
   right: 0;
 }
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .bottom {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   width: 100%;
 }
 .hint, .hint i {
   color: white;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 800;
   user-select: none;
   cursor: pointer;
