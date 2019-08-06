@@ -60,7 +60,7 @@ div.fullscreen:hover img {
 .description > a {
   user-select: none;
   color: lightgray;
-  font-size: 30px;
+  font-size: 20px;
   cursor: pointer;
 }
 .description h1:hover {
