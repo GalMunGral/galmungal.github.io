@@ -14,9 +14,8 @@ body::-webkit-scrollbar {
 }
 .fullscreen {
   width: 100vw; height: 100vh;
-  overflow: scroll;
   position: relative;
-  overflow-y: hidden; /* Disable scrolling when image is expanded*/
+  overflow: hidden; /* Disable scrolling when image is expanded*/
   flex: 0 0 auto;  /* When placed inside a flex container */
 }
 img.fullscreen {
