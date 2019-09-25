@@ -15,88 +15,72 @@
 
 \pagestyle{empty}
 \begin{document}
-
 \noindent
-\parbox{0.3\textwidth}{\quad}
-\parbox{0.4\textwidth}{\centerline{\Huge\scshape\bfseries Wenqi He}}
-\parbox{0.3\textwidth}{hewenqi96@gmail.com\\+1 (470) 343 - 5207}
-
+\parbox{0.25\textwidth}{\hfill\texttt{github.com/GalMunGral}}
+\parbox{0.5\textwidth}{\centerline{\Huge\scshape\bfseries Wenqi He}}
+\parbox{0.25\textwidth}{hewenqi96@gmail.com\\+1 (470) 343 - 5207}
+%
 \section*{EDUCATION}
-{\bfseries\itshape B.Sc. Computer Science, Georgia Institute of Technology} \enspace (cumulative: 3.97/4.0, major: 4.0/4.0) \hfill {\itshape\bfseries Aug. 2015 - Dec. 2019}\\
-{Relevant Coursework: \textit{Computer Architecture, Operating System, Computer Networking, Relational Database, Information Security}}
-
+{\large\scshape\bfseries Georgia Institute of Technology} \enspace (cumulative GPA: 3.97/4.0, major GPA: 4.0/4.0) \hfill {\itshape\bfseries Aug. 2015 - Dec. 2019}\\
+{\itshape {\bfseries Bachelor of Science in Computer Science}, Concentration in Information Internetworks,  Minor in Physics}\\
+Areas of interest: \textit{front-end web development, mobile/desktop development and UI technologies in general}.
 \vspace{-0.5em}
 
 \section*{EXPERIENCE}
-\centertitle{Frontend Developer, Intern}{Pegasus CRM, Decatur, GA}{Jan. 2018 - May. 2018}
+\centertitle{Front-end Developer Intern}{PegasusCRM, Decatur, GA}{Jan. 2018 - May. 2018}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Reimplemented part of existing UI in \underline{\smash{Vue.js}} for the team to evaluate viability of the framework.
-\item Translated designs into \underline{\smash{Blade templates}} (Laravel) and \underline{SCSS} and implemented drag-and-drop/resizing in plain \underline{\smash{JavaScript}}.
-\item Debugged backend \underline{PHP} (Laravel, CakePHP) code and \underline{SSH}-ed into production server to perform minor hotfixes.
+\item Improved web page responsiveness by reimplementing jQuery DataTables as a Vue.js component.
+\item Enhanced user experience for adding items to lists by adding drag-and-drop/resizing features using vanilla JavaScript.
+\item Reduced SCSS compilation time by over 90\% by replacing Ruby Sass with LibSass/SassC in build configurations.
+\item Participated in UI design decisions and translated designs into Laravel Blade templates and SCSS/CSS.
+\item Debugged backend Laravel/CakePHP code and fixed typos on production servers through SSH.
 \end{itemize}
 \vspace{-0.5em}
 
-\section*{SOFTWARE PROJECTS \hfill \color{gray}{//github.com/GalMunGral}}
-\textbf{OpenEval} \enspace \textit{\color{gray} Mid-term course survey (in progress)}
+\section*{SOFTWARE PROJECTS}
+\textbf{galmungral.github.io}  \enspace \textit{\color{gray} Portfolio website and web app multiplexer}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Integrated \underline{\smash{Georgia Tech Login Service (CAS)}} into the \underline{\smash{Angular}} application with a \underline{\smash{Node.js}} back end.
-\item Utilized \underline{\smash{ldapjs}} (LDAP client for Node.js) to retrieve user information from Georgia Tech's public LDAP server.
-\item Created UI components using \underline{\smash{Salesforce Lightning Design System (SLDS)}}.
+\item Devised a multiplexing mechanism to allow multiple web apps running independently on different internal ports to be accessible through a single port exposed on Heroku servers by mapping port numbers to URL path prefixes.
+\item Implemented the port-path translation and HTTP traffic routing in Node.js.
+\item Set up multiple web apps as well as the multiplexer inside a Docker container to be deployed on Heroku.
+\item Designed and handcrafted the homepage using vanilla HTML/CSS/JavasScript.
 \end{itemize}
 \vspace{0.5em}
+\textbf{Werkestacion} \enspace File explorer and text editor built with Electron, React, and styled-components\\
+\textbf{ReSpotify} \enspace Replica of Spotify UI built with React, CSS, Flask and Spotify Web API/Playback SDK\\
+\textbf{NoTube} \enspace Replica of YouTube UI built with Angular Material, SCSS and Shaka player\\
+\textbf{MARTA Passenger Traffic} \enspace Single-page application build with React Bootstrap, Redux, Express.js and MySQL (course project)\\
+\textbf{Todo-X} \enspace To-do apps built with various native and cross-platform technologies such as Flutter, React Native and SwiftUI\vspace{0.5em}\\
 %
-\textbf{galmungral.github.io}  \enspace \textit{\color{gray} Portfolio website}
+\textbf{TwoFactor} \enspace \textit{\color{gray} Two-factor authentication system (proof of concept)}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Devised a mechanism to allow multiple web apps running independently on different internal ports to be accessible through a single port exposed on \underline{Heroku} servers by mapping port numbers to URL path prefixes.
-\item Implemented the port-path translation and HTTP traffic routing in \underline{\smash{Node.js}}.
-\item Set up multiple web apps as well as the routing server inside a \underline{Docker} container to be deployed on Heroku.
-\item Designed and handcrafted the homepage using vanilla \underline{\smash{HTML/CSS/JavasScript}}.
+\item Crafted HTTP/2 requests to Firebase Cloud Messaging/Apple Push Notification service to dispatch push notifications.
+\item Used Socket.IO to notify the login page when user confirms login on the mobile app.
 \end{itemize}
 \vspace{0.5em}
 %
 \textbf{SitBit} \enspace \textit{\color{gray} Sitting time recorder (proof of concept)} 
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Utilized \underline{Core Motion} (iOS) and \underline{\smash{sensor framework}} (Android) to detect vertical acceleration and \underline{\smash{MySQL}} to store sensor data.
-\item Created a data-driven \underline{SVG} calendar heatmap embedded in \underline{\smash{(WK)WebView}} using \underline{\smash{D3.js}}.
+\item Utilized Core Motion (iOS) and sensor framework (Android) to detect vertical acceleration and MySQL to store sensor data.
+\item Created a data-driven SVG calendar heatmap using D3.js and embedded it in mobile apps using webviews.
 \end{itemize}
 \vspace{0.5em}
 %
-\textbf{MARTA Passenger Traffic} \enspace \textit{\color{gray} Database course project}
+\textbf{OpenEval} \enspace \textit{\color{gray} Mid-term course survey (Junior Design project, in progress)}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Created a single-page application using \underline{\smash{React Bootstrap}} and \underline{\smash{Redux}} and built the \underline{REST API} using \underline{\smash{Express.js}} and \underline{\smash{MySQL}}.
+\item Integrated Georgia Tech Login Service  into the Angular application using a Node.js back end.
+\item Utilized ldapjs to retrieve user information from Georgia Tech's public LDAP server.
+\item Created UI components using Salesforce Lightning Design System.
 \end{itemize}
 \vspace{0.5em}
 %
-\textbf{WebREPL}  \enspace \textit{\color{gray} Online interactive Python shell}
-\begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Utilized the IPC between the \underline{\smash{Node.js}} server process and its \underline{\smash{Python}} child process to execute user-submitted Python code.
-\end{itemize}
-\vspace{0.5em}
-%
-\textbf{TwoFactor} \enspace \textit{\color{gray} Two-factor authentication system}
-\begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Crafted \underline{HTTP/2} requests to \underline{\smash{FCM/APNs}} servers to dispatch push notifications from back end to Android/iOS clients.
-\item Used \underline{\smash{Socket.IO}} to notify the login page when user confirms login on the mobile app.
-\end{itemize}
-\vspace{0.5em}
-%
-\textbf{ReSpotify}
-\begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Replicated Spotify UI controls (playback, volume) using \underline{\smash{React}}, \underline{CSS} and \underline{\smash{Spotify Web Playback SDK}}.
-\item Implemented a \underline{\smash{Flask}} back end to obtain \underline{OAuth 2.0} tokens from \underline{\smash{Spotify Web API}} and render the page using fetched data.
-\end{itemize}
-\vspace{0.5em}
-%
-\textbf{NoTube}
-\begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Replicated YouTube UI using \underline{\smash{Angular Material}} and \underline{\smash{SCSS}} and enabled video streaming using \underline{\smash{Shaka player}}.
-\end{itemize}
-\vspace{0.5em}
-%
-\textbf{Werk-estacion} \enspace \textit{Desktop file explorer + text editor built with \underline{Electron}, \underline{React}, and \underline{\smash{styled-components}}}\\
-\textbf{WebSocket Server}  \enspace \textit{A \underline{\smash{Node.js}} implementation of  the \underline{WebSocket} protocol}\\
-\textbf{WolframAlpha CLI} \enspace \textit{Command-line wrapper of \underline{\smash{Wolfram|Alpha XML API}}}\\
-\textbf{CleanWaterCrowdsourcing} \enspace \textit{Mobile app built using \underline{\smash{Google Maps SDK}} and \underline{\smash{Firebase SDK}} (course project)}
+\textbf{WebREPL}  \enspace Online Python shell that executes user-submitted code using a Python child process on the Node.js server\\
+\textbf{WebSocket Server}  \enspace A Node.js implementation of the WebSocket protocol\\
+\textbf{WolframAlpha CLI} \enspace Command-line wrapper of the Wolfram|Alpha XML API\\
+\textbf{CleanWaterCrowdsourcing} \enspace Mobile app built using Google Maps SDK and Firebase SDK (course project)
+
 \section*{TECHNICAL SKILLS}
-\textbf{Proficient:} Bash, Vim, Git, HTML/CSS/JavaScript (ES6+) \enspace\textbf{Familiar:} C, Java, Python, TypeScript, React.js, Redux.js, Vue.js, Angular.js, Node.js, Express.js, Socket.IO, PHP, jQuery, Sass/SCSS, Bootstrap, SQL, MATLAB \enspace\textbf{Used:}  Android (Java/Kotlin), iOS (Objective-C/Swift/UIKit/SwiftUI), Flutter (Dart), Xamarin (C\#), Electron, React Native, NativeScript, Go/Golang
+\textbf{Proficient:} Bash, Vim, Git, C, Java, Swift, Python, HTML, CSS, JavaScript, TypeScript\\
+\textbf{Familiar:} Node.js, Express, React, Redux, Angular, Vue.js, jQuery, Sass/SCSS, Bootstrap, SQL\\
+\textbf{Used:} PHP, Go/Golang, Kotlin, Objective-C, C\#, Dart, Android, iOS, Flutter, Xamarin, Electron, React Native, NativeScript
 \end{document}
