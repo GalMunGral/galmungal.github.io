@@ -1,89 +1,82 @@
 \documentclass[11pt]{article}
-\usepackage[margin=0.5in]{geometry}
+\usepackage[margin=0.6in]{geometry}
 \usepackage[T1]{fontenc}
-\usepackage{ebgaramond, xcolor}
+\usepackage{xcolor}
 \usepackage{titlesec}
 \usepackage{enumitem}
 
 \titleformat{\section} {}{\thesection}{1em}{}[{\titlerule[0.3pt]\vspace{-0.4em}}]
-\newcommand{\centertitle}[3]{
-	{\noindent\bfseries
-	\parbox[][0.5em][b]{0.35\textwidth}{#1\hfill}%
-	\parbox[][0.5em][b]{0.3\textwidth}{\centerline{#2}}%
-	\parbox[][0.5em][b]{0.35\textwidth}{\hfill#3}}
-}
 
 \pagestyle{empty}
 \begin{document}
 \noindent
 \parbox{0.25\textwidth}{\hfill\texttt{github.com/GalMunGral}}
-\parbox{0.5\textwidth}{\centerline{\Huge\scshape\bfseries Wenqi He}}
-\parbox{0.25\textwidth}{hewenqi96@gmail.com\\+1 (470) 343 - 5207}
-%
-\section*{EDUCATION}
-{\large\scshape\bfseries Georgia Institute of Technology} \enspace (cumulative GPA: 3.97/4.0, major GPA: 4.0/4.0) \hfill {\bfseries Aug. 2015 - Dec. 2019}\\
-{\itshape {\bfseries Bachelor of Science in Computer Science}, Concentration in Information Internetworks,  Minor in Physics}\\
-\indent Areas of interest: {computer networking, frontend web development and UI technologies in general}.
-\vspace{-0.5em}
+\parbox{0.5\textwidth}{\centerline{\Huge\slshape\bfseries Wenqi He}}
+\parbox{0.25\textwidth}{\texttt{hewenqi96@gmail.com\\+1(470)343-5207}}
 
-\section*{EXPERIENCE}
-\centertitle{JavaScript (Electron) Developer}{Étude (Student Startup), Atlanta, GA}{Sep. 2019 - Present}
+\section*{EDUCATION}
+\textbf{\itshape B.S. in Computer Science, Georgia Institute of Technology} \hfill \textit{Aug. 2015 - Dec. 2019}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Delivered critical PDF.js-based features, such as selection highlighting and navigation between search results.
-\item Fixed persistent bugs resulted from a race condition between PDF rendering and worker-thread computations.
+	\item Major GPA: 4.0/4.0 (cumulative: 3.97/4.0)
+	\item Minor in Physics (GPA: 3.8/4.0, paper: \texttt{https://galmungral.github.io/physics})
+\end{itemize}
+%
+\section*{EXPERIENCE}
+\textbf{JavaScript (Electron) Developer, Etude (Student Startup)} \hfill \textit{Sep. 2019 - Present}
+\begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
+\item Fixed persistent bug resulted from a race condition between PDF rendering and back-end computation.
+\item Delivered major PDF-related features such as table of contents extraction and parsing, non-contiguous text selection and highlighting and search result navigation.
 \end{itemize}
 \vspace{1em}
-\centertitle{Frontend Developer Intern}{PegasusCRM, Decatur, GA}{Jan. 2018 - May. 2018}
+\textbf{Front-end Developer Intern, PegasusCRM} \hfill \textit{Jan. 2018 - May. 2018}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Improved web page responsiveness by reimplementing jQuery DataTables as a Vue.js component.
-\item Enhanced user experience for list management by adding drag-and-drop/resizing features using vanilla JavaScript.
-\item Reduced SCSS compilation time by over 90\% by replacing Ruby Sass with LibSass/SassC in build configurations.
-\item Participated in UI design decisions and translated designs into Laravel Blade templates and SCSS/CSS.
-\item Debugged backend Laravel/CakePHP code and fixed typos and styling issues on the production server through SSH.
+	\item Slimmed down front-end code by reimplementing main features of DataTables jQuery plug-in in Vue.js.
+	\item Tanslated UI designs into Laravel Blade templates, SCSS/CSS and Javascript.
+	\item Helped debug backend PHP code and fixed minor issues on the production server through SSH.
 \end{itemize}
 \vspace{-0.5em}
-
+%
 \section*{SOFTWARE PROJECTS}
-\textbf{galmungral.github.io}  \enspace \textit{\color{gray} Portfolio website and web app multiplexer} \hfill\textit{Jul. 2019}
+\textbf{OpenEval} \enspace \textit{\color{gray} Mid-term course survey (Junior Design)} \hfill \textit{Aug. - Nov. 2019}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Devised a multiplexing mechanism to allow multiple web apps running independently on different internal ports to be accessible through a single port exposed on Heroku servers by mapping port numbers to URL path prefixes.
-\item Implemented the port-path translation and HTTP traffic routing in Node.js.
-\item Set up multiple web apps as well as the multiplexer inside a Docker container to be deployed on Heroku.
-\item Designed and handcrafted the homepage using vanilla HTML/CSS/JavasScript.
-\end{itemize}
-\vspace{0.5em}
-%
-\textbf{OpenEval} \enspace \textit{\color{gray} Mid-term course survey (Junior Design, in progress)} \hfill \textit{Aug. 2019 - Present}
-\begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Integrated Georgia Tech Login Service and Canvas LMS API with the Node.js back end.
+\item Developed back-end Express routes and front-end Angular services for all main features.
+\item Designed MongoDB schemas and TypeScript interfaces for application data models.
+\item Integrated Georgia Tech Login Service, Georgia Tech's public LDAP service and Canvas LMS API.
 \item Created Angular components using Salesforce Lightning Design System.
-\item Utilized ldapjs to retrieve user information from Georgia Tech's public LDAP server.
 \end{itemize}
 \vspace{0.5em}
 %
-\textbf{SitBit} \enspace \textit{\color{gray} Sitting time recorder (prototype)}  \hfill \textit{Jan. 2019}
+\textbf{galmungral.github.io}  \enspace \textit{\color{gray} Website multiplexer} \hfill\textit{Jul. 2019}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Utilized Core Motion (iOS) and sensor framework (Android) to detect vertical acceleration and MySQL to store sensor data.
-\item Created a data-driven SVG calendar heatmap using D3.js and embedded it in mobile apps using webviews.
+\item Designed a multiplexing mechanism to allow multiple sites running simultaneously on multiple ports to be accessible through a single port exposed on Heroku servers by mapping port numbers to URL path prefixes.
+\item Implemented the port-path translation and HTTP traffic routing in Node.js.
+\item Deployed the Docker container containing the multiplexer and multiple web apps.
+\item Designed and wrote the homepage in plain HTML/CSS/JavasScript.
 \end{itemize}
 \vspace{0.5em}
 %
-\textbf{MARTA Passenger Traffic} \enspace Single-page application build with React Bootstrap, Redux, Express.js and MySQL \hfill\textit{Oct. 2017}\\
-\textbf{Werkestacion} \enspace File explorer and text editor built with Electron, React, and styled-components \hfill \textit{Jul. 2019}\\
-\textbf{ReSpotify} \enspace Replica of Spotify UI built with React, CSS, Flask and Spotify Web API/Playback SDK \hfill\textit{Jul. 2019}\\
-\textbf{NoTube} \enspace Replica of YouTube UI built with Angular Material, SCSS and Shaka player \hfill\textit{Jun. 2019}\\
-%
-\textbf{WebREPL}  \enspace Python shell that executes user-submitted code through a Python subprocess on the Node.js server \hfill\textit{Apr. 2018}\\
-\textbf{WebSocket Server}  \enspace A Node.js implementation of the WebSocket protocol \hfill\textit{May. 2018}\\
-\textbf{Todo-X} \enspace To-do apps built with various UI technologies such as Flutter, React Native and SwiftUI \hfill\textit{May. - Jul. 2019}\\
 \textbf{TwoFactor} \enspace \textit{\color{gray} Two-factor authentication system (proof of concept)} \hfill \textit{Feb. 2019}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Crafted HTTP/2 requests to Firebase Cloud Messaging/Apple Push Notification service to dispatch push notifications.
+\item Set up push notifications using Firebase Cloud Messaging and Apple Push Notification service.
 \item Used Socket.IO to notify the login page when user confirms login on the mobile app.
 \end{itemize}
-
+\vspace{0.5em}
+%
+\textbf{SitBit} \enspace \textit{\color{gray} Sitting time recorder (proof of concept)}  \hfill \textit{Jan. 2019}
+\begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
+\item Utilized Core Motion (iOS) and sensor framework (Android) to detect vertical acceleration.
+\item Created a data-driven SVG calendar heatmap using D3.js in webview.
+\end{itemize}
+\vspace{0.5em}
+%
+\textbf{MARTA} \enspace Single-page Application build with React Bootstrap, Redux, Express.js and MySQL \hfill\textit{Oct. 2017}\\
+\textbf{Werkestacion} \enspace File explorer/editor built with Electron, React and styled-components \hfill \textit{Jul. 2019}\\
+\textbf{WebREPL}  \enspace Web-based Python shell that executes user-submitted code on a Node.js back end \hfill\textit{Apr. 2018}\\
+\textbf{WebSocketServer}  \enspace A Node.js implementation of the WebSocket protocol \hfill\textit{May. 2018}\\
+\textbf{Todo-X} \enspace To-do list apps built with SwiftUI, UIKit, React Native, NativeScript and Flutter. \hfill\textit{Jun. 2019}
+%
 \section*{TECHNICAL SKILLS}
-\textbf{Proficient:} Bash, Vim, Git, C, Java, Swift, Python, JavaScript, TypeScript, HTML, CSS\\
-\textbf{Familiar:} Node.js, Express, React, Redux, Angular, Vue.js, jQuery, Sass/SCSS, Bootstrap, SQL\\
-\textbf{Used:} PHP, Go/Golang, Kotlin, Objective-C, C\#, Dart, Android, iOS, Flutter, Xamarin, Electron, React Native, NativeScript
+\textbf{Proficient:} TypeScript/JavaScript, SCSS/CSS, HTML, Git, Bash, Vim\\
+\textbf{Familiar:} Node.js, Express, React, Angular, Vue.js, RxJS, Redux, jQuery, Bootstrap, SQL, MongoDB\\
+\textbf{Used:} Common Lisp, C, C++, Java, C\#, Objective-C, Swift, Kotlin, Dart, Go/Golang, Python, PHP
 \end{document}
