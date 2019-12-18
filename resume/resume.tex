@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+\documentclass[12pt]{article}
 \usepackage[margin=0.6in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{xcolor}
@@ -15,68 +15,66 @@
 \parbox{0.25\textwidth}{\texttt{hewenqi96@gmail.com\\+1(470)343-5207}}
 
 \section*{EDUCATION}
-\textbf{\itshape B.S. in Computer Science, Georgia Institute of Technology} \hfill \textit{Aug. 2015 - Dec. 2019}
+\textbf{\itshape B.S. Computer Science, Georgia Institute of Technology} \hfill \textit{\color{gray} Aug. 2015 - Dec. 2019}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-	\item Major GPA: 4.0/4.0 (cumulative: 3.97/4.0)
+	\item Concentration: Information Internetworks (major GPA: 4.0/4.0, cumulative GPA: 3.97/4.0)
 	\item Minor in Physics (GPA: 3.8/4.0, paper: \texttt{https://galmungral.github.io/physics})
 \end{itemize}
 %
 \section*{EXPERIENCE}
-\textbf{JavaScript (Electron) Developer, Etude (Student Startup)} \hfill \textit{Sep. 2019 - Present}
+\textbf{\itshape JavaScript Developer, Etude (Student Startup)} \hfill \textit{\color{gray} Sep. 2019 - Present}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Fixed persistent bug resulted from a race condition between PDF rendering and back-end computation.
-\item Delivered major PDF-related features such as table of contents extraction and parsing, non-contiguous text selection and highlighting and search result navigation.
+\item Implemented non-contiguous text highlighting and table of contents parsing on top of PDF.js.
+\item Fixed hidden race condition between PDF rendering and background computations.
 \end{itemize}
 \vspace{1em}
-\textbf{Front-end Developer Intern, PegasusCRM} \hfill \textit{Jan. 2018 - May. 2018}
+\textbf{\itshape Front-end Developer Intern, PegasusCRM} \hfill \textit{\color{gray} Jan. 2018 - May. 2018}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-	\item Slimmed down front-end code by reimplementing main features of DataTables jQuery plug-in in Vue.js.
-	\item Tanslated UI designs into Laravel Blade templates, SCSS/CSS and Javascript.
-	\item Helped debug backend PHP code and fixed minor issues on the production server through SSH.
+	\item Slimmed down front-end code by reimplementing core features of DataTables (jQuery) in Vue.js.
+	\item Translated UI designs into Laravel Blade templates, SCSS/CSS and JavaScript.
+	\item Helped debug back-end PHP code and fix minor issues on production server through SSH.
 \end{itemize}
 \vspace{-0.5em}
 %
 \section*{SOFTWARE PROJECTS}
-\textbf{OpenEval} \enspace \textit{\color{gray} Mid-term course survey (Junior Design)} \hfill \textit{Aug. - Nov. 2019}
+\textbf{OpenEval} \enspace \textit{\color{gray} (Junior Design) Midterm course survey} \hfill \textit{\color{gray}Aug. - Nov. 2019}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
 \item Developed back-end Express routes and front-end Angular services for all main features.
-\item Designed MongoDB schemas and TypeScript interfaces for application data models.
-\item Integrated Georgia Tech Login Service, Georgia Tech's public LDAP service and Canvas LMS API.
-\item Created Angular components using Salesforce Lightning Design System.
+\item Designed MongoDB schemas and TypeScript interfaces for the data models.
+\item Integrated Georgia Tech Login Service (CAS), Georgia Tech's Canvas LMS API and LDAP service.
+\item Created Angular components using Salesforce Lightning Design System and D3.js.
 \end{itemize}
 \vspace{0.5em}
 %
-\textbf{galmungral.github.io}  \enspace \textit{\color{gray} Website multiplexer} \hfill\textit{Jul. 2019}
+\textbf{galmungral.github.io}  \enspace \textit{\color{gray} Web proxy and multiplexer} \hfill\textit{\color{gray} Jul. 2019}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Designed a multiplexing mechanism to allow multiple sites running simultaneously on multiple ports to be accessible through a single port exposed on Heroku servers by mapping port numbers to URL path prefixes.
-\item Implemented the port-path translation and HTTP traffic routing in Node.js.
-\item Deployed the Docker container containing the multiplexer and multiple web apps.
-\item Designed and wrote the homepage in plain HTML/CSS/JavasScript.
+\item Designed and implemented (in Node.js) a proxy that maps TCP ports to URL path prefixes so that multiple independent websites can be bundled together and served on a single port.
+\item Crafted the home page in plain HTML/CSS/JavaScript.
 \end{itemize}
 \vspace{0.5em}
 %
-\textbf{TwoFactor} \enspace \textit{\color{gray} Two-factor authentication system (proof of concept)} \hfill \textit{Feb. 2019}
+\textbf{SitBit} \enspace \textit{\color{gray}  (Proof of Concept) Sitting time recorder}  \hfill \textit{\color{gray} Jan. 2019}
+\begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
+\item Utilized Core Motion on iOS and sensor framework on Android to detect vertical movements.
+\item Embedded in WebView a data-driven SVG calendar heatmap created using D3.js.
+\end{itemize}
+\vspace{0.5em}
+%
+\textbf{TwoFactor} \enspace \textit{\color{gray} (Proof of Concept) Two-factor authentication system} \hfill \textit{\color{gray} Feb. 2019}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
 \item Set up push notifications using Firebase Cloud Messaging and Apple Push Notification service.
-\item Used Socket.IO to notify the login page when user confirms login on the mobile app.
+\item Used Socket.IO to notify the browser when user confirms login on the mobile app.
 \end{itemize}
 \vspace{0.5em}
 %
-\textbf{SitBit} \enspace \textit{\color{gray} Sitting time recorder (proof of concept)}  \hfill \textit{Jan. 2019}
-\begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Utilized Core Motion (iOS) and sensor framework (Android) to detect vertical acceleration.
-\item Created a data-driven SVG calendar heatmap using D3.js in webview.
-\end{itemize}
-\vspace{0.5em}
-%
-\textbf{MARTA} \enspace Single-page Application build with React Bootstrap, Redux, Express.js and MySQL \hfill\textit{Oct. 2017}\\
-\textbf{Werkestacion} \enspace File explorer/editor built with Electron, React and styled-components \hfill \textit{Jul. 2019}\\
-\textbf{WebREPL}  \enspace Web-based Python shell that executes user-submitted code on a Node.js back end \hfill\textit{Apr. 2018}\\
-\textbf{WebSocketServer}  \enspace A Node.js implementation of the WebSocket protocol \hfill\textit{May. 2018}\\
-\textbf{Todo-X} \enspace To-do list apps built with SwiftUI, UIKit, React Native, NativeScript and Flutter. \hfill\textit{Jun. 2019}
+\textbf{Werkestacion} \enspace File explorer/editor built with Electron, React and styled-components \hfill \textit{\color{gray} Jul. 2019}\\
+\textbf{Todo} \enspace To-do list apps built with SwiftUI, UIKit, React Native, NativeScript and Flutter \hfill\textit{\color{gray} Jun. 2019}\\
+\textbf{WebSocketServer}  \enspace A Node.js implementation of the WebSocket protocol \hfill\textit{\color{gray} May. 2018}\\
+\textbf{WebREPL}  \enspace Web-based Python interactive shell with a Node.js back end \hfill\textit{\color{gray} Apr. 2018}\\
+\textbf{MARTA} \enspace (Course Project) SPA built with React-Bootstrap, Redux, Express and MySQL \hfill\textit{\color{gray} Oct. 2017}
 %
 \section*{TECHNICAL SKILLS}
 \textbf{Proficient:} TypeScript/JavaScript, SCSS/CSS, HTML, Git, Bash, Vim\\
 \textbf{Familiar:} Node.js, Express, React, Angular, Vue.js, RxJS, Redux, jQuery, Bootstrap, SQL, MongoDB\\
-\textbf{Used:} Common Lisp, C, C++, Java, C\#, Objective-C, Swift, Kotlin, Dart, Go/Golang, Python, PHP
+\textbf{Used:} Lisp, C, C++, C\#, Objective-C, Swift, Java, Kotlin, Dart, Go/Golang, Python, PHP 
 \end{document}
