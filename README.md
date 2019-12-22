@@ -440,15 +440,6 @@ Sent from my iPhone
 
 > Wenqi He
 
-**Time:** Mon 1/7/2019 3:05 PM  
-**Subject:** Physics Research
-
-> Hi Ms. Steele,
-
-> Sorry about not getting the email draft done during the break. I'm wondering if you are available any time this afternoon. I have some
-
-> Get Outlook for Android
-
 **Time:** Sun 1/6/2019 12:28 AM  
 **Subject:** Question about Permit for PHYS 7125
 
@@ -470,6 +461,15 @@ Sent from my iPhone
 > Wenqi He
 
 > GTID: 903130953
+
+**Time:** Mon 1/7/2019 3:05 PM  
+**Subject:** Physics Research
+
+> Hi Ms. Steele,
+
+> Sorry about not getting the email draft done during the break. I'm wondering if you are available any time this afternoon. I have some
+
+> Get Outlook for Android
 
 **Time:** Mon 1/7/2019 3:15 PM  
 **Subject:** RE: Physics Research
