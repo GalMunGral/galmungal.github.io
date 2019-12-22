@@ -134,4 +134,27 @@ Sent from my iPhone
 
 > Get Outlook for iOS
 
+**Time:** Tue 1/17/2017 9:02 AM  
+**Subject:** CS 2340 Group
+
+> Hi Chris,
+
+> I met with Dr. Waters today and it turns out I have already been assigned to a group in my section, so I guess there is no need to go cross-section now.
+
+> Wenqi He
+
+**Time:** Tue 2/14/2017 6:01 PM  
+**Subject:** Missing Grade for HW3 Demo
+
+> Hey Kevin, 
+
+> I have demoed HW3 to you on the Friday before last, but I got a 0 on T-square for "missed demo". I think this is a mistake.
+
+> Thanks,
+
+> Wenqi He
+
+> Get Outlook for iOS
+
+
 
