@@ -67,7 +67,7 @@
 
 > Hi Professor,
 
-> It seems that there is no spot left in PHYS 4142 (Statistical Mechanics). Since the class is only offered in spring semesters, I would prefer not to wait until next year to take the class. Can I request for a registration ovverride?
+> It seems that there is no spot left in PHYS 4142 (Statistical Mechanics). Since the class is only offered in spring semesters, I would prefer not to wait until next year to take the class. Can I request for a registration override?
 
 > Best,
 > Wenqi He
@@ -222,7 +222,7 @@ Sent from my iPhone
 
 > Hi Mr. Lindsay,
 
-> We had a conversation last week about my CPT application. I confirmed with PegasusCRM that my employer will be ALocalResource.com, their parent company, and I have updated my co-op placement form accordingly. Would you mind taking a look?
+> We had a conversation last week about my CPT application. I confirmed with [redacted] that my employer will be [redacted], their parent company, and I have updated my co-op placement form accordingly. Would you mind taking a look?
 
 > Thanks,
 
