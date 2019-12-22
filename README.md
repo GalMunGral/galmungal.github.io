@@ -429,7 +429,7 @@ Sent from my iPhone
 
 > Get Outlook for Android
 
-**Time:* Sat 1/5/2019 6:36 PM  
+**Time:** Sat 1/5/2019 6:36 PM  
 **Subject:** Adding Physics Minor
  
 > Hi Dr. Jarrio,
