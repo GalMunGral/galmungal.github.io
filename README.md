@@ -70,7 +70,9 @@
 > It seems that there is no spot left in PHYS 4142 (Statistical Mechanics). Since the class is only offered in spring semesters, I would prefer not to wait until next year to take the class. Can I request for a registration override?
 >
 > Best,
+>
 > Wenqi He
+>
 > GTID: [redacted]
 
 Sent from my iPhone
