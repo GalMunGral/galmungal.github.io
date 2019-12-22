@@ -74,3 +74,64 @@
 > GTID: [redacted]
 
 Sent from my iPhone
+
+**Time:** Thu 12/15/2016 6:30 PM  
+**Subject:** Staying During Winter Break
+
+> Hi Jake,
+
+> If I'm staying for the winter break, do I still need to schedule a check-out appointment?
+
+> Thanks,
+
+> Wenqi He
+
+**Time:** Fri 1/13/2017 11:25 PM  
+**Subject:** [CS2340] Late Registration
+
+> Hi Mr. Waters,
+
+> I just registered for this class at 3pm this afternoon and so I haven't met any classmates yet. I noticed that people have already formed teams and the first team assignment has been released, which really made me panick. I just wonder if you could assign me to a team that still needs or accepts new members. I apologize for any inconveniences caused by my late decision to join the class.
+
+> Thanks,
+
+> Wenqi He
+
+> GtID: [redacted]
+
+**Time:** Sat 1/14/2017 7:03 PM  
+**Subject:** (No subject)
+
+> Hey Kevin, 
+
+> This is Wenqi. I don't know if you remember me, but we were in the same ENGL1101 class a year ago. So here is the thing: I registered for CS2340 on Friday afternoon and then realized that I'm a little late because people have already formed groups and the first team assignment has already been released. I emailed the intructor but I haven't got any response yet. I noticed that you are also in CS2340 this semester, so I just wonder if I could join your team. 
+
+> Thanks,
+
+> Wenqi He
+
+**Time:** Sat 1/14/2017 8:49 PM  
+**Subject:** (No subject)
+
+> I totally understand. I will try to contact professor Waters again.
+
+> By the way, do you use Facebook?
+
+> Get Outlook for iOS
+
+**Time:** Sat 1/14/2017 9:06 PM  
+**Subject:** [CS 2340] Team Assignment
+
+> Hi Mr. Waters,
+
+> I registered for this class in the last hour of registration phase II, and I missed all the lectures last week. I sent you an email about this last night, but I haven't got your response so far so I wonder if the email was actually received. I noticed that there are some 4-person teams now due to droppings. Is it possible to put me on one of those teams?
+
+> Thanks,
+
+> Wenqi He
+
+>GtID: [redacted]
+
+> Get Outlook for iOS
+
+
