@@ -156,5 +156,202 @@ Sent from my iPhone
 
 > Get Outlook for iOS
 
+**Time:** Sat 3/25/2017 2:26 AM  
+**Suject:** Registration Hold
+
+> Hi Professor,
+
+> I recently changed my major from physics to mathematics, but when I checked Buzzport today I found out that there is still a registration hold placed on my account by School of Physics. I believe the hold was placed before my major was updated in the system. Could you remove the hold?
+
+> Thanks,
+
+> Wenqi He
+
+> GTID: [redacted]
+
+**Time:** Wed 9/13/2017 10:00 AM  
+**Subject:** MARTA Hackathon Extra Credit for CS 4400
+
+> Hi Prof. Sweat,
+
+> I participated in the MARTA Hackathon last week. Here are the photos that one of my teammates took. (I'm the one in blue shirt.)
+
+> Best,
+
+> Wenqi He
+
+> GTID: [redacted]
+
+**Time:** Mon 10/30/2017 1:44 PM  
+**Subject:** CX/MATH 4640 Office Hours
+
+> Hi Professor,
+
+> I’m a student taking CX/MATH 4640 this semester. Will you be at your office this evening? I ask because I went to the office hours last Monday and you weren’t there.
+
+> Best,
+
+> Wenqi He
+
+**Time:** Wed 11/1/2017 3:17 PM  
+**Subject:** Degree Plan
+
+> Hi Ms. Damon,
+
+> Here is my degree plan. Should I contact you or Ms. Houston from now on?
+
+> Best,
+
+> Wenqi He
+
+> Get Outlook for iOS
+
+**Time:** Wed 11/1/2017 6:28 PM  
+**Subject:** Co-op Registraion
+
+> Hi Ms. Houston,
+
+> I have submitted the Co-op Placement form. Would you mind taking a look at it?
+
+> Best, 
+
+> Wenqi He
+
+**Time:** Mon 11/13/2017 2:04 PM  
+**Subject:** CPT Application
+
+> Hi Mr. Lindsay,
+
+> We had a conversation last week about my CPT application. I confirmed with PegasusCRM that my employer will be ALocalResource.com, their parent company, and I have updated my co-op placement form accordingly. Would you mind taking a look?
+
+> Thanks,
+
+> Wenqi He
+
+> GTID: [redacted]
+
+**Time:** Thu 11/16/2017 12:28 PM  
+**Subject:** Small Error in CPT Application
+
+> Hi Mr. Lindsay,
+
+> I just discovered a small error in my CPT application: The employer name should be “[redacted]” instead of “[redacted]”. Also, I think “[redacted]” should be “[redacted]”. I’m wondering if it’s possible to edit the submission.
+
+> Thanks,
+
+> Wenqi He
+
+**Time:** Fri 11/17/2017 2:00 PM  
+**Subject:** RE: Small Error in CPT Application
+
+> Hi Mr. Lindsay,
+
+> I talked to a student advisor at OIE today and was told that the employer name on my CPT request has to be completely correct. Could you make the changes?
+
+> Thanks,
+
+> Wenqi He
+
+**Time:** Thu 12/21/2017 3:53 PM  
+**Subject:** RE: Your I-20 work authorization
+
+> Hi Mr. Lindsay,
+
+> I just uploaded my I-20 to CareerBuzz. Will you be available tomorrow?
+
+> Best,
+
+> Wenqi He
+
+**Time:** Thu 3/29/2018 4:05 PM  
+**Subject:** RE: +Important
+
+> Hi Mr. Lindsay,
+
+> I tried to make an appointment on CareerBuzz but your name now doesn’t show up in the system. Can I make the appointment through email?
+
+> Best,
+
+> Wenqi He
+
+> Sent from my iPhone
+
+**Time:** Fri 3/30/2018 2:41 AM  
+**Subject:** RE: +Important
+
+> Hi Mr. Lindsay,
+
+> Sorry for the late reply. Can I come in next Monday (April 2nd) at 8:00AM?
+
+> Sent from my iPhone
+
+**Time:** Thu 5/24/2018 4:53 PM  
+**Subject:** Looking for CS4641 Project Group
+
+> Hi,
+
+> Do you still have room in your group? I’m a 3rd year CS major looking for a group to join.
+
+> Wenqi He
+
+> Sent from my iPhone
+
+**Time:** Fri 5/25/2018 8:48 PM  
+**Subject:** CS 4641 Project Group
+
+> Hey,
+
+> I don’t have anything particular in mind about the topic right now. I guess each of us can go over the list of suggested topics and find the ones that we are both interested in. But we still need to find 2~3 people to join... And also how do you want to communicate? Slack?
+
+> Wenqi He
+
+**Time:** Sat 5/26/2018 2:36 AM  
+**Subject:** Project Topic
+
+> Hey,
+
+> I don’t know if you got my email yesterday, but I’ve joined another group now.
+
+> Wenqi He
+
+**Time:** Wed 6/20/2018 12:45 PM  
+**Subject:** Appointment Reason
+
+> Hi Ms. Joseph,
+
+> Yes, I received an email from the registrar saying that I need to submit a Petition to the Faculty in order to return for the fall semester because I have withdrawn from the summer semester. 
+
+> Best,
+
+> Wenqi He
+
+**Time:** Tue 6/26/2018 2:45 PM  
+**Subject:** Appointment Reason
+
+> Hi Ms. Joseph,
+
+> Here are my petition and personal statement.
+
+> Best,
+
+> Wenqi He
+
+**Time:** Fri 8/24/2018 11:35 AM  
+**Subject:** RE: [CS 3311] If you are DROPPING the class, please reply immediately (for benefit of Junior Design team formation)
+
+> Hi, I have dropped the class. My name is Wenqi He (username: [redacted], GTID: [redacted])
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
