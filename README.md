@@ -699,6 +699,20 @@ Sent from my iPhone
 > GTID: [redacted]
 
 
+**Time:** Wed 1/8/2020 2:26 AM  
+**Subject:** RE: International Diploma Mailing Address Confirmation
+
+> Hi,
+>
+> The address above is correct ([redacted] is the province and [redacted] is the city). 
+>
+> I'm not sure if the format matters, but the leading 86 in the phone number is the country code for China and the number itself is [redacted].
+>
+> Thanks,
+>
+> Wenqi He
+>
+> GTID: [redacted]
 
 
 
