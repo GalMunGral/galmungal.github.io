@@ -14,7 +14,7 @@
 \parbox{0.5\textwidth}{\centerline{\Huge\slshape\bfseries Wenqi He}}
 \parbox{0.25\textwidth}{\texttt{hewenqi96@gmail.com\\+1(470)343-5207}}
 %
-\vspace{-0.5em}
+\vspace{-1em}
 \section*{EDUCATION}
 {\itshape 
 {\bfseries B.S. Computer Science, Georgia Institute of Technology} \hfill Aug. 2015 -- Dec. 2019}
@@ -28,16 +28,15 @@
 {\itshape {\bfseries Software Engineer, Etude (\texttt{etudereader.com}), Atlanta} \hfill Sep. 2019 -- Present}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
 \item Implemented multiple features for the \textbf{Electron}-based smart PDF reader, including persistent non-contiguous text highlighting and table of contents parsing, which worked on 85\% of user-uploaded PDF documents without bookmarks.
-\item Utilized \textbf{PDF.js} and applied \textbf{MVVM pattern} for the persistent highlighting feature.
-\item Fixed a race condition in the default PDF.js viewer between text layer rendering and background computations that caused some highlights to not render on large documents.
+\item Utilized \textbf{PDF.js} to implement the features; detected and fixed a race condition in the default PDF.js viewer between text layer rendering and background computations that caused highlighting bugs on large documents.
 \end{itemize}
 \vspace{0.5em}
 %
 {\itshape {\bfseries Front-end Engineer Intern, PegasusCRM, Atlanta} \hfill Jan. -- May. 2018}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Worked on a new feature of the PHP web application that allows merchants to organize potential customers into lists.
-	\item Reimplemented main features of \textbf{jQuery} DataTables plugin in \textbf{Vue.js} to allow for future custom needs.
-	\item Used \textbf{Jira} to manage assigned tickets and \textbf{Confluence} to manage internal documentation.
+\item Worked on a new feature of the Laravel application that allows merchants to organize their potential customers into lists.
+\item Reimplemented main features of \textbf{jQuery} DataTables plugin in \textbf{Vue.js} to allow for future customizations.
+\item Used \textbf{Jira} to manage assigned tickets and \textbf{Confluence} to manage internal documentation.
 \end{itemize}
 %
 \vspace{-0.5em}
@@ -45,53 +44,56 @@
 {\itshape {\bfseries Georgia Tech Midterm Course Survey System (Web Application)}  \hfill Aug. -- Nov. 2019}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
 \item Developed a full-stack web application for the Office of Academic Effectiveness at Georgia Tech that allows students to take surveys anonymously and lets instructors create/edit/close/delete surveys and view survey results.
-\item Used \textbf{MongoDB} to store survey templates and responses, and implemented a collection of \textbf{Angular} components to render survey forms dynamically based on template \textbf{JSON} fetched from the \textbf{Express/Node.js} back end.
-\item Integrated Georgia Tech Login Service (CAS) and Canvas LMS REST API to determine user type and enrollment status, and used \textbf{singleton Angular services} with \textbf{web storage} to manage user login state and data requests.
-\item Also used Puppeteer, ldapjs, Salesforce Lightning Design System and \textbf{D3.js}.
+\item Used \textbf{MongoDB} to store survey templates and responses and implemented a suite of \textbf{Angular components} to render survey forms dynamically based on the \textbf{JSON}-encoded survey template it receives from the back end.
+\item Integrated Georgia Tech Login Service (CAS) and Canvas LMS REST API to determine user type and enrollment status, and used \textbf{Angular services} with \textbf{Web Storage} to manage user login status and data requests.
+\item Used \textbf{Express/Node.js}, Puppeteer, ldapjs, Salesforce Lightning Design System and \textbf{D3.js}.
 \end{itemize}
 \vspace{0.5em}
 %
-{\itshape {\bfseries MARTA Public Transport Management System (Web Application)} \hfill Sep. -- Nov. 2018}
+{\itshape {\bfseries Public Transport Management System (Web Application, Course Project)} \hfill Sep. -- Nov. 2018}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
 \item Developed a full-stack web application that lets MARTA passengers manage personal accounts, transactions and travel histories and lets administrators update station information and review overall traffic and revenues in a time period.
-\item Utilized \textbf{MySQL}, Sequelize ORM and \textbf{Express/Node.js} to build a REST API for the above functionalities.
-\item Used \textbf{Redux} with \textbf{React} and \textbf{React Router} to synchronize front-end application state such as login status and account balance with back end and across front-end routes/pages without making repeated network requests. 
-\item Deployed the application on \textbf{Heroku} and ClearDB.
+\item Utilized \textbf{MySQL}, \textbf{Express/Node.js}, Sequelize and \textbf{JWT} to build a REST API for the above functionalities.
+\item Created two implementations of the front end using \textbf{React/Redux/React Router} and \textbf{Vue/Vuex/Vue Router}. 
+\item Deployed the application and database on \textbf{Heroku} and ClearDB.
 \end{itemize}
 \vspace{0.5em}
 %
-{\itshape {\bfseries Online Python Console for Public Chats and Video Interviews (Web Application)}  \hfill May. 2018 -- Aug. 2019}
+{\itshape {\bfseries Online Python Console for Chats and Video Interviews (Web Application)}  \hfill May. 2018 -- Aug. 2019}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Developed an online Python console that runs user-submitted Python code and also supports multiple public chat rooms and video interview channels, each with a dynamically spawned, dedicated Python REPL subprocess.
-\item Utilized \textbf{Socket.IO} and \textbf{Node.js} to broadcast one user’s input/output to all users on the same channel.
-\item Implemented the video chat feature using \textbf{WebRTC} and built the signaling service for WebRTC in \textbf{Socket.IO}.
-\item Also used \textbf{React} and \textbf{webpack}.
-
+\item Developed a web-based \textbf{Python} console that supports dynamic creation of public chat rooms and video interview channels, each with a dedicated REPL instance that runs user-submitted Python code.
+\item Used \textbf{Socket.IO} with \textbf{Node.js} to broadcast one user’s messages to other users on the same channel, as well as providing the signaling service that enables the \textbf{WebRTC} video call feature.
 \end{itemize}
 \vspace{0.5em}
 %
-{\itshape {\bfseries Server Port Multiplexer for Heroku}  \hfill Jul. 2019}
+{\itshape {\bfseries Server Port Multiplexer/Demultiplexer}  \hfill Jul. 2019}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Developed a system that allows multiple web servers on the same host to be accessed from a single port by translating between TCP port numbers and URL path prefixes using \textbf{service workers} and \textbf{Node.js}. 
+\item Developed a system that allows multiple web servers running on the same host to be accessed from a single port by translating between TCP port numbers and URL path prefixes using \textbf{service workers} and a \textbf{Node.js} proxy.
 \end{itemize}
 \vspace{0.2em}
 %
-{\itshape {\bfseries Lisp System in JavaScript}  \hfill Oct. 2019}
+{\itshape {\bfseries Mini Visual Studio Code (Electron Application)}  \hfill May. 2019}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Implemented Lisp's s-expressions, \texttt{eval} function and macros in \textbf{JavaScript}.
+\item Built a basic desktop file explorer and text editor with \textbf{Electron}, \textbf{React} and \textbf{styled-components}.
 \end{itemize}
 \vspace{0.2em}
 %
-{\itshape {\bfseries Mini Visual Studio Code (Electron Desktop Application)}  \hfill May. 2018}
+{\itshape {\bfseries A Small JavaScript/HTML Parser} \hfill Mar. 2020}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
-\item Developed a basic cross-platform desktop file explorer and text editor in \textbf{Electron} JavaScript framework.
+\item Implemented a shift-reduce parser in JavaScript for a small subset of JavaScript and HTML.
+\end{itemize}
+\vspace{0.2em}
+%
+{\itshape {\bfseries JavaScript S-expression Evaluator} \hfill Nov. 2019}
+\begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
+\item Implemented s-expression, \texttt{eval} and a macro system in JavaScript based on McCarthy's original paper on LISP.
 \end{itemize}
 \vspace{0.2em}
 %
 {\itshape {\bfseries Sitting Time Recorder (Mobile Application)}  \hfill Jan. 2019}
 \begin{itemize}[leftmargin=15pt, noitemsep, topsep=0pt]
 \item Utilized \textbf{iOS} Core Motion and \textbf{Android} sensor framework to detect vertical movements (standing up/sitting down).
-\item Implemented a calendar heatmap in \textbf{D3.js} to display recorded daily sitting time.
+\item Used \textbf{Go} with \textbf{MySQL} to record user's daily sitting time and used \textbf{D3.js} with \textbf{SVG} to create calendar heatmaps.
 \end{itemize}
 %
 \vspace{-0.5em}
