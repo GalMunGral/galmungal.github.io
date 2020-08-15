@@ -8,6 +8,7 @@ function setLeftOffset(left) {
 function scrollTo(i) {
   setLeftOffset(i * window.innerWidth);
 }
+
 function snap() {
   const left = document.body.scrollLeft;
   let targetIndex = Math.round(left / window.innerWidth);
@@ -24,7 +25,9 @@ function snap() {
     window.requestAnimationFrame(snap);
   }
 }
+
 window.addEventListener('scroll', _.debounce(snap, 50));
+
 window.addEventListener('keydown', e => {
   switch(e.key) {
     case 'ArrowLeft':
@@ -42,7 +45,6 @@ window.addEventListener('keydown', e => {
 })
 
 document.body.onload = function() {
-  
   document.querySelectorAll('img.fullscreen').forEach((img, i) => {
     let description = img.parentNode.querySelector('.description');
     
