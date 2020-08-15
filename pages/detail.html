@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Wenqi He</title>
+    <link rel="stylesheet" href="./resume.css">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        margin: 50px 0 0;
+        font-family: sans-serif;
+        font-weight: lighter;
+        text-decoration: none;
+        color: black;
+      }
+      a .secondary {
+        color: gray;
+      }
+      a:hover, a:hover .secondary {
+        text-decoration: underline;
+        color: lightgray;
+      }
+      .row {
+        /* width: calc(80vw + 2 * 100vw - 800px); */
+        overflow-x: auto;
+        display: flex;
+        align-items: flex-start;
+      }
+      #resume {
+        flex: 0 0 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        overflow: scroll;
+      }
+      #resume img {
+        width: 70vw;
+      }
+      iframe {
+        margin-left: -200px;
+        margin-right: -200px;
+        flex: 0 0 100vw;
+        height: 100vh;
+        border: none;
+        overflow-x: hidden;
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <iframe src="/pages/resume.html?lang=zh"></iframe>
+      <iframe src="/pages/resume.html?lang=en"></iframe>
+      <iframe src="/pages/physics.html"></iframe>
+      <iframe src="/pages/machine-learning.html"></iframe>
+    </div> 
+  <body>
+</html>
