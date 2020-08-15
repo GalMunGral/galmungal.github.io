@@ -1,33 +1,41 @@
+const step = 50; // scroll speed - px per frame
 let index = 0;
+
+function setLeftOffset(left) {
+  document.body.scrollLeft = left;
+}
+
 function scrollTo(i) {
-  document.body.scrollLeft = i * window.innerWidth;
+  setLeftOffset(i * window.innerWidth);
 }
 function snap() {
-  let targetIndex = Math.round(document.body.scrollLeft / window.innerWidth);
+  const left = document.body.scrollLeft;
+  let targetIndex = Math.round(left / window.innerWidth);
   let targetLeft = targetIndex * window.innerWidth;
-  document.body.scrollLeft = targetLeft;
+  // setLeftOffset(targetLeft);
 
-  if (Math.abs(document.body.scrollLeft - targetLeft) < 10) {
-    document.body.scrollLeft = targetLeft;
+  if (Math.abs(left - targetLeft) < step) {
+    // Terminate
+    setLeftOffset(targetLeft);
     index = targetIndex;
   } else {
-    let left = document.body.scrollLeft + (document.body.scrollLeft - targetLeft > 0 ? -1 : 1);
-    document.body.scrollLeft = left;
+    targetLeft = left + (left - targetLeft > 0 ? -step : step);
+    setLeftOffset(targetLeft);
     window.requestAnimationFrame(snap);
   }
 }
-window.addEventListener('scroll', _.debounce(snap, 1000));
+window.addEventListener('scroll', _.debounce(snap, 50));
 window.addEventListener('keydown', e => {
   switch(e.key) {
     case 'ArrowLeft':
       e.preventDefault();
       if (--index < 0) index = 0;
-      document.body.scrollLeft = index * window.innerWidth;
+      setLeftOffset(index * window.innerWidth);
       break;
     case 'ArrowRight':
       e.preventDefault();
       if (++index > 3) index = 3;
-      document.body.scrollLeft = index * window.innerWidth;
+      setLeftOffset(index * window.innerWidth);
       break;
     default:
   }
