@@ -1,0 +1,89 @@
+\documentclass[10 pt]{article}
+\usepackage{xeCJK}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+
+\titleformat{\section}{}{\thesection}{0pt}{\vspace{-0.5em}}[{\titlerule[0.1pt]}]
+\setCJKmainfont{Noto Serif CJK SC}
+\setlist[itemize]{leftmargin=1.5em, topsep=0.7em, itemsep=0.5pt, label={-}}
+\setlength\parindent{0pt}
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+\textbf{\huge 何文琦}\\
+\vspace{0.5em}
+\textbf{\texttt{hewenqi96@\{gmail,qq\}.com | 136-2602-2079 }}
+\end{center}
+
+\section*{教育经历}
+\textbf{计算机科学理学学士 | 佐治亚理工学院 (Georgia Institute of Technology)} | GPA: 3.97/4.0 \hfill 2015/08 -- 2019/12
+
+\section*{工作/实习经历}
+\textbf{兼职 JavaScript 工程师 | Etude (\texttt{etudereader.com}, 大学生初创公司) | 亚特兰大} \hfill 2019/09 -- 2019/12
+\begin{itemize}
+\item 应用 MVVM 模式和插入区间的算法实现了 PDF 阅读器 (Electron 应用) 非连续文本选中和高亮显示的功能.
+\item 使用正则表达式从目录页文本中提取标题和页码, 从而实现了自动生成章节跳转链接的功能.
+\end{itemize}
+
+\textbf{前端开发实习生 | PegasusCRM | 亚特兰大} \hfill 2018/01 -- 2018/04
+\begin{itemize}
+\item 负责用 Vue.js 重写原先基于 jQuery 插件的表格组件, 并实现拖拽分组的功能. 参与维护和更新 PHP 和 jQuery 代码.
+\item 使用 Laravel Blade 模板和 Sass/SCSS 复现页面设计和样式规范, 参与系统设计讨论并协助后端调试代码.
+\end{itemize} 
+
+\section*{个人/学校项目 \texttt{\large //github.com/GalMunGral}}
+\textbf{ \texttt{./modulizer:} 独立开发的前端构建工具 (受Vite和webpack启发) } \hfill 2020/10 -- 进行中 
+\begin{itemize}
+\item 独立开发了基于 Babel, PostCSS, Puppeteer, 支持打包和非打包模式的前端构建工具和开发服务器.
+\item (原生 ESM 模式) 支持构建缓存, 自动刷新 (构建缓存失效+页面刷新), HTTP/2 (服务器推送功能暂未完成).
+\item (打包+服务端渲染模式) 设计并实现了代码分割 算法 (同步/异步/公用/第三方模块)和模块异步加载机制.
+\end{itemize}
+
+\textbf{ \texttt{./replay:} 独立开发的前端框架 (受 React Fiber, MobX 和 Vue 启发) } \hfill 2020/05 -- 2020/09
+\begin{itemize}
+\item 设计并分别通过两种渲染模式实现了diff 算法. 基于 proxy 实现了独立于渲染机制的响应式系统.
+\item (增量DOM模式) 将 JSX 直接编译为原地 diff 指令, 减少内存消耗. 增加 hydration 功能, 支持服务端渲染.
+\item (虚拟DOM模式) 用 generator 实现了可暂停/继续/取消并支持组件懒加载的异步渲染. 支持一套原创的内嵌DSL.
+\item 在上述核心库的基础上开发了简单的和 CSS-in-JS 库 (仿 styled-components), 状态管理 (仿 Redux, Vuex) 和前端路由.
+\item 使用本框架搭建了仿 Gmail 的单页应用, 用于对本框架和上述自行开发的构建工具进行测试和调试.
+\end{itemize}
+
+\textbf{\texttt{./js-to-wasm:}简易 JavaScript -- WebAssembly 编译器 (仅支持小部分语法)} \hfill 2020/06
+\begin{itemize}
+\item 用 Node.js 开发了美观输出 WebAssembly 文本格式的 JS 编译器, 内部 AST 大致遵循 ESTree 规范.
+\end{itemize}
+
+\textbf{\texttt{./marta-\{react,vue\}:} 地铁乘客信息管理系统 (SQL课程项目) } \hfill 2017/09 -- 2017/11
+\begin{itemize}
+\item 分别使用 React/Redux/React Router 和 Vue/Vuex/Vue Router 搭配 Bulma  CSS 框架开发了两套前端应用.
+\item 使用 MySQL, Express 和 JWT 搭建了后端 API, 提供记录行程, 管理账户余额, 查看历史记录和车站人流等功能.
+\item 用 Node.js 开发了通过 cookie 指定上游端口的简易反向代理, 满足了在同一个 Heroku 项目部署多个应用的需求.
+\end{itemize}
+
+\textbf{\texttt{../MarcusWilder/open-evaluation:} 期中调查问卷系统 (设计课程项目)} \hfill 2019/08 -- 2019/12
+\begin{itemize}
+\item 参与 Angular 前端开发, 实现了将 JSON 格式的问卷模板和用户回答信息动态渲染成表单的功能.
+\item 负责 Express/Node.js 后端开发, 集成了学校单点登录系统 (CAS), 并通过 Canvas LMS API 拉取学生选课数据.
+\item 利用 Puppeteer 截取 session cookie 作为替代 OAuth 2.0 临时获取 API 访问权限的方法 (未公开, 仅作 demo 用).
+\end{itemize}
+
+\textbf{\texttt{./web-repl:} 在线 Python REPL 聊天室}  \hfill 2018/05 
+\begin{itemize}
+\item 用 Node.js 和 Socket.IO 开发了基于动态创建 Python 子进程的可协作运行代码的简易聊天室 (前端以 React 编写).
+\item 用 Socket.IO 搭建了 WebRTC 视频通话功能所需的信令服务. (另用 Node.js 编写了 WebSocket 服务器作为替代).
+\end{itemize}
+
+\textbf{\texttt{./sitbit-\{ios,android,server\}:} 移动端久坐追踪应用} \hfill 2019/01
+\begin{itemize}
+\item 使用 iOS Core Motion 和安卓 sensor 框架实时监测用户起身/坐下的动作并上传到数据库 (后端以 Go 语言编写).
+\item 使用 D3.js 以类似 GitHub 个人页上的 SVG 日历热图的形式展示每日久坐时间.
+\end{itemize}
+
+\textbf{\texttt{./todo-\{uikit-objc,swiftui,flutter,react-native,nativescript\}:} 移动端To-do List} \hfill 2019/06
+
+\end{document}
+
