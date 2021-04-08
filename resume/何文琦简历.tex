@@ -7,7 +7,7 @@
 
 \titleformat{\section}{}{\thesection}{0pt}{\vspace{-0.5em}}[{\titlerule[0.1pt]}]
 \setCJKmainfont{Noto Serif CJK SC}
-\setlist[itemize]{leftmargin=1.5em, topsep=0.7em, itemsep=0.5pt, label={-}}
+\setlist[itemize]{leftmargin=1.5em, topsep=0.5em, itemsep=0pt, label={-}}
 \setlength\parindent{0pt}
 \pagestyle{empty}
 
@@ -15,7 +15,7 @@
 
 \begin{center}
 \textbf{\huge 何文琦}\\
-\vspace{0.5em}
+\vspace{0.2em}
 \textbf{\texttt{hewenqi96@\{gmail,qq\}.com | 136-2602-2079 }}
 \end{center}
 
@@ -23,20 +23,27 @@
 \textbf{计算机科学理学学士 | 佐治亚理工学院 (Georgia Institute of Technology)} | GPA: 3.97/4.0 \hfill 2015/08 -- 2019/12
 
 \section*{工作/实习经历}
-\textbf{兼职 JavaScript 工程师 | Etude (\texttt{etudereader.com}, 大学生初创公司) | 亚特兰大} \hfill 2019/09 -- 2019/12
+\textbf{前端工程师 | 谷露软件 Gllue Software | 上海} \hfill 2020/11 -- present
 \begin{itemize}
-\item 应用 MVVM 模式和插入区间的算法实现了 PDF 阅读器 (Electron 应用) 非连续文本选中和高亮显示的功能.
-\item 使用正则表达式从目录页文本中提取标题和页码, 从而实现了自动生成章节跳转链接的功能.
+\item 负责谷露星选小程序猎头榜单以及登录注册和团队管理模块的前端开发.
+\item 主要使用 TypeScript, Taro, React, dva (Redux + Redux-Saga + Immer), Linaria (styled-components), Sass, ECharts.
+\item 参与小程序前端基础建设, 包括表单引擎, 基于 react-pdf 的海报图片生成服务, 以及可嵌套组合的数据查询语言.
+\item 参与了 ATS 和其中 XML 渲染引擎的维护和开发. 编写了检测无用代码文件的 webpack 插件.
+\end{itemize}
+
+\textbf{Electron 开发工程师 (兼职) | Étude (\texttt{etudereader.com}) | 亚特兰大} \hfill 2019/09 -- 2019/12
+\begin{itemize}
+\item 应用 MVVM 模式和插入区间的算法实现了 PDF 阅读器非连续文本选中和高亮显示的功能.
+\item 使用正则表达式从目录页文本中提取标题和页码, 实现了自动生成章节跳转链接的功能.
 \end{itemize}
 
 \textbf{前端开发实习生 | PegasusCRM | 亚特兰大} \hfill 2018/01 -- 2018/04
 \begin{itemize}
-\item 负责用 Vue.js 重写原先基于 jQuery 插件的表格组件, 并实现拖拽分组的功能. 参与维护和更新 PHP 和 jQuery 代码.
-\item 使用 Laravel Blade 模板和 Sass/SCSS 复现页面设计和样式规范, 参与系统设计讨论并协助后端调试代码.
+\item 主要使用 Laravel (PHP), Vue.js, jQuery 和 Sass.
 \end{itemize} 
 
 \section*{个人/学校项目 \texttt{\large //github.com/GalMunGral}}
-\textbf{ \texttt{./modulizer:} 独立开发的前端构建工具 (受Vite和webpack启发) } \hfill 2020/10 -- 进行中 
+\textbf{ \texttt{./modulizer:} 独立开发的前端构建工具 (受Vite和webpack启发) } \hfill 2020/10 -- 2020/11 
 \begin{itemize}
 \item 独立开发了基于 Babel, PostCSS, Puppeteer, 支持打包和非打包模式的前端构建工具和开发服务器.
 \item (原生 ESM 模式) 支持构建缓存, 自动刷新 (构建缓存失效+页面刷新), HTTP/2 (服务器推送功能暂未完成).
@@ -82,8 +89,6 @@
 \item 使用 iOS Core Motion 和安卓 sensor 框架实时监测用户起身/坐下的动作并上传到数据库 (后端以 Go 语言编写).
 \item 使用 D3.js 以类似 GitHub 个人页上的 SVG 日历热图的形式展示每日久坐时间.
 \end{itemize}
-
-\textbf{\texttt{./todo-\{uikit-objc,swiftui,flutter,react-native,nativescript\}:} 移动端To-do List} \hfill 2019/06
 
 \end{document}
 
