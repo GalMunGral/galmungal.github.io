@@ -16,7 +16,7 @@
 \begin{center}
 \textbf{\huge 何文琦}\\
 \vspace{0.2em}
-\textbf{\texttt{hewenqi96@\{gmail,qq\}.com | 136-2602-2079 }}
+\textbf{\texttt{hewenqi96@qq.com | 136-2602-2079 }}
 \end{center}
 
 \section*{教育经历}
@@ -25,10 +25,10 @@
 \section*{工作/实习经历}
 \textbf{前端工程师 | 谷露软件 Gllue Software | 上海} \hfill 2020/11 -- present
 \begin{itemize}
-\item 负责谷露星选小程序猎头榜单以及登录注册和团队管理模块的前端开发.
-\item 主要使用 TypeScript, Taro, React, dva (Redux + Redux-Saga + Immer), Linaria (styled-components), Sass, ECharts.
-\item 参与小程序前端基础建设, 包括表单引擎, 基于 react-pdf 的海报图片生成服务, 以及可嵌套组合的数据查询语言.
-\item 参与了 ATS 和其中 XML 渲染引擎的维护和开发. 编写了检测无用代码文件的 webpack 插件.
+\item 负责协作平台人才库模块的前端开发, 主要使用 TypeScript, React, SWR, Tailwind CSS, Vite.
+\item 负责谷露星选小程序多个模块的前端开发. 主要使用 TypeScript, Taro (React), dva (Redux Saga), Linaria, Sass, ECharts.
+\item 参与小程序前端基础建设, 包括表单引擎、图片生成服务.
+\item 参与了 ATS 和其中 XML 渲染引擎的维护和开发.
 \end{itemize}
 
 \textbf{Electron 开发工程师 (兼职) | Étude (\texttt{etudereader.com}) | 亚特兰大} \hfill 2019/09 -- 2019/12
@@ -43,6 +43,12 @@
 \end{itemize} 
 
 \section*{个人/学校项目 \texttt{\large //github.com/GalMunGral}}
+\textbf{ \texttt{./react-split-renderer}  基于 Service Worker 的 React 渲染器 (proof of concept)} \hfill 2021/05 
+\begin{itemize}
+\item 通过在后台线程运行应用, 减少重复加载、运行初始化代码 (比如关闭tab再打开或者同时打开多个 tab 时).
+\item  在 worker 内维护一层“mutable VDOM”供 React Reconciler 进行同步操作 , 再由其对主线程 DOM 发出对应操作指令.
+\end{itemize}
+
 \textbf{ \texttt{./modulizer:} 独立开发的前端构建工具 (受Vite和webpack启发) } \hfill 2020/10 -- 2020/11 
 \begin{itemize}
 \item 独立开发了基于 Babel, PostCSS, Puppeteer, 支持打包和非打包模式的前端构建工具和开发服务器.
@@ -59,10 +65,21 @@
 \item 使用本框架搭建了仿 Gmail 的单页应用, 用于对本框架和上述自行开发的构建工具进行测试和调试.
 \end{itemize}
 
+\textbf{\texttt{./parser-combinator:}编译器 (仅支持小部分语法)} \hfill 2020/06
+\begin{itemize}
+\item 用 Node.js 开发了美观输出 WebAssembly 文本格式的 JS 编译器, 内部 AST 大致遵循 ESTree 规范.
+\end{itemize}
+
 \textbf{\texttt{./js-to-wasm:}简易 JavaScript -- WebAssembly 编译器 (仅支持小部分语法)} \hfill 2020/06
 \begin{itemize}
 \item 用 Node.js 开发了美观输出 WebAssembly 文本格式的 JS 编译器, 内部 AST 大致遵循 ESTree 规范.
 \end{itemize}
+
+\textbf{\texttt{./js-to-wasm:}简易 JavaScript -- WebAssembly 编译器 (仅支持小部分语法)} \hfill 2020/06
+\begin{itemize}
+\item 一些 webpack 插件, 包括: 按需生成原子化CSS, 检测无用代码文件, 分析模块间耦合
+\end{itemize}
+
 
 \textbf{\texttt{./marta-\{react,vue\}:} 地铁乘客信息管理系统 (SQL课程项目) } \hfill 2017/09 -- 2017/11
 \begin{itemize}
